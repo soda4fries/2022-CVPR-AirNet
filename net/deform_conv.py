@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 from torch.nn.modules.utils import _pair
 
-from mmcv.ops import modulated_deform_conv2d
+# from mmcv.ops import modulated_deform_conv2d
 
 
 class DCN_layer(nn.Module):
@@ -61,5 +61,5 @@ class DCN_layer(nn.Module):
         offset = torch.cat((o1, o2), dim=1)
         mask = torch.sigmoid(mask)
 
-        return modulated_deform_conv2d(input_feat.contiguous(), offset, mask, self.weight, self.bias, self.stride,
+        #return modulated_deform_conv2d(input_feat.contiguous(), offset, mask, self.weight, self.bias, self.stride,
                                        self.padding, self.dilation, self.groups, self.deformable_groups)
