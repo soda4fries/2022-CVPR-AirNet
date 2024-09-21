@@ -1,4 +1,5 @@
 from torch import nn
+from net import fre
 from net.moco import MoCo
 
 
@@ -53,15 +54,15 @@ class CBDE(nn.Module):
         dim = 256
 
         # Encoder
-        self.E = MoCo(base_encoder=ResEncoder, dim=dim, K=opt.batch_size * dim)
+        self.E = MoCo(base_encoder=fre.WaveletResNet, dim=dim, K=opt.batch_size * dim)
 
     def forward(self, x_query, x_key):
         if self.training:
             # degradation-aware represenetion learning
-            fea, logits, labels, inter = self.E(x_query, x_key)
+            fea, logits, labels = self.E(x_query, x_key)
 
-            return fea, logits, labels, inter
+            return fea, logits, labels
         else:
             # degradation-aware represenetion learning
-            fea, inter = self.E(x_query, x_query)
-            return fea, inter
+            fea = self.E(x_query, x_query)
+            return fea

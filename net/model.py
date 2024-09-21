@@ -1,7 +1,9 @@
 from torch import nn
 
+from net import fre
 from net.encoder import CBDE
-from net.DGRN import DGRN
+# from net.DGRN import DGRN
+from net.restoration import PromptIR
 
 
 class AirNet(nn.Module):
@@ -9,21 +11,21 @@ class AirNet(nn.Module):
         super(AirNet, self).__init__()
 
         # Restorer
-        self.R = DGRN(opt)
+        self.R = PromptIR()
 
         # Encoder
         self.E = CBDE(opt)
 
     def forward(self, x_query, x_key):
         if self.training:
-            fea, logits, labels, inter = self.E(x_query, x_key)
+            fea, logits, labels = self.E(x_query, x_key)
 
-            restored = self.R(x_query, inter)
+            restored = self.R(x_query, fea)
 
             return restored, logits, labels
         else:
-            fea, inter = self.E(x_query, x_query)
+            fea = self.E(x_query, x_query)
 
-            restored = self.R(x_query, inter)
+            restored = self.R(x_query, fea)
 
             return restored
