@@ -38,7 +38,7 @@ if __name__ == '__main__':
             optimizer.zero_grad()
 
             if epoch < opt.epochs_encoder:
-                _, output, target, _ = net.E(x_query=degrad_patch_1, x_key=degrad_patch_2)
+                _, output, target = net.E(x_query=degrad_patch_1, x_key=degrad_patch_2)
                 contrast_loss = CE(output, target)
                 loss = contrast_loss
             else:
