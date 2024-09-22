@@ -14,7 +14,7 @@ from einops import rearrange
 from einops.layers.torch import Rearrange
 import time
 
-from net.wtconv.wtconv2d import WTConv2d
+from wtconv.wtconv2d import WTConv2d
 
 
 ##########################################################################
@@ -131,7 +131,6 @@ class Attention(nn.Module):
 
         attn = (q @ k.transpose(-2, -1)) * self.temperature
         attn = attn.softmax(dim=-1)
-
         out = (attn @ v)
         
         out = rearrange(out, 'b head c (h w) -> b (head c) h w', head=self.num_heads, h=h, w=w)
@@ -143,14 +142,16 @@ class Attention(nn.Module):
 
 
 class WaveletAtt(nn.Module):
-    def __init__(self, dim, num_heads, bias):
+    def __init__(self, q_dim, k_dim, dim, num_heads, bias, to_dim=256):
         super(WaveletAtt, self).__init__()
         self.num_heads = num_heads
         self.temperature = nn.Parameter(torch.ones(num_heads, 1, 1))
-        self.q = WTConv2d(dim, dim, kernel_size=1, bias = bias)
-        self.k = WTConv2d(dim, dim, kernel_size=1, bias = bias)
+        
+        self.to_dim = to_dim
+        self.q = nn.Conv2d(q_dim, dim, kernel_size=1, bias = bias)
+        self.k = nn.Conv2d(k_dim, dim, kernel_size=1, bias = bias)
 
-        self.v = WTConv2d(dim, dim, kernel_size=1, bias = bias)
+        self.v = nn.Conv2d(k_dim, dim, kernel_size=1, bias = bias)
 
         self.q_dw = WTConv2d(dim, dim, kernel_size=3, stride=1 ,bias= bias)
         self.k_dw = WTConv2d(dim, dim, kernel_size=3, stride=1, bias= bias)
@@ -164,12 +165,11 @@ class WaveletAtt(nn.Module):
 
 
     def forward(self, x, crossFeat = None):
-        b,c,h,w = x.shape
         if crossFeat != None:
             b,c,h,w = x.shape
             _,_,H,W = crossFeat.shape
         else:
-            b,c,H,W = crossFeat.shape
+            b,c,H,W = x.shape
         # cross attention with wavelet
         q = self.q(x)
         k = self.k(crossFeat)
@@ -179,7 +179,7 @@ class WaveletAtt(nn.Module):
         
         #qkv = self.qkv_dwconv(qkv)
         q,k,v = self.q_dw(q), self.k_dw(k), self.v_dw(v)
-        
+
         q = F.interpolate(q, size=(H, W), mode='bilinear', align_corners=False)
         q = rearrange(q, 'b (head c) H W -> b head c (H W)', head=self.num_heads)
         k = rearrange(k, 'b (head c) H W -> b head c (H W)', head=self.num_heads)
@@ -190,7 +190,6 @@ class WaveletAtt(nn.Module):
 
         attn = (q @ k.transpose(-2, -1)) * self.temperature
         attn = attn.softmax(dim=-1)
-
         out = (attn @ v)
         
         out = rearrange(out, 'b head c (H W) -> b (head c) H W', head=self.num_heads, H=H, W=W)
@@ -207,7 +206,7 @@ class resblock(nn.Module):
         super(resblock, self).__init__()
         # self.norm = LayerNorm(dim, LayerNorm_type='BiasFree')
 
-        self.body = nn.Sequential(nn.Conv2d(dim, dim, kernel_size=3, stride=1, padding=1, bias=False),
+        self.body = MultiInputSequential(nn.Conv2d(dim, dim, kernel_size=3, stride=1, padding=1, bias=False),
                                   nn.PReLU(),
                                   nn.Conv2d(dim, dim, kernel_size=3, stride=1, padding=1, bias=False))
 
@@ -223,7 +222,7 @@ class Downsample(nn.Module):
     def __init__(self, n_feat):
         super(Downsample, self).__init__()
 
-        self.body = nn.Sequential(nn.Conv2d(n_feat, n_feat//2, kernel_size=3, stride=1, padding=1, bias=False),
+        self.body = MultiInputSequential(nn.Conv2d(n_feat, n_feat//2, kernel_size=3, stride=1, padding=1, bias=False),
                                   nn.PixelUnshuffle(2))
 
     def forward(self, x):
@@ -233,7 +232,7 @@ class Upsample(nn.Module):
     def __init__(self, n_feat):
         super(Upsample, self).__init__()
 
-        self.body = nn.Sequential(nn.Conv2d(n_feat, n_feat*2, kernel_size=3, stride=1, padding=1, bias=False),
+        self.body = MultiInputSequential(nn.Conv2d(n_feat, n_feat*2, kernel_size=3, stride=1, padding=1, bias=False),
                                   nn.PixelShuffle(2))
 
     def forward(self, x):
@@ -243,15 +242,15 @@ class Upsample(nn.Module):
 ##########################################################################
 ## Transformer Block
 class TransformerBlock(nn.Module):
-    def __init__(self, dim, num_heads, ffn_expansion_factor, bias, LayerNorm_type, dualAtt=False):
+    def __init__(self, dim, num_heads, ffn_expansion_factor, bias, LayerNorm_type, dualAtt=True):
         super(TransformerBlock, self).__init__()
-
+        wavelet_dim=256
         self.norm1 = LayerNorm(dim, LayerNorm_type)
         if dualAtt == True:
-            self.waveletselfattn = WaveletAtt(dim, num_heads, bias)
+            self.waveletselfattn = Attention(256, num_heads, bias)
 
-            self.wavelet_to_image = WaveletAtt(dim, num_heads, bias)
-            self.image_to_wavelet = WaveletAtt(dim, num_heads, bias)
+            self.wavelet_to_image = WaveletAtt(q_dim=wavelet_dim,k_dim=dim, dim=dim, num_heads=num_heads, bias=bias, to_dim=wavelet_dim)
+            self.image_to_wavelet = WaveletAtt(q_dim=dim,k_dim=wavelet_dim, dim=dim, num_heads=num_heads, bias=bias, to_dim=wavelet_dim)
 
         self.attn = Attention(dim,num_heads, bias)
 
@@ -262,7 +261,7 @@ class TransformerBlock(nn.Module):
 
     def forward(self, x, waveletPrompt= None):
         if waveletPrompt == None:
-            x = x + self.attn(self.norm1(x), waveletPrompt)
+            x = x + self.attn(self.norm1(x))
             x = x + self.ffn(self.norm2(x))
         else:
             x = self.norm1(x)
@@ -270,10 +269,10 @@ class TransformerBlock(nn.Module):
             wave = self.waveletselfattn(waveletPrompt)
             cross1 = self.wavelet_to_image(wave, x) 
 
-            cross2 = self.wavelet_to_image(x, wave)
+            cross2 = self.image_to_wavelet(x, wave)
             cross2 = F.interpolate(cross2, size=(h, w), mode='bilinear', align_corners=False)
             # cross2 needs to resize
-            x = torch.concat( [cross1, cross2], dim = 1)
+            x = cross1 + cross2 #torch.concat( [cross1, cross2], dim = 1)
         return x
 
 
@@ -319,6 +318,19 @@ class PromptGenBlock(nn.Module):
 
 
 
+class MultiInputSequential(nn.Module):
+    def __init__(self, *args):
+        super(MultiInputSequential, self).__init__()
+        self.modules_list = nn.ModuleList(args)
+
+    def forward(self, *inputs):
+        for module in self.modules_list:
+            if isinstance(inputs, tuple):
+                inputs = module(*inputs)
+            else:
+                inputs = module(inputs)
+        return inputs
+
 ##########################################################################
 ##---------- PromptIR -----------------------
 
@@ -356,48 +368,51 @@ class PromptIR(nn.Module):
 
 
         self.reduce_noise_channel_1 = nn.Conv2d(dim + 64,dim,kernel_size=1,bias=bias)
-        self.encoder_level1 = nn.Sequential(*[TransformerBlock(dim=dim, num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[0])])
+        self.encoder_level1 = MultiInputSequential(*[TransformerBlock(dim=dim, num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[0])])
         
         self.down1_2 = Downsample(dim) ## From Level 1 to Level 2
 
         self.reduce_noise_channel_2 = nn.Conv2d(int(dim*2**1) + 128,int(dim*2**1),kernel_size=1,bias=bias)
-        self.encoder_level2 = nn.Sequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[1], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[1])])
+        self.encoder_level2 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[1], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[1])])
         
         self.down2_3 = Downsample(int(dim*2**1)) ## From Level 2 to Level 3
 
         self.reduce_noise_channel_3 = nn.Conv2d(int(dim*2**2) + 256,int(dim*2**2),kernel_size=1,bias=bias)
-        self.encoder_level3 = nn.Sequential(*[TransformerBlock(dim=int(dim*2**2), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[2])])
+        self.encoder_level3 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**2), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[2])])
 
         self.down3_4 = Downsample(int(dim*2**2)) ## From Level 3 to Level 4
         
-        self.latent = nn.Sequential(*[TransformerBlock(dim=int(dim*2**3), num_heads=heads[3], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[3])])
+        self.latent = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**3), num_heads=heads[3], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[3])])
         
         self.up4_3 = Upsample(int(dim*2**2)) ## From Level 4 to Level 3
-        self.reduce_chan_level3 = nn.Conv2d(int(dim*2**1)+192, int(dim*2**2), kernel_size=1, bias=bias)
-        self.noise_level3 = TransformerBlock(dim=int(dim*2**2) + 512, num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type)
-        self.reduce_noise_level3 = nn.Conv2d(int(dim*2**2)+512,int(dim*2**2),kernel_size=1,bias=bias)
+
+        self.noise_level3 = TransformerBlock(dim=int(dim*2**3), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type)
+
+        self.reduce_noise_level3 = nn.Conv2d(int(dim*2**3),int(dim*2**2),kernel_size=1,bias=bias)
+
+        self.reduce_chan_level3 = nn.Conv2d(int(dim*2**2) +96 , int(dim*2**2), kernel_size=1, bias=bias)
 
 
-        self.decoder_level3 = nn.Sequential(*[TransformerBlock(dim=int(dim*2**2), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[2])])
+        self.decoder_level3 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**2), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[2])])
 
 
         self.up3_2 = Upsample(int(dim*2**2)) ## From Level 3 to Level 2
         self.reduce_chan_level2 = nn.Conv2d(int(dim*2**2), int(dim*2**1), kernel_size=1, bias=bias)
-        self.noise_level2 = TransformerBlock(dim=int(dim*2**1) + 224, num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type)
-        self.reduce_noise_level2 = nn.Conv2d(int(dim*2**1)+224,int(dim*2**2),kernel_size=1,bias=bias)
+        self.noise_level2 = TransformerBlock(dim=int(dim*2**2)  , num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type)
+        self.reduce_noise_level2 = nn.Conv2d(int(dim*2**2), int(dim*2**2),kernel_size=1,bias=bias)
 
 
-        self.decoder_level2 = nn.Sequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[1], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[1])])
+        self.decoder_level2 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[1], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[1])])
         
         self.up2_1 = Upsample(int(dim*2**1))  ## From Level 2 to Level 1  (NO 1x1 conv to reduce channels)
 
-        self.noise_level1 = TransformerBlock(dim=int(dim*2**1)+64, num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type)
-        self.reduce_noise_level1 = nn.Conv2d(int(dim*2**1)+64,int(dim*2**1),kernel_size=1,bias=bias)
+        self.noise_level1 = TransformerBlock(dim=int(dim*2**1), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type)
+        self.reduce_noise_level1 = nn.Conv2d(int(dim*2**1),int(dim*2**1),kernel_size=1,bias=bias)
 
 
-        self.decoder_level1 = nn.Sequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[0])])
+        self.decoder_level1 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[0])])
         
-        self.refinement = nn.Sequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_refinement_blocks)])
+        self.refinement = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_refinement_blocks)])
                     
         self.output = nn.Conv2d(int(dim*2**1), out_channels, kernel_size=3, stride=1, padding=1, bias=bias)
 
@@ -427,8 +442,7 @@ class PromptIR(nn.Module):
 
         if self.decoder:
             # dec3_param = self.prompt3(latent)
-
-            latent = torch.cat([latent, dec3_param], 1)
+            # latent = torch.cat([latent, dec3_param], 1)
             latent = self.noise_level3(latent)
             latent = self.reduce_noise_level3(latent)
                         
@@ -437,11 +451,12 @@ class PromptIR(nn.Module):
         inp_dec_level3 = torch.cat([inp_dec_level3, out_enc_level3], 1)
         inp_dec_level3 = self.reduce_chan_level3(inp_dec_level3)
 
+
         out_dec_level3 = self.decoder_level3(inp_dec_level3) 
+
         if self.decoder:
-            dec2_param = self.prompt2(out_dec_level3)
-            out_dec_level3 = torch.cat([out_dec_level3, dec2_param], 1)
-            out_dec_level3 = self.noise_level2(out_dec_level3)
+
+            out_dec_level3 = self.noise_level2(out_dec_level3,noise_emb)
             out_dec_level3 = self.reduce_noise_level2(out_dec_level3)
 
         inp_dec_level2 = self.up3_2(out_dec_level3)
@@ -449,11 +464,10 @@ class PromptIR(nn.Module):
         inp_dec_level2 = self.reduce_chan_level2(inp_dec_level2)
 
         out_dec_level2 = self.decoder_level2(inp_dec_level2)
+
         if self.decoder:
            
-            dec1_param = self.prompt1(out_dec_level2)
-            out_dec_level2 = torch.cat([out_dec_level2, dec1_param], 1)
-            out_dec_level2 = self.noise_level1(out_dec_level2)
+            out_dec_level2 = self.noise_level1(out_dec_level2, noise_emb)
             out_dec_level2 = self.reduce_noise_level1(out_dec_level2)
         
         inp_dec_level1 = self.up2_1(out_dec_level2)
@@ -468,3 +482,11 @@ class PromptIR(nn.Module):
 
 
         return out_dec_level1
+
+
+if __name__ == '__main__':
+    net = PromptIR(decoder=True)
+
+    random1 = torch.randn(3,3,128,128)
+    random2 = torch.randn(3,256,16,16)
+    print(net(random1,random2).shape)
