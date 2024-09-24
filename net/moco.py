@@ -147,7 +147,7 @@ class MoCo(nn.Module):
 
             return embedding, logits, labels#, inter
         else:
-            embedding = self.encoder_q(im_q)
+            embedding,q = self.encoder_q(im_q)
 
             return embedding
 
