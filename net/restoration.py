@@ -14,7 +14,7 @@ from einops import rearrange
 from einops.layers.torch import Rearrange
 import time
 
-from wtconv.wtconv2d import WTConv2d
+from net.wtconv.wtconv2d import WTConv2d
 
 
 ##########################################################################
@@ -345,7 +345,7 @@ class PromptIR(nn.Module):
         ffn_expansion_factor = 2.66,
         bias = False,
         LayerNorm_type = 'WithBias',   ## Other option 'BiasFree'
-        decoder = False,
+        decoder = True,
     
     ):
 
@@ -415,8 +415,11 @@ class PromptIR(nn.Module):
         self.refinement = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_refinement_blocks)])
                     
         self.output = nn.Conv2d(int(dim*2**1), out_channels, kernel_size=3, stride=1, padding=1, bias=bias)
+        print(f'dim = {dim}')
 
     def forward(self, inp_img,noise_emb = None):
+        
+
 
         inp_enc_level1 = self.patch_embed(inp_img)
 
