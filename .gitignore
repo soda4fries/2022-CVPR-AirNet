@@ -4,4 +4,4 @@ __pycache__/
 /data/
 /ckpt/
 /test/
-/wanddb/
+/wandb/
