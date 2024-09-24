@@ -2,3 +2,5 @@ PromptIR/
 Restormer/
 __pycache__/
 /data/
+/ckpt/
+/test/
