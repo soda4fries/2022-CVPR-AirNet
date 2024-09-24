@@ -10,15 +10,26 @@ from utils.dataset_utils import TrainDataset
 from net.model import AirNet
 
 from option import options as opt
+import os
+import wandb
 
 if __name__ == '__main__':
     torch.cuda.set_device(opt.cuda)
     subprocess.check_output(['mkdir', '-p', opt.ckpt_path])
+    
+    wandb.init(project='WaveletTrain',mode='offline', config={
+        'learning_rate': opt.lr,
+        'epochs': opt.epochs,
+        'pretrain_batch_size': opt.batch_size * 128,
+    }  )
+    
 
     trainset = TrainDataset(opt)
-    trainloader = DataLoader(trainset, batch_size=opt.batch_size, pin_memory=True, shuffle=True,
+    trainloader = DataLoader(trainset, batch_size=opt.batch_size*128, pin_memory=True, shuffle=True,
                              drop_last=True, num_workers=opt.num_workers)
-
+    changed = False
+    
+    wandb.log({'updated_batch_size': opt.batch_size * 128})
     # Network Construction
     net = AirNet(opt).cuda()
     net.train()
@@ -34,6 +45,7 @@ if __name__ == '__main__':
         for ([clean_name, de_id], degrad_patch_1, degrad_patch_2, clean_patch_1, clean_patch_2) in tqdm(trainloader):
             degrad_patch_1, degrad_patch_2 = degrad_patch_1.cuda(), degrad_patch_2.cuda()
             clean_patch_1, clean_patch_2 = clean_patch_1.cuda(), clean_patch_2.cuda()
+            
 
             optimizer.zero_grad()
 
@@ -41,26 +53,46 @@ if __name__ == '__main__':
                 _, output, target = net.E(x_query=degrad_patch_1, x_key=degrad_patch_2)
                 contrast_loss = CE(output, target)
                 loss = contrast_loss
+                
             else:
+                
+                    
                 restored, output, target = net(x_query=degrad_patch_1, x_key=degrad_patch_2)
+                
                 contrast_loss = CE(output, target)
                 l1_loss = l1(restored, clean_patch_1)
                 loss = l1_loss + 0.1 * contrast_loss
+                
 
             # backward
             loss.backward()
             optimizer.step()
+            
+            
 
         if epoch < opt.epochs_encoder:
             print(
                 'Epoch (%d)  Loss: contrast_loss:%0.4f\n' % (
                     epoch, contrast_loss.item(),
                 ), '\r', end='')
+            
+            wandb.log({'epoch': epoch, 'contrast_loss': contrast_loss.item()})
+            
+            if(epoch == opt.epochs_encoder - 1 and not changed):
+                    trainloader = DataLoader(trainset, batch_size=opt.batch_size*4, pin_memory=True, shuffle=True,
+                            drop_last=True, num_workers=4)
+                    changed = True
+                    print("changed")
+                    wandb.log({'updated_batch_size': opt.batch_size * 4})
         else:
             print(
                 'Epoch (%d)  Loss: l1_loss:%0.4f contrast_loss:%0.4f\n' % (
                     epoch, l1_loss.item(), contrast_loss.item(),
                 ), '\r', end='')
+            
+            wandb.log({'epoch': epoch, 'l1_loss': l1_loss.item(), 'contrast_loss': contrast_loss.item()})
+            
+        wandb.log({'learning_rate': optimizer.param_groups[0]['lr']})
 
         GPUS = 1
         if (epoch + 1) % 50 == 0:
@@ -82,3 +114,4 @@ if __name__ == '__main__':
             lr = 0.0001 * (0.5 ** ((epoch - opt.epochs_encoder) // 125))
             for param_group in optimizer.param_groups:
                 param_group['lr'] = lr
+    wandb.finish()

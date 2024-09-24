@@ -1,0 +1,32 @@
+2024-09-23 05:50:03,690 INFO    MainThread:2236234 [wandb_setup.py:_flush():77] Current SDK version is 0.18.0
+2024-09-23 05:50:03,691 INFO    MainThread:2236234 [wandb_setup.py:_flush():77] Configure stats pid to 2236234
+2024-09-23 05:50:03,691 INFO    MainThread:2236234 [wandb_setup.py:_flush():77] Loading settings from /home/user/mahdinur/.config/wandb/settings
+2024-09-23 05:50:03,691 INFO    MainThread:2236234 [wandb_setup.py:_flush():77] Loading settings from /scr/user/mahdinur/CVPR/2022-CVPR-AirNet/wandb/settings
+2024-09-23 05:50:03,691 INFO    MainThread:2236234 [wandb_setup.py:_flush():77] Loading settings from environment variables: {}
+2024-09-23 05:50:03,692 INFO    MainThread:2236234 [wandb_setup.py:_flush():77] Applying setup settings: {'_disable_service': False}
+2024-09-23 05:50:03,692 INFO    MainThread:2236234 [wandb_setup.py:_flush():77] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': '/scr/user/mahdinur/CVPR/2022-CVPR-AirNet/train.py', 'program': '/scr/user/mahdinur/CVPR/2022-CVPR-AirNet/train.py'}
+2024-09-23 05:50:03,692 INFO    MainThread:2236234 [wandb_init.py:_log_setup():525] Logging user logs to /scr/user/mahdinur/CVPR/2022-CVPR-AirNet/wandb/offline-run-20240923_055003-g0ogusmr/logs/debug.log
+2024-09-23 05:50:03,693 INFO    MainThread:2236234 [wandb_init.py:_log_setup():526] Logging internal logs to /scr/user/mahdinur/CVPR/2022-CVPR-AirNet/wandb/offline-run-20240923_055003-g0ogusmr/logs/debug-internal.log
+2024-09-23 05:50:03,693 INFO    MainThread:2236234 [wandb_init.py:init():609] calling init triggers
+2024-09-23 05:50:03,693 INFO    MainThread:2236234 [wandb_init.py:init():616] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'epochs': 1000, 'pretrain_batch_size': 640}
+2024-09-23 05:50:03,694 INFO    MainThread:2236234 [wandb_init.py:init():659] starting backend
+2024-09-23 05:50:03,694 INFO    MainThread:2236234 [wandb_init.py:init():663] setting up manager
+2024-09-23 05:50:03,695 INFO    MainThread:2236234 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-09-23 05:50:03,700 INFO    MainThread:2236234 [wandb_init.py:init():671] backend started and connected
+2024-09-23 05:50:03,703 INFO    MainThread:2236234 [wandb_init.py:init():766] updated telemetry
+2024-09-23 05:50:03,716 INFO    MainThread:2236234 [wandb_init.py:init():799] communicating run to backend with 90.0 second timeout
+2024-09-23 05:50:03,743 INFO    MainThread:2236234 [wandb_init.py:init():850] starting run threads in backend
+2024-09-23 05:50:05,005 INFO    MainThread:2236234 [wandb_run.py:_console_start():2466] atexit reg
+2024-09-23 05:50:05,006 INFO    MainThread:2236234 [wandb_run.py:_redirect():2312] redirect: wrap_raw
+2024-09-23 05:50:05,006 INFO    MainThread:2236234 [wandb_run.py:_redirect():2377] Wrapping output streams.
+2024-09-23 05:50:05,006 INFO    MainThread:2236234 [wandb_run.py:_redirect():2402] Redirects installed.
+2024-09-23 05:50:05,022 INFO    MainThread:2236234 [wandb_init.py:init():893] run started, returning control to user process
+2024-09-24 07:38:18,663 INFO    MainThread:2236234 [wandb_run.py:_finish():2163] finishing run WaveletTrain/g0ogusmr
+2024-09-24 07:38:18,847 INFO    MainThread:2236234 [wandb_run.py:_atexit_cleanup():2427] got exitcode: 0
+2024-09-24 07:38:18,851 INFO    MainThread:2236234 [wandb_run.py:_restore():2409] restore
+2024-09-24 07:38:18,851 INFO    MainThread:2236234 [wandb_run.py:_restore():2415] restore done
+2024-09-24 07:38:18,852 INFO    MainThread:2236234 [wandb_run.py:_on_finish():2680] communicating current version
+2024-09-24 07:38:18,853 INFO    MainThread:2236234 [wandb_run.py:_on_finish():2689] got version response 
+2024-09-24 07:38:19,877 INFO    MainThread:2236234 [wandb_run.py:_footer_history_summary_info():4104] rendering history
+2024-09-24 07:38:19,877 INFO    MainThread:2236234 [wandb_run.py:_footer_history_summary_info():4136] rendering summary

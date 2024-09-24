@@ -130,7 +130,6 @@ class WaveletResNet(nn.Module):
         x = self.layer3(x)
         logits = self.avgpool(x)
         logits = torch.flatten(logits,1)
-        print(logits.shape)
         logits = self.mlp(logits)
         return x, logits   #feature, out(logits), inter
 
