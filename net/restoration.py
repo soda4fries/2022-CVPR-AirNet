@@ -266,6 +266,7 @@ class TransformerBlock(nn.Module):
         else:
             x = self.norm1(x)
             b,c,h,w = x.shape
+            x = self.attn(self.norm1(x))
             wave = self.waveletselfattn(waveletPrompt)
             cross1 = self.wavelet_to_image(wave, x) 
 
@@ -273,6 +274,8 @@ class TransformerBlock(nn.Module):
             cross2 = F.interpolate(cross2, size=(h, w), mode='bilinear', align_corners=False)
             # cross2 needs to resize
             x = cross1 + cross2 #torch.concat( [cross1, cross2], dim = 1)
+            x = x + self.ffn(self.norm2(x))
+
         return x
 
 
