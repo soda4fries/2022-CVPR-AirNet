@@ -247,7 +247,7 @@ class TransformerBlock(nn.Module):
         wavelet_dim=256
         self.norm1 = LayerNorm(dim, LayerNorm_type)
         if dualAtt == True:
-            self.waveletselfattn = Attention(256, num_heads, bias)
+            self.waveletselfattn = Attention(wavelet_dim, num_heads, bias)
 
             self.wavelet_to_image = WaveletAtt(q_dim=wavelet_dim,k_dim=dim, dim=dim, num_heads=num_heads, bias=bias, to_dim=wavelet_dim)
             self.image_to_wavelet = WaveletAtt(q_dim=dim,k_dim=wavelet_dim, dim=dim, num_heads=num_heads, bias=bias, to_dim=wavelet_dim)
@@ -490,6 +490,6 @@ class PromptIR(nn.Module):
 if __name__ == '__main__':
     net = PromptIR(decoder=True)
 
-    random1 = torch.randn(3,3,128,128)
+    random1 = torch.randn(3,3,256,256)
     random2 = torch.randn(3,256,16,16)
     print(net(random1,random2).shape)
