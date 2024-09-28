@@ -446,7 +446,7 @@ class PromptIR(nn.Module):
         if self.decoder:
             # dec3_param = self.prompt3(latent)
             # latent = torch.cat([latent, dec3_param], 1)
-            latent = self.noise_level3(latent)
+            latent = self.noise_level3(latent, noise_emb)
             latent = self.reduce_noise_level3(latent)
                         
         inp_dec_level3 = self.up4_3(latent)

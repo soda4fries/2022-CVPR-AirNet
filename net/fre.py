@@ -80,11 +80,17 @@ class WaveletCNNBlock(nn.Module):
         # Apply IDWT
         out = self.idwt((out, yh))
         
+        if out.shape != residual.shape:
+            size = residual.shape[-1], residual.shape[-2]
+            out = F.interpolate(out, size=size, mode='bilinear')
+
         out = self.se(out)
         
         if self.stride != 1:
             out = F.avg_pool2d(out, 2)
         
+
+
         out += residual
         out = self.relu(out)
         
@@ -130,7 +136,7 @@ class WaveletResNet(nn.Module):
         x = self.layer3(x)
         logits = self.avgpool(x)
         logits = torch.flatten(logits,1)
-        print(logits.shape)
+        #print(logits.shape)
         logits = self.mlp(logits)
         return x, logits   #feature, out(logits), inter
 
