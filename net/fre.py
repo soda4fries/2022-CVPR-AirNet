@@ -80,8 +80,12 @@ class WaveletCNNBlock(nn.Module):
         # Apply IDWT
         out = self.idwt((out, yh))
         
+<<<<<<< HEAD
         
         
+=======
+ 
+>>>>>>> 081ed19 (fixed fre bugs)
         out = self.se(out)
         
         if self.stride != 1:
@@ -89,6 +93,13 @@ class WaveletCNNBlock(nn.Module):
             
         print(f'{out.shape} {residual.shape}')
         
+<<<<<<< HEAD
+=======
+        if out.shape != residual.shape:
+            size = residual.shape[-1], residual.shape[-2]
+            out = F.interpolate(out, size=size, mode='bilinear')
+
+>>>>>>> 081ed19 (fixed fre bugs)
         out += residual
         out = self.relu(out)
         
@@ -138,10 +149,9 @@ class WaveletResNet(nn.Module):
         return x, logits   #feature, out(logits), inter
 
 # Test the model
-# model = WaveletResNet(num_classes=100).to(device)
-# data = torch.randn(2, 3, 224, 224).to(device)
+# model = WaveletResNet()
+# data = torch.randn(2, 3, 224, 224)
 # print(model(data).shape)
 
-# Uncomment the following lines if you want to check the total number of parameters
 # total_params = sum(p.numel() for p in model.parameters())
 # print(f"Total number of parameters: {total_params}")
