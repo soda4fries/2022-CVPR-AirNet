@@ -28,6 +28,7 @@ def test_Denoise(net, dataset, sigma=15):
             degrad_patch, clean_patch = degrad_patch.cuda(), clean_patch.cuda()
 
             restored = net(x_query=degrad_patch, x_key=degrad_patch)
+            #clean_patchpermuated, restored_permuated =  clean_patch.permute(0, 2, 3, 1) , restored.permute(0, 2, 3, 1)
             temp_psnr, temp_ssim, N = compute_psnr_ssim(restored, clean_patch)
             psnr.update(temp_psnr, N)
             ssim.update(temp_ssim, N)

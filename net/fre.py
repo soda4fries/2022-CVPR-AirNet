@@ -80,10 +80,14 @@ class WaveletCNNBlock(nn.Module):
         # Apply IDWT
         out = self.idwt((out, yh))
         
+        
+        
         out = self.se(out)
         
         if self.stride != 1:
             out = F.avg_pool2d(out, 2)
+            
+        print(f'{out.shape} {residual.shape}')
         
         out += residual
         out = self.relu(out)
