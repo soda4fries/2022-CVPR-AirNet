@@ -1,5 +1,5 @@
 from torch import nn
-from net import fre
+from net import fre, fre2
 from net.moco import MoCo
 
 
@@ -54,7 +54,7 @@ class CBDE(nn.Module):
         dim = 256
 
         # Encoder
-        self.E = MoCo(base_encoder=fre.WaveletResNet, dim=dim, K=opt.batch_size * dim)
+        self.E = MoCo(base_encoder=fre2.WaveletResNet, dim=dim, K=opt.batch_size * dim)
 
     def forward(self, x_query, x_key):
         if self.training:

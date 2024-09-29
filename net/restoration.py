@@ -242,9 +242,9 @@ class Upsample(nn.Module):
 ##########################################################################
 ## Transformer Block
 class TransformerBlock(nn.Module):
-    def __init__(self, dim, num_heads, ffn_expansion_factor, bias, LayerNorm_type, dualAtt=True):
+    def __init__(self, dim, num_heads, ffn_expansion_factor, bias, LayerNorm_type, dualAtt=True, wavelet_dim=256):
         super(TransformerBlock, self).__init__()
-        wavelet_dim=256
+
         self.norm1 = LayerNorm(dim, LayerNorm_type)
         if dualAtt == True:
             self.waveletselfattn = Attention(wavelet_dim, num_heads, bias)
@@ -349,6 +349,7 @@ class PromptIR(nn.Module):
         bias = False,
         LayerNorm_type = 'WithBias',   ## Other option 'BiasFree'
         decoder = False,
+        wavelet_dim=256
     
     ):
 
@@ -371,21 +372,21 @@ class PromptIR(nn.Module):
 
 
         self.reduce_noise_channel_1 = nn.Conv2d(dim + 64,dim,kernel_size=1,bias=bias)
-        self.encoder_level1 = MultiInputSequential(*[TransformerBlock(dim=dim, num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[0])])
+        self.encoder_level1 = MultiInputSequential(*[TransformerBlock(dim=dim, num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type,wavelet_dim=wavelet_dim) for i in range(num_blocks[0])])
         
         self.down1_2 = Downsample(dim) ## From Level 1 to Level 2
 
         self.reduce_noise_channel_2 = nn.Conv2d(int(dim*2**1) + 128,int(dim*2**1),kernel_size=1,bias=bias)
-        self.encoder_level2 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[1], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[1])])
+        self.encoder_level2 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[1], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type,wavelet_dim=wavelet_dim) for i in range(num_blocks[1])])
         
         self.down2_3 = Downsample(int(dim*2**1)) ## From Level 2 to Level 3
 
         self.reduce_noise_channel_3 = nn.Conv2d(int(dim*2**2) + 256,int(dim*2**2),kernel_size=1,bias=bias)
-        self.encoder_level3 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**2), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[2])])
+        self.encoder_level3 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**2), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type,wavelet_dim=wavelet_dim) for i in range(num_blocks[2])])
 
         self.down3_4 = Downsample(int(dim*2**2)) ## From Level 3 to Level 4
         
-        self.latent = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**3), num_heads=heads[3], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[3])])
+        self.latent = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**3), num_heads=heads[3], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type,wavelet_dim=wavelet_dim) for i in range(num_blocks[3])])
         
         self.up4_3 = Upsample(int(dim*2**2)) ## From Level 4 to Level 3
 
@@ -396,7 +397,7 @@ class PromptIR(nn.Module):
         self.reduce_chan_level3 = nn.Conv2d(int(dim*2**2) +96 , int(dim*2**2), kernel_size=1, bias=bias)
 
 
-        self.decoder_level3 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**2), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[2])])
+        self.decoder_level3 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**2), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type,wavelet_dim=wavelet_dim) for i in range(num_blocks[2])])
 
 
         self.up3_2 = Upsample(int(dim*2**2)) ## From Level 3 to Level 2
@@ -405,7 +406,7 @@ class PromptIR(nn.Module):
         self.reduce_noise_level2 = nn.Conv2d(int(dim*2**2), int(dim*2**2),kernel_size=1,bias=bias)
 
 
-        self.decoder_level2 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[1], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[1])])
+        self.decoder_level2 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[1], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type,wavelet_dim=wavelet_dim) for i in range(num_blocks[1])])
         
         self.up2_1 = Upsample(int(dim*2**1))  ## From Level 2 to Level 1  (NO 1x1 conv to reduce channels)
 
@@ -413,9 +414,9 @@ class PromptIR(nn.Module):
         self.reduce_noise_level1 = nn.Conv2d(int(dim*2**1),int(dim*2**1),kernel_size=1,bias=bias)
 
 
-        self.decoder_level1 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[0])])
+        self.decoder_level1 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type,wavelet_dim=wavelet_dim) for i in range(num_blocks[0])])
         
-        self.refinement = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_refinement_blocks)])
+        self.refinement = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type,wavelet_dim=wavelet_dim) for i in range(num_refinement_blocks)])
                     
         self.output = nn.Conv2d(int(dim*2**1), out_channels, kernel_size=3, stride=1, padding=1, bias=bias)
 
@@ -490,6 +491,6 @@ class PromptIR(nn.Module):
 if __name__ == '__main__':
     net = PromptIR(decoder=True)
 
-    random1 = torch.randn(3,3,256,256)
-    random2 = torch.randn(3,256,16,16)
+    random1 = torch.randn(2,3,128,128)
+    random2 = torch.randn(2,256,16,16)
     print(net(random1,random2).shape)
