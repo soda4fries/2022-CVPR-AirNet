@@ -43,7 +43,7 @@ class WaveletCNNBlock(nn.Module):
         
         self.conv1 = nn.Conv2d(in_channels, out_channels, kernel_size=1, bias=False)
         self.bn1 = nn.BatchNorm2d(out_channels)
-        self.conv2 = SeparableConv2d(out_channels, out_channels, kernel_size=3, stride=1, padding=1)
+        self.conv2 = nn.Conv2d(out_channels, out_channels, kernel_size=3, stride=1, padding=1)
         self.bn2 = nn.BatchNorm2d(out_channels)
         self.conv3 = nn.Conv2d(out_channels, out_channels, kernel_size=1, bias=False)
         self.bn3 = nn.BatchNorm2d(out_channels)
@@ -80,26 +80,15 @@ class WaveletCNNBlock(nn.Module):
         # Apply IDWT
         out = self.idwt((out, yh))
         
-<<<<<<< HEAD
-        
-        
-=======
  
->>>>>>> 081ed19 (fixed fre bugs)
         out = self.se(out)
         
         if self.stride != 1:
             out = F.avg_pool2d(out, 2)
-            
-        print(f'{out.shape} {residual.shape}')
-        
-<<<<<<< HEAD
-=======
         if out.shape != residual.shape:
-            size = residual.shape[-1], residual.shape[-2]
+            size = residual.shape[-2], residual.shape[-1]
             out = F.interpolate(out, size=size, mode='bilinear')
 
->>>>>>> 081ed19 (fixed fre bugs)
         out += residual
         out = self.relu(out)
         
@@ -145,12 +134,13 @@ class WaveletResNet(nn.Module):
         x = self.layer3(x)
         logits = self.avgpool(x)
         logits = torch.flatten(logits,1)
+        #print(logits.shape)
         logits = self.mlp(logits)
         return x, logits   #feature, out(logits), inter
 
 # Test the model
 # model = WaveletResNet()
-# data = torch.randn(2, 3, 224, 224)
+# data = torch.randn(2, 3, 400, 544)
 # print(model(data).shape)
 
 # total_params = sum(p.numel() for p in model.parameters())
