@@ -1,136 +1,0 @@
-no change     /app/miniconda/24.7.1/condabin/conda
-no change     /app/miniconda/24.7.1/bin/conda
-no change     /app/miniconda/24.7.1/bin/conda-env
-no change     /app/miniconda/24.7.1/bin/activate
-no change     /app/miniconda/24.7.1/bin/deactivate
-no change     /app/miniconda/24.7.1/etc/profile.d/conda.sh
-no change     /app/miniconda/24.7.1/etc/fish/conf.d/conda.fish
-no change     /app/miniconda/24.7.1/shell/condabin/Conda.psm1
-no change     /app/miniconda/24.7.1/shell/condabin/conda-hook.ps1
-no change     /app/miniconda/24.7.1/lib/python3.12/site-packages/xontrib/conda.xsh
-no change     /app/miniconda/24.7.1/etc/profile.d/conda.csh
-no change     /home/user/mahdinur/.bashrc
-No action taken.
-dim = 48
-Start training...
-Epoch (0)  Loss: contrast_loss:6.4591
- Epoch (1)  Loss: contrast_loss:5.9515
- Epoch (2)  Loss: contrast_loss:5.8349
- Epoch (3)  Loss: contrast_loss:5.6978
- Epoch (4)  Loss: contrast_loss:5.6127
- Epoch (5)  Loss: contrast_loss:5.5290
- Epoch (6)  Loss: contrast_loss:5.6219
- Epoch (7)  Loss: contrast_loss:5.5314
- Epoch (8)  Loss: contrast_loss:5.4628
- Epoch (9)  Loss: contrast_loss:5.4689
- Epoch (10)  Loss: contrast_loss:5.4206
- Epoch (11)  Loss: contrast_loss:5.3243
- Epoch (12)  Loss: contrast_loss:5.3240
- Epoch (13)  Loss: contrast_loss:5.2408
- Epoch (14)  Loss: contrast_loss:5.3397
- Epoch (15)  Loss: contrast_loss:5.2521
- Epoch (16)  Loss: contrast_loss:5.2847
- Epoch (17)  Loss: contrast_loss:5.1907
- Epoch (18)  Loss: contrast_loss:5.2661
- Epoch (19)  Loss: contrast_loss:5.2799
- Epoch (20)  Loss: contrast_loss:5.2036
- Epoch (21)  Loss: contrast_loss:5.1003
- Epoch (22)  Loss: contrast_loss:5.0907
- Epoch (23)  Loss: contrast_loss:5.1516
- Epoch (24)  Loss: contrast_loss:5.1674
- Epoch (25)  Loss: contrast_loss:5.0987
- Epoch (26)  Loss: contrast_loss:5.0657
- Epoch (27)  Loss: contrast_loss:5.0531
- Epoch (28)  Loss: contrast_loss:5.0479
- Epoch (29)  Loss: contrast_loss:5.0404
- Epoch (30)  Loss: contrast_loss:4.9691
- Epoch (31)  Loss: contrast_loss:4.9925
- Epoch (32)  Loss: contrast_loss:4.9919
- Epoch (33)  Loss: contrast_loss:5.0026
- Epoch (34)  Loss: contrast_loss:4.8479
- Epoch (35)  Loss: contrast_loss:4.8987
- Epoch (36)  Loss: contrast_loss:4.8987
- Epoch (37)  Loss: contrast_loss:4.9198
- Epoch (38)  Loss: contrast_loss:4.9982
- Epoch (39)  Loss: contrast_loss:4.9252
- Epoch (40)  Loss: contrast_loss:4.9038
- Epoch (41)  Loss: contrast_loss:4.8527
- Epoch (42)  Loss: contrast_loss:4.7665
- Epoch (43)  Loss: contrast_loss:4.8541
- Epoch (44)  Loss: contrast_loss:4.7562
- Epoch (45)  Loss: contrast_loss:4.7276
- Epoch (46)  Loss: contrast_loss:4.6797
- Epoch (47)  Loss: contrast_loss:4.7061
- Epoch (48)  Loss: contrast_loss:4.7538
- Epoch (49)  Loss: contrast_loss:4.7218
- Epoch (50)  Loss: contrast_loss:4.6541
- Epoch (51)  Loss: contrast_loss:4.6965
- Epoch (52)  Loss: contrast_loss:4.6489
- Epoch (53)  Loss: contrast_loss:4.6947
- Epoch (54)  Loss: contrast_loss:4.5940
- Epoch (55)  Loss: contrast_loss:4.6067
- Epoch (56)  Loss: contrast_loss:4.5715
- Epoch (57)  Loss: contrast_loss:4.5500
- Epoch (58)  Loss: contrast_loss:4.4976
- Epoch (59)  Loss: contrast_loss:4.4939
- Epoch (60)  Loss: contrast_loss:4.4972
- Epoch (61)  Loss: contrast_loss:4.5400
- Epoch (62)  Loss: contrast_loss:4.6124
- Epoch (63)  Loss: contrast_loss:4.4897
- Epoch (64)  Loss: contrast_loss:4.3856
- Epoch (65)  Loss: contrast_loss:4.4258
- Epoch (66)  Loss: contrast_loss:4.4163
- Epoch (67)  Loss: contrast_loss:4.3639
- Epoch (68)  Loss: contrast_loss:4.4165
- Epoch (69)  Loss: contrast_loss:4.3662
- Epoch (70)  Loss: contrast_loss:4.3821
- Epoch (71)  Loss: contrast_loss:4.2648
- Epoch (72)  Loss: contrast_loss:4.3288
- Epoch (73)  Loss: contrast_loss:4.3451
- Epoch (74)  Loss: contrast_loss:4.3263
- Epoch (75)  Loss: contrast_loss:4.2345
- Epoch (76)  Loss: contrast_loss:4.2773
- Epoch (77)  Loss: contrast_loss:4.2793
- Epoch (78)  Loss: contrast_loss:4.2684
- Epoch (79)  Loss: contrast_loss:4.1869
- Epoch (80)  Loss: contrast_loss:4.1676
- Epoch (81)  Loss: contrast_loss:4.2492
- Epoch (82)  Loss: contrast_loss:4.2084
- Epoch (83)  Loss: contrast_loss:4.2372
- Epoch (84)  Loss: contrast_loss:4.2046
- Epoch (85)  Loss: contrast_loss:4.1830
- Epoch (86)  Loss: contrast_loss:4.1957
- Epoch (87)  Loss: contrast_loss:4.1635
- Epoch (88)  Loss: contrast_loss:4.1610
- Epoch (89)  Loss: contrast_loss:4.1258
- Epoch (90)  Loss: contrast_loss:4.1546
- Epoch (91)  Loss: contrast_loss:4.1247
- Epoch (92)  Loss: contrast_loss:4.0351
- Epoch (93)  Loss: contrast_loss:4.0410
- Epoch (94)  Loss: contrast_loss:4.1224
- Epoch (95)  Loss: contrast_loss:4.1363
- Epoch (96)  Loss: contrast_loss:3.9803
- Epoch (97)  Loss: contrast_loss:4.0749
- Epoch (98)  Loss: contrast_loss:4.0931
- Epoch (99)  Loss: contrast_loss:3.9733
- Epoch (100)  Loss: contrast_loss:3.9602
- Epoch (101)  Loss: contrast_loss:4.1403
- Epoch (102)  Loss: contrast_loss:3.9907
- Epoch (103)  Loss: contrast_loss:3.9670
- Epoch (104)  Loss: contrast_loss:4.0025
- Epoch (105)  Loss: contrast_loss:4.0019
- Epoch (106)  Loss: contrast_loss:3.9994
- Epoch (107)  Loss: contrast_loss:4.0641
- Epoch (108)  Loss: contrast_loss:4.0486
- Epoch (109)  Loss: contrast_loss:3.9553
- Epoch (110)  Loss: contrast_loss:3.9064
- Epoch (111)  Loss: contrast_loss:3.9943
- Epoch (112)  Loss: contrast_loss:3.8583
- Epoch (113)  Loss: contrast_loss:3.9710
- Epoch (114)  Loss: contrast_loss:3.8962
- Epoch (115)  Loss: contrast_loss:3.8759
- Epoch (116)  Loss: contrast_loss:3.9203
- Epoch (117)  Loss: contrast_loss:3.9567
- Epoch (118)  Loss: contrast_loss:3.9703
- Epoch (119)  Loss: contrast_loss:3.8912
- 
