@@ -85,11 +85,12 @@ class WaveletCNNBlock(nn.Module):
         
         if self.stride != 1:
             out = F.avg_pool2d(out, 2)
-        
+        print(out.shape,residual.shape)
         if out.shape != residual.shape:
-            size = residual.shape[-1], residual.shape[-2]
+            size = residual.shape[-2], residual.shape[-1]
             out = F.interpolate(out, size=size, mode='bilinear')
 
+        print(out.shape,residual.shape)
         out += residual
         out = self.relu(out)
         
@@ -140,9 +141,9 @@ class WaveletResNet(nn.Module):
         return x, logits   #feature, out(logits), inter
 
 # Test the model
-# model = WaveletResNet()
-# data = torch.randn(2, 3, 224, 224)
-# print(model(data).shape)
+model = WaveletResNet()
+data = torch.randn(2, 3, 400, 544)
+print(model(data).shape)
 
-# total_params = sum(p.numel() for p in model.parameters())
-# print(f"Total number of parameters: {total_params}")
+total_params = sum(p.numel() for p in model.parameters())
+print(f"Total number of parameters: {total_params}")
