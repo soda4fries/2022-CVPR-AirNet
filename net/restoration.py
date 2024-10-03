@@ -270,10 +270,10 @@ class TransformerBlock(nn.Module):
             wave = self.waveletselfattn(waveletPrompt)
             cross1 = self.wavelet_to_image(wave, x) 
 
-            cross2 = self.image_to_wavelet(x, wave)
-            cross2 = F.interpolate(cross2, size=(h, w), mode='bilinear', align_corners=False)
+            #cross2 = self.image_to_wavelet(x, wave)
+            #cross2 = F.interpolate(cross2, size=(h, w), mode='bilinear', align_corners=False)
             # cross2 needs to resize
-            x = cross1 + cross2 #torch.concat( [cross1, cross2], dim = 1)
+            x = cross1 #+ cross2 #torch.concat( [cross1, cross2], dim = 1)
             x = x + self.ffn(self.norm2(x))
 
         return x
