@@ -1,83 +1,0 @@
-Decoder: True
-<class 'net.fre2.WaveletResNet'>
-Start training...
-Epoch (0)  Loss: contrast_loss:3.8912
- Epoch (1)  Loss: contrast_loss:4.4999
- Epoch (2)  Loss: contrast_loss:3.8908
- Epoch (3)  Loss: contrast_loss:4.0852
- Epoch (4)  Loss: contrast_loss:3.9265
- Epoch (5)  Loss: contrast_loss:4.1706
- Epoch (6)  Loss: contrast_loss:4.4270
- Epoch (7)  Loss: contrast_loss:4.2610
- Epoch (8)  Loss: contrast_loss:4.5836
- Epoch (9)  Loss: contrast_loss:5.5832
- Epoch (10)  Loss: contrast_loss:3.6266
- Epoch (11)  Loss: contrast_loss:3.7372
- Epoch (12)  Loss: contrast_loss:4.1619
- Epoch (13)  Loss: contrast_loss:3.3952
- Epoch (14)  Loss: contrast_loss:4.1922
- Epoch (15)  Loss: contrast_loss:4.4489
- Epoch (16)  Loss: contrast_loss:3.7832
- Epoch (17)  Loss: contrast_loss:3.5623
- Epoch (18)  Loss: contrast_loss:4.2683
- Epoch (19)  Loss: contrast_loss:3.0910
- Epoch (20)  Loss: contrast_loss:3.4979
- Epoch (21)  Loss: contrast_loss:4.0787
- Epoch (22)  Loss: contrast_loss:3.7631
- Epoch (23)  Loss: contrast_loss:3.1208
- Epoch (24)  Loss: contrast_loss:3.7418
- Epoch (25)  Loss: contrast_loss:3.5470
- Epoch (26)  Loss: contrast_loss:3.5305
- Epoch (27)  Loss: contrast_loss:3.3472
- Epoch (28)  Loss: contrast_loss:5.4142
- Epoch (29)  Loss: contrast_loss:4.1121
- Epoch (30)  Loss: contrast_loss:4.4404
- Epoch (31)  Loss: contrast_loss:4.0405
- Epoch (32)  Loss: contrast_loss:4.5326
- Epoch (33)  Loss: contrast_loss:3.6313
- Epoch (34)  Loss: contrast_loss:3.7728
- Epoch (35)  Loss: contrast_loss:4.1393
- Epoch (36)  Loss: contrast_loss:5.3697
- Epoch (37)  Loss: contrast_loss:4.9357
- Epoch (38)  Loss: contrast_loss:3.1905
- Epoch (39)  Loss: contrast_loss:3.4864
- Epoch (40)  Loss: contrast_loss:3.3304
- Epoch (41)  Loss: contrast_loss:3.5334
- Epoch (42)  Loss: contrast_loss:3.4475
- Epoch (43)  Loss: contrast_loss:3.2060
- Epoch (44)  Loss: contrast_loss:4.3892
- Epoch (45)  Loss: contrast_loss:2.8995
- Epoch (46)  Loss: contrast_loss:2.7130
- Epoch (47)  Loss: contrast_loss:2.7498
- Epoch (48)  Loss: contrast_loss:3.6517
- Epoch (49)  Loss: contrast_loss:6.2160
- Denoise sigma=50: psnr: 14.23, ssim: 0.2052
-Epoch (50)  Loss: contrast_loss:3.4771
- Epoch (51)  Loss: contrast_loss:2.3253
- Epoch (52)  Loss: contrast_loss:2.5784
- Epoch (53)  Loss: contrast_loss:3.0350
- Epoch (54)  Loss: contrast_loss:4.6644
- Epoch (55)  Loss: contrast_loss:2.4091
- Epoch (56)  Loss: contrast_loss:4.6803
- Epoch (57)  Loss: contrast_loss:3.0438
- Epoch (58)  Loss: contrast_loss:2.2260
- Epoch (59)  Loss: contrast_loss:2.7821
- Epoch (60)  Loss: contrast_loss:5.4229
- Epoch (61)  Loss: contrast_loss:2.4532
- Epoch (62)  Loss: contrast_loss:2.6403
- Epoch (63)  Loss: contrast_loss:4.7255
- Epoch (64)  Loss: contrast_loss:2.4483
- Epoch (65)  Loss: contrast_loss:2.0878
- Epoch (66)  Loss: contrast_loss:5.5445
- Epoch (67)  Loss: contrast_loss:2.4159
- Epoch (68)  Loss: contrast_loss:6.0716
- Epoch (69)  Loss: contrast_loss:3.5531
- Epoch (70)  Loss: contrast_loss:2.6225
- Epoch (71)  Loss: contrast_loss:1.7135
- Epoch (72)  Loss: contrast_loss:2.2763
- Epoch (73)  Loss: contrast_loss:2.7678
- Epoch (74)  Loss: contrast_loss:5.1080
- Epoch (75)  Loss: contrast_loss:2.7570
- Epoch (76)  Loss: contrast_loss:2.4908
- Epoch (77)  Loss: contrast_loss:3.4934
- 

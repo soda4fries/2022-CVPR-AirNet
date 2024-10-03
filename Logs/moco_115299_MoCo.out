@@ -1,7 +1,0 @@
-Decoder: True
-<class 'net.fre2.WaveletResNet'>
-Start training...
-Epoch (0)  Loss: contrast_loss:4.7635
- Denoise sigma=50: psnr: 12.58, ssim: 0.2106
-Epoch (1)  Loss: contrast_loss:4.5447
- 

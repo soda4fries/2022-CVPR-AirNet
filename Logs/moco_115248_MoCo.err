@@ -1,9 +1,0 @@
-/home/user/mahdinur/.bashrc: line 40: syntax error near unexpected token `else'
-/home/user/mahdinur/.bashrc: line 40: `        else'
-
-CondaError: Run 'conda init' before 'conda activate'
-
-Traceback (most recent call last):
-  File "/scr/user/mahdinur/CVPR/2022-CVPR-AirNet/train.py", line 4, in <module>
-    import torch
-ModuleNotFoundError: No module named 'torch'

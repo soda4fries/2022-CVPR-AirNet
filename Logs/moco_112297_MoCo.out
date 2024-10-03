@@ -1,1017 +1,0 @@
-no change     /app/miniconda/24.7.1/condabin/conda
-no change     /app/miniconda/24.7.1/bin/conda
-no change     /app/miniconda/24.7.1/bin/conda-env
-no change     /app/miniconda/24.7.1/bin/activate
-no change     /app/miniconda/24.7.1/bin/deactivate
-no change     /app/miniconda/24.7.1/etc/profile.d/conda.sh
-no change     /app/miniconda/24.7.1/etc/fish/conf.d/conda.fish
-no change     /app/miniconda/24.7.1/shell/condabin/Conda.psm1
-no change     /app/miniconda/24.7.1/shell/condabin/conda-hook.ps1
-no change     /app/miniconda/24.7.1/lib/python3.12/site-packages/xontrib/conda.xsh
-no change     /app/miniconda/24.7.1/etc/profile.d/conda.csh
-no change     /home/user/mahdinur/.bashrc
-No action taken.
-<class 'net.fre2.WaveletResNet'>
-Start training...
-Epoch (0)  Loss: contrast_loss:5.9097
- Epoch (1)  Loss: contrast_loss:5.6893
- Epoch (2)  Loss: contrast_loss:5.5383
- Epoch (3)  Loss: contrast_loss:5.3864
- Epoch (4)  Loss: contrast_loss:5.4357
- Epoch (5)  Loss: contrast_loss:5.4167
- Epoch (6)  Loss: contrast_loss:5.3851
- Epoch (7)  Loss: contrast_loss:5.2657
- Epoch (8)  Loss: contrast_loss:5.2615
- Epoch (9)  Loss: contrast_loss:5.1214
- Epoch (10)  Loss: contrast_loss:5.1860
- Epoch (11)  Loss: contrast_loss:5.0977
- Epoch (12)  Loss: contrast_loss:5.1694
- Epoch (13)  Loss: contrast_loss:5.1627
- Epoch (14)  Loss: contrast_loss:5.1429
- Epoch (15)  Loss: contrast_loss:5.0244
- Epoch (16)  Loss: contrast_loss:5.0764
- Epoch (17)  Loss: contrast_loss:5.0007
- Epoch (18)  Loss: contrast_loss:4.9974
- Epoch (19)  Loss: contrast_loss:5.0297
- Epoch (20)  Loss: contrast_loss:4.9247
- Epoch (21)  Loss: contrast_loss:5.0038
- Epoch (22)  Loss: contrast_loss:5.0618
- Epoch (23)  Loss: contrast_loss:4.8777
- Epoch (24)  Loss: contrast_loss:4.9619
- Epoch (25)  Loss: contrast_loss:4.9540
- Epoch (26)  Loss: contrast_loss:4.9071
- Epoch (27)  Loss: contrast_loss:4.9196
- Epoch (28)  Loss: contrast_loss:4.8226
- Epoch (29)  Loss: contrast_loss:4.8816
- Epoch (30)  Loss: contrast_loss:4.8296
- Epoch (31)  Loss: contrast_loss:4.8180
- Epoch (32)  Loss: contrast_loss:4.8565
- Epoch (33)  Loss: contrast_loss:4.7635
- Epoch (34)  Loss: contrast_loss:4.6972
- Epoch (35)  Loss: contrast_loss:4.7662
- Epoch (36)  Loss: contrast_loss:4.8041
- Epoch (37)  Loss: contrast_loss:4.8611
- Epoch (38)  Loss: contrast_loss:4.7384
- Epoch (39)  Loss: contrast_loss:4.8753
- Epoch (40)  Loss: contrast_loss:4.6253
- Epoch (41)  Loss: contrast_loss:4.6802
- Epoch (42)  Loss: contrast_loss:4.6990
- Epoch (43)  Loss: contrast_loss:4.6102
- Epoch (44)  Loss: contrast_loss:4.6574
- Epoch (45)  Loss: contrast_loss:4.7430
- Epoch (46)  Loss: contrast_loss:4.5626
- Epoch (47)  Loss: contrast_loss:4.6588
- Epoch (48)  Loss: contrast_loss:4.6687
- Epoch (49)  Loss: contrast_loss:4.6649
- Epoch (50)  Loss: contrast_loss:4.7496
- Epoch (51)  Loss: contrast_loss:4.6084
- Epoch (52)  Loss: contrast_loss:4.5947
- Epoch (53)  Loss: contrast_loss:4.6315
- Epoch (54)  Loss: contrast_loss:4.5666
- Epoch (55)  Loss: contrast_loss:4.4983
- Epoch (56)  Loss: contrast_loss:4.5730
- Epoch (57)  Loss: contrast_loss:4.4977
- Epoch (58)  Loss: contrast_loss:4.5861
- Epoch (59)  Loss: contrast_loss:4.6569
- Epoch (60)  Loss: contrast_loss:4.5745
- Epoch (61)  Loss: contrast_loss:4.4504
- Epoch (62)  Loss: contrast_loss:4.4801
- Epoch (63)  Loss: contrast_loss:4.4838
- Epoch (64)  Loss: contrast_loss:4.5036
- Epoch (65)  Loss: contrast_loss:4.3849
- Epoch (66)  Loss: contrast_loss:4.4207
- Epoch (67)  Loss: contrast_loss:4.4008
- Epoch (68)  Loss: contrast_loss:4.4384
- Epoch (69)  Loss: contrast_loss:4.3295
- Epoch (70)  Loss: contrast_loss:4.4635
- Epoch (71)  Loss: contrast_loss:4.4362
- Epoch (72)  Loss: contrast_loss:4.3901
- Epoch (73)  Loss: contrast_loss:4.3584
- Epoch (74)  Loss: contrast_loss:4.3281
- Epoch (75)  Loss: contrast_loss:4.2328
- Epoch (76)  Loss: contrast_loss:4.2997
- Epoch (77)  Loss: contrast_loss:4.2824
- Epoch (78)  Loss: contrast_loss:4.3308
- Epoch (79)  Loss: contrast_loss:4.2163
- Epoch (80)  Loss: contrast_loss:4.3276
- Epoch (81)  Loss: contrast_loss:4.3132
- Epoch (82)  Loss: contrast_loss:4.2888
- Epoch (83)  Loss: contrast_loss:4.2169
- Epoch (84)  Loss: contrast_loss:4.2620
- Epoch (85)  Loss: contrast_loss:4.2412
- Epoch (86)  Loss: contrast_loss:4.2705
- Epoch (87)  Loss: contrast_loss:4.2053
- Epoch (88)  Loss: contrast_loss:4.1972
- Epoch (89)  Loss: contrast_loss:4.2732
- Epoch (90)  Loss: contrast_loss:4.2343
- Epoch (91)  Loss: contrast_loss:4.1798
- Epoch (92)  Loss: contrast_loss:4.1550
- Epoch (93)  Loss: contrast_loss:4.2816
- Epoch (94)  Loss: contrast_loss:4.2811
- Epoch (95)  Loss: contrast_loss:4.2125
- Epoch (96)  Loss: contrast_loss:4.1874
- Epoch (97)  Loss: contrast_loss:4.2376
- Epoch (98)  Loss: contrast_loss:4.2058
- Epoch (99)  Loss: contrast_loss:4.1245
- changed
-Epoch (100)  Loss: l1_loss:0.0527 contrast_loss:3.9003
- Epoch (101)  Loss: l1_loss:0.0462 contrast_loss:4.2605
- Epoch (102)  Loss: l1_loss:0.0404 contrast_loss:4.8713
- Epoch (103)  Loss: l1_loss:0.0338 contrast_loss:4.3399
- Epoch (104)  Loss: l1_loss:0.0336 contrast_loss:4.1763
- Epoch (105)  Loss: l1_loss:0.0367 contrast_loss:3.8681
- Epoch (106)  Loss: l1_loss:0.0323 contrast_loss:3.8229
- Epoch (107)  Loss: l1_loss:0.0399 contrast_loss:3.6868
- Epoch (108)  Loss: l1_loss:0.0368 contrast_loss:4.4057
- Epoch (109)  Loss: l1_loss:0.0316 contrast_loss:3.2751
- Epoch (110)  Loss: l1_loss:0.0312 contrast_loss:3.7927
- Epoch (111)  Loss: l1_loss:0.0338 contrast_loss:3.6788
- Epoch (112)  Loss: l1_loss:0.0351 contrast_loss:4.5489
- Epoch (113)  Loss: l1_loss:0.0278 contrast_loss:3.6289
- Epoch (114)  Loss: l1_loss:0.0320 contrast_loss:3.2168
- Epoch (115)  Loss: l1_loss:0.0322 contrast_loss:3.4549
- Epoch (116)  Loss: l1_loss:0.0300 contrast_loss:3.3275
- Epoch (117)  Loss: l1_loss:0.0307 contrast_loss:3.5297
- Epoch (118)  Loss: l1_loss:0.0312 contrast_loss:3.4702
- Epoch (119)  Loss: l1_loss:0.0280 contrast_loss:3.8961
- Epoch (120)  Loss: l1_loss:0.0303 contrast_loss:3.7739
- Epoch (121)  Loss: l1_loss:0.0267 contrast_loss:3.7308
- Epoch (122)  Loss: l1_loss:0.0282 contrast_loss:4.8036
- Epoch (123)  Loss: l1_loss:0.0265 contrast_loss:3.0806
- Epoch (124)  Loss: l1_loss:0.0262 contrast_loss:3.5496
- Epoch (125)  Loss: l1_loss:0.0294 contrast_loss:3.3715
- Epoch (126)  Loss: l1_loss:0.0280 contrast_loss:3.1875
- Epoch (127)  Loss: l1_loss:0.0275 contrast_loss:3.7068
- Epoch (128)  Loss: l1_loss:0.0265 contrast_loss:3.7359
- Epoch (129)  Loss: l1_loss:0.0247 contrast_loss:2.7506
- Epoch (130)  Loss: l1_loss:0.0308 contrast_loss:2.7259
- Epoch (131)  Loss: l1_loss:0.0238 contrast_loss:2.8987
- Epoch (132)  Loss: l1_loss:0.0257 contrast_loss:3.4563
- Epoch (133)  Loss: l1_loss:0.0261 contrast_loss:3.7471
- Epoch (134)  Loss: l1_loss:0.0259 contrast_loss:4.0072
- Epoch (135)  Loss: l1_loss:0.0270 contrast_loss:4.2559
- Epoch (136)  Loss: l1_loss:0.0256 contrast_loss:3.4213
- Epoch (137)  Loss: l1_loss:0.0248 contrast_loss:3.1474
- Epoch (138)  Loss: l1_loss:0.0272 contrast_loss:3.7933
- Epoch (139)  Loss: l1_loss:0.0229 contrast_loss:3.1353
- Epoch (140)  Loss: l1_loss:0.0255 contrast_loss:3.8306
- Epoch (141)  Loss: l1_loss:0.0260 contrast_loss:3.4996
- Epoch (142)  Loss: l1_loss:0.0258 contrast_loss:4.2451
- Epoch (143)  Loss: l1_loss:0.0270 contrast_loss:3.2253
- Epoch (144)  Loss: l1_loss:0.0244 contrast_loss:2.9877
- Epoch (145)  Loss: l1_loss:0.0249 contrast_loss:4.0706
- Epoch (146)  Loss: l1_loss:0.0265 contrast_loss:3.4129
- Epoch (147)  Loss: l1_loss:0.0261 contrast_loss:4.4409
- Epoch (148)  Loss: l1_loss:0.0269 contrast_loss:3.6465
- Epoch (149)  Loss: l1_loss:0.0265 contrast_loss:2.6272
- Epoch (150)  Loss: l1_loss:0.0236 contrast_loss:3.0268
- Epoch (151)  Loss: l1_loss:0.0245 contrast_loss:2.5929
- Epoch (152)  Loss: l1_loss:0.0246 contrast_loss:2.8227
- Epoch (153)  Loss: l1_loss:0.0253 contrast_loss:2.7735
- Epoch (154)  Loss: l1_loss:0.0244 contrast_loss:3.1523
- Epoch (155)  Loss: l1_loss:0.0237 contrast_loss:2.1954
- Epoch (156)  Loss: l1_loss:0.0236 contrast_loss:3.3111
- Epoch (157)  Loss: l1_loss:0.0242 contrast_loss:3.5267
- Epoch (158)  Loss: l1_loss:0.0256 contrast_loss:2.9567
- Epoch (159)  Loss: l1_loss:0.0224 contrast_loss:2.6602
- Epoch (160)  Loss: l1_loss:0.0237 contrast_loss:2.7691
- Epoch (161)  Loss: l1_loss:0.0224 contrast_loss:2.3703
- Epoch (162)  Loss: l1_loss:0.0232 contrast_loss:2.9626
- Epoch (163)  Loss: l1_loss:0.0250 contrast_loss:3.0629
- Epoch (164)  Loss: l1_loss:0.0228 contrast_loss:2.6342
- Epoch (165)  Loss: l1_loss:0.0248 contrast_loss:2.9502
- Epoch (166)  Loss: l1_loss:0.0252 contrast_loss:2.7005
- Epoch (167)  Loss: l1_loss:0.0238 contrast_loss:2.9798
- Epoch (168)  Loss: l1_loss:0.0245 contrast_loss:2.1767
- Epoch (169)  Loss: l1_loss:0.0241 contrast_loss:2.7317
- Epoch (170)  Loss: l1_loss:0.0211 contrast_loss:3.4854
- Epoch (171)  Loss: l1_loss:0.0237 contrast_loss:2.2080
- Epoch (172)  Loss: l1_loss:0.0234 contrast_loss:2.7300
- Epoch (173)  Loss: l1_loss:0.0208 contrast_loss:2.6419
- Epoch (174)  Loss: l1_loss:0.0226 contrast_loss:3.5072
- Epoch (175)  Loss: l1_loss:0.0242 contrast_loss:2.7607
- Epoch (176)  Loss: l1_loss:0.0259 contrast_loss:2.8386
- Epoch (177)  Loss: l1_loss:0.0243 contrast_loss:3.1358
- Epoch (178)  Loss: l1_loss:0.0255 contrast_loss:3.1497
- Epoch (179)  Loss: l1_loss:0.0233 contrast_loss:3.5413
- Epoch (180)  Loss: l1_loss:0.0245 contrast_loss:3.3915
- Epoch (181)  Loss: l1_loss:0.0220 contrast_loss:3.2164
- Epoch (182)  Loss: l1_loss:0.0233 contrast_loss:3.6333
- Epoch (183)  Loss: l1_loss:0.0239 contrast_loss:3.0689
- Epoch (184)  Loss: l1_loss:0.0223 contrast_loss:2.8625
- Epoch (185)  Loss: l1_loss:0.0224 contrast_loss:2.4536
- Epoch (186)  Loss: l1_loss:0.0234 contrast_loss:2.9670
- Epoch (187)  Loss: l1_loss:0.0214 contrast_loss:2.3114
- Epoch (188)  Loss: l1_loss:0.0216 contrast_loss:2.7774
- Epoch (189)  Loss: l1_loss:0.0243 contrast_loss:2.5336
- Epoch (190)  Loss: l1_loss:0.0232 contrast_loss:2.3484
- Epoch (191)  Loss: l1_loss:0.0230 contrast_loss:2.4601
- Epoch (192)  Loss: l1_loss:0.0213 contrast_loss:2.4276
- Epoch (193)  Loss: l1_loss:0.0216 contrast_loss:1.9996
- Epoch (194)  Loss: l1_loss:0.0214 contrast_loss:1.8687
- Epoch (195)  Loss: l1_loss:0.0211 contrast_loss:2.2963
- Epoch (196)  Loss: l1_loss:0.0232 contrast_loss:1.6347
- Epoch (197)  Loss: l1_loss:0.0243 contrast_loss:2.9888
- Epoch (198)  Loss: l1_loss:0.0215 contrast_loss:2.7580
- Epoch (199)  Loss: l1_loss:0.0213 contrast_loss:2.0930
- Epoch (200)  Loss: l1_loss:0.0244 contrast_loss:2.0471
- Epoch (201)  Loss: l1_loss:0.0211 contrast_loss:2.2356
- Epoch (202)  Loss: l1_loss:0.0213 contrast_loss:2.3978
- Epoch (203)  Loss: l1_loss:0.0228 contrast_loss:2.2768
- Epoch (204)  Loss: l1_loss:0.0235 contrast_loss:2.5142
- Epoch (205)  Loss: l1_loss:0.0247 contrast_loss:2.7535
- Epoch (206)  Loss: l1_loss:0.0216 contrast_loss:2.2310
- Epoch (207)  Loss: l1_loss:0.0224 contrast_loss:1.8462
- Epoch (208)  Loss: l1_loss:0.0223 contrast_loss:1.9769
- Epoch (209)  Loss: l1_loss:0.0207 contrast_loss:2.2455
- Epoch (210)  Loss: l1_loss:0.0221 contrast_loss:2.2604
- Epoch (211)  Loss: l1_loss:0.0222 contrast_loss:2.7872
- Epoch (212)  Loss: l1_loss:0.0210 contrast_loss:1.8353
- Epoch (213)  Loss: l1_loss:0.0192 contrast_loss:2.7019
- Epoch (214)  Loss: l1_loss:0.0201 contrast_loss:2.4344
- Epoch (215)  Loss: l1_loss:0.0211 contrast_loss:1.6964
- Epoch (216)  Loss: l1_loss:0.0216 contrast_loss:2.5924
- Epoch (217)  Loss: l1_loss:0.0207 contrast_loss:2.4674
- Epoch (218)  Loss: l1_loss:0.0236 contrast_loss:2.7084
- Epoch (219)  Loss: l1_loss:0.0209 contrast_loss:2.0936
- Epoch (220)  Loss: l1_loss:0.0210 contrast_loss:2.6299
- Epoch (221)  Loss: l1_loss:0.0213 contrast_loss:2.1147
- Epoch (222)  Loss: l1_loss:0.0229 contrast_loss:1.7502
- Epoch (223)  Loss: l1_loss:0.0220 contrast_loss:2.5340
- Epoch (224)  Loss: l1_loss:0.0185 contrast_loss:2.0861
- Epoch (225)  Loss: l1_loss:0.0214 contrast_loss:1.9386
- Epoch (226)  Loss: l1_loss:0.0195 contrast_loss:2.2137
- Epoch (227)  Loss: l1_loss:0.0195 contrast_loss:2.5184
- Epoch (228)  Loss: l1_loss:0.0195 contrast_loss:1.8309
- Epoch (229)  Loss: l1_loss:0.0211 contrast_loss:1.7593
- Epoch (230)  Loss: l1_loss:0.0217 contrast_loss:2.5797
- Epoch (231)  Loss: l1_loss:0.0197 contrast_loss:2.1745
- Epoch (232)  Loss: l1_loss:0.0196 contrast_loss:2.1794
- Epoch (233)  Loss: l1_loss:0.0200 contrast_loss:2.2358
- Epoch (234)  Loss: l1_loss:0.0207 contrast_loss:1.5538
- Epoch (235)  Loss: l1_loss:0.0233 contrast_loss:2.2515
- Epoch (236)  Loss: l1_loss:0.0216 contrast_loss:2.0431
- Epoch (237)  Loss: l1_loss:0.0209 contrast_loss:2.2138
- Epoch (238)  Loss: l1_loss:0.0213 contrast_loss:2.5965
- Epoch (239)  Loss: l1_loss:0.0212 contrast_loss:1.7687
- Epoch (240)  Loss: l1_loss:0.0213 contrast_loss:1.4405
- Epoch (241)  Loss: l1_loss:0.0192 contrast_loss:1.7023
- Epoch (242)  Loss: l1_loss:0.0235 contrast_loss:1.7604
- Epoch (243)  Loss: l1_loss:0.0206 contrast_loss:1.7277
- Epoch (244)  Loss: l1_loss:0.0220 contrast_loss:2.3436
- Epoch (245)  Loss: l1_loss:0.0220 contrast_loss:2.1723
- Epoch (246)  Loss: l1_loss:0.0210 contrast_loss:2.1659
- Epoch (247)  Loss: l1_loss:0.0194 contrast_loss:2.0632
- Epoch (248)  Loss: l1_loss:0.0194 contrast_loss:1.9560
- Epoch (249)  Loss: l1_loss:0.0196 contrast_loss:2.3934
- Epoch (250)  Loss: l1_loss:0.0223 contrast_loss:1.8655
- Epoch (251)  Loss: l1_loss:0.0208 contrast_loss:1.8962
- Epoch (252)  Loss: l1_loss:0.0208 contrast_loss:2.0077
- Epoch (253)  Loss: l1_loss:0.0208 contrast_loss:2.2434
- Epoch (254)  Loss: l1_loss:0.0205 contrast_loss:2.1267
- Epoch (255)  Loss: l1_loss:0.0217 contrast_loss:2.8531
- Epoch (256)  Loss: l1_loss:0.0209 contrast_loss:2.1559
- Epoch (257)  Loss: l1_loss:0.0193 contrast_loss:1.6688
- Epoch (258)  Loss: l1_loss:0.0211 contrast_loss:1.3111
- Epoch (259)  Loss: l1_loss:0.0220 contrast_loss:2.3912
- Epoch (260)  Loss: l1_loss:0.0229 contrast_loss:1.9074
- Epoch (261)  Loss: l1_loss:0.0210 contrast_loss:1.7280
- Epoch (262)  Loss: l1_loss:0.0203 contrast_loss:2.2731
- Epoch (263)  Loss: l1_loss:0.0219 contrast_loss:1.6864
- Epoch (264)  Loss: l1_loss:0.0226 contrast_loss:1.7254
- Epoch (265)  Loss: l1_loss:0.0243 contrast_loss:2.1159
- Epoch (266)  Loss: l1_loss:0.0228 contrast_loss:2.4743
- Epoch (267)  Loss: l1_loss:0.0184 contrast_loss:1.7823
- Epoch (268)  Loss: l1_loss:0.0242 contrast_loss:2.0665
- Epoch (269)  Loss: l1_loss:0.0203 contrast_loss:1.8196
- Epoch (270)  Loss: l1_loss:0.0208 contrast_loss:1.8017
- Epoch (271)  Loss: l1_loss:0.0229 contrast_loss:1.6790
- Epoch (272)  Loss: l1_loss:0.0210 contrast_loss:2.1793
- Epoch (273)  Loss: l1_loss:0.0208 contrast_loss:2.1735
- Epoch (274)  Loss: l1_loss:0.0196 contrast_loss:1.5960
- Epoch (275)  Loss: l1_loss:0.0194 contrast_loss:1.8065
- Epoch (276)  Loss: l1_loss:0.0226 contrast_loss:1.8148
- Epoch (277)  Loss: l1_loss:0.0199 contrast_loss:2.0389
- Epoch (278)  Loss: l1_loss:0.0208 contrast_loss:2.0742
- Epoch (279)  Loss: l1_loss:0.0215 contrast_loss:1.8517
- Epoch (280)  Loss: l1_loss:0.0214 contrast_loss:2.0042
- Epoch (281)  Loss: l1_loss:0.0205 contrast_loss:2.0842
- Epoch (282)  Loss: l1_loss:0.0190 contrast_loss:2.4599
- Epoch (283)  Loss: l1_loss:0.0204 contrast_loss:1.7904
- Epoch (284)  Loss: l1_loss:0.0191 contrast_loss:1.6804
- Epoch (285)  Loss: l1_loss:0.0183 contrast_loss:2.1422
- Epoch (286)  Loss: l1_loss:0.0199 contrast_loss:1.7997
- Epoch (287)  Loss: l1_loss:0.0209 contrast_loss:1.6871
- Epoch (288)  Loss: l1_loss:0.0183 contrast_loss:1.6181
- Epoch (289)  Loss: l1_loss:0.0195 contrast_loss:2.2992
- Epoch (290)  Loss: l1_loss:0.0228 contrast_loss:1.8749
- Epoch (291)  Loss: l1_loss:0.0198 contrast_loss:1.9247
- Epoch (292)  Loss: l1_loss:0.0185 contrast_loss:1.9056
- Epoch (293)  Loss: l1_loss:0.0204 contrast_loss:1.9786
- Epoch (294)  Loss: l1_loss:0.0190 contrast_loss:1.9442
- Epoch (295)  Loss: l1_loss:0.0196 contrast_loss:1.9775
- Epoch (296)  Loss: l1_loss:0.0187 contrast_loss:2.0011
- Epoch (297)  Loss: l1_loss:0.0197 contrast_loss:2.3594
- Epoch (298)  Loss: l1_loss:0.0195 contrast_loss:1.5970
- Epoch (299)  Loss: l1_loss:0.0174 contrast_loss:2.8662
- Epoch (300)  Loss: l1_loss:0.0202 contrast_loss:1.6257
- Epoch (301)  Loss: l1_loss:0.0211 contrast_loss:2.0520
- Epoch (302)  Loss: l1_loss:0.0224 contrast_loss:1.9833
- Epoch (303)  Loss: l1_loss:0.0195 contrast_loss:2.3704
- Epoch (304)  Loss: l1_loss:0.0205 contrast_loss:1.4727
- Epoch (305)  Loss: l1_loss:0.0203 contrast_loss:2.0044
- Epoch (306)  Loss: l1_loss:0.0212 contrast_loss:1.5623
- Epoch (307)  Loss: l1_loss:0.0191 contrast_loss:2.0205
- Epoch (308)  Loss: l1_loss:0.0201 contrast_loss:1.2241
- Epoch (309)  Loss: l1_loss:0.0182 contrast_loss:2.0728
- Epoch (310)  Loss: l1_loss:0.0192 contrast_loss:2.2183
- Epoch (311)  Loss: l1_loss:0.0199 contrast_loss:1.8856
- Epoch (312)  Loss: l1_loss:0.0204 contrast_loss:1.7609
- Epoch (313)  Loss: l1_loss:0.0179 contrast_loss:2.5180
- Epoch (314)  Loss: l1_loss:0.0184 contrast_loss:1.5923
- Epoch (315)  Loss: l1_loss:0.0193 contrast_loss:1.8326
- Epoch (316)  Loss: l1_loss:0.0193 contrast_loss:2.2070
- Epoch (317)  Loss: l1_loss:0.0188 contrast_loss:1.8858
- Epoch (318)  Loss: l1_loss:0.0184 contrast_loss:1.8551
- Epoch (319)  Loss: l1_loss:0.0185 contrast_loss:1.7870
- Epoch (320)  Loss: l1_loss:0.0206 contrast_loss:1.8632
- Epoch (321)  Loss: l1_loss:0.0205 contrast_loss:1.7132
- Epoch (322)  Loss: l1_loss:0.0191 contrast_loss:1.3816
- Epoch (323)  Loss: l1_loss:0.0172 contrast_loss:1.4789
- Epoch (324)  Loss: l1_loss:0.0210 contrast_loss:1.5829
- Epoch (325)  Loss: l1_loss:0.0215 contrast_loss:1.6259
- Epoch (326)  Loss: l1_loss:0.0221 contrast_loss:1.1344
- Epoch (327)  Loss: l1_loss:0.0204 contrast_loss:1.3699
- Epoch (328)  Loss: l1_loss:0.0194 contrast_loss:1.5921
- Epoch (329)  Loss: l1_loss:0.0200 contrast_loss:1.7426
- Epoch (330)  Loss: l1_loss:0.0213 contrast_loss:1.6829
- Epoch (331)  Loss: l1_loss:0.0174 contrast_loss:1.3288
- Epoch (332)  Loss: l1_loss:0.0183 contrast_loss:1.6686
- Epoch (333)  Loss: l1_loss:0.0183 contrast_loss:1.6223
- Epoch (334)  Loss: l1_loss:0.0190 contrast_loss:1.9500
- Epoch (335)  Loss: l1_loss:0.0207 contrast_loss:2.9760
- Epoch (336)  Loss: l1_loss:0.0196 contrast_loss:1.8913
- Epoch (337)  Loss: l1_loss:0.0180 contrast_loss:1.9474
- Epoch (338)  Loss: l1_loss:0.0193 contrast_loss:1.6375
- Epoch (339)  Loss: l1_loss:0.0189 contrast_loss:1.6428
- Epoch (340)  Loss: l1_loss:0.0172 contrast_loss:2.1034
- Epoch (341)  Loss: l1_loss:0.0190 contrast_loss:1.2542
- Epoch (342)  Loss: l1_loss:0.0197 contrast_loss:1.8436
- Epoch (343)  Loss: l1_loss:0.0179 contrast_loss:2.1801
- Epoch (344)  Loss: l1_loss:0.0198 contrast_loss:1.6786
- Epoch (345)  Loss: l1_loss:0.0197 contrast_loss:2.7697
- Epoch (346)  Loss: l1_loss:0.0198 contrast_loss:1.5075
- Epoch (347)  Loss: l1_loss:0.0179 contrast_loss:1.6815
- Epoch (348)  Loss: l1_loss:0.0201 contrast_loss:1.5927
- Epoch (349)  Loss: l1_loss:0.0188 contrast_loss:1.3531
- Epoch (350)  Loss: l1_loss:0.0190 contrast_loss:1.4420
- Epoch (351)  Loss: l1_loss:0.0197 contrast_loss:1.3098
- Epoch (352)  Loss: l1_loss:0.0184 contrast_loss:1.7552
- Epoch (353)  Loss: l1_loss:0.0185 contrast_loss:1.8932
- Epoch (354)  Loss: l1_loss:0.0178 contrast_loss:1.7271
- Epoch (355)  Loss: l1_loss:0.0205 contrast_loss:1.4819
- Epoch (356)  Loss: l1_loss:0.0186 contrast_loss:1.6516
- Epoch (357)  Loss: l1_loss:0.0182 contrast_loss:1.5605
- Epoch (358)  Loss: l1_loss:0.0205 contrast_loss:2.2566
- Epoch (359)  Loss: l1_loss:0.0174 contrast_loss:1.3467
- Epoch (360)  Loss: l1_loss:0.0171 contrast_loss:1.5469
- Epoch (361)  Loss: l1_loss:0.0196 contrast_loss:1.6110
- Epoch (362)  Loss: l1_loss:0.0186 contrast_loss:1.7451
- Epoch (363)  Loss: l1_loss:0.0184 contrast_loss:2.0071
- Epoch (364)  Loss: l1_loss:0.0173 contrast_loss:2.1440
- Epoch (365)  Loss: l1_loss:0.0189 contrast_loss:1.3522
- Epoch (366)  Loss: l1_loss:0.0182 contrast_loss:1.7421
- Epoch (367)  Loss: l1_loss:0.0189 contrast_loss:1.3930
- Epoch (368)  Loss: l1_loss:0.0193 contrast_loss:1.3946
- Epoch (369)  Loss: l1_loss:0.0188 contrast_loss:2.1017
- Epoch (370)  Loss: l1_loss:0.0179 contrast_loss:1.7767
- Epoch (371)  Loss: l1_loss:0.0196 contrast_loss:2.0348
- Epoch (372)  Loss: l1_loss:0.0207 contrast_loss:1.5144
- Epoch (373)  Loss: l1_loss:0.0183 contrast_loss:1.5477
- Epoch (374)  Loss: l1_loss:0.0192 contrast_loss:1.4766
- Epoch (375)  Loss: l1_loss:0.0172 contrast_loss:1.5582
- Epoch (376)  Loss: l1_loss:0.0183 contrast_loss:2.3264
- Epoch (377)  Loss: l1_loss:0.0190 contrast_loss:1.9895
- Epoch (378)  Loss: l1_loss:0.0178 contrast_loss:1.7073
- Epoch (379)  Loss: l1_loss:0.0178 contrast_loss:1.9208
- Epoch (380)  Loss: l1_loss:0.0191 contrast_loss:1.5203
- Epoch (381)  Loss: l1_loss:0.0190 contrast_loss:1.3014
- Epoch (382)  Loss: l1_loss:0.0176 contrast_loss:1.4116
- Epoch (383)  Loss: l1_loss:0.0179 contrast_loss:2.6369
- Epoch (384)  Loss: l1_loss:0.0183 contrast_loss:1.5977
- Epoch (385)  Loss: l1_loss:0.0178 contrast_loss:1.3197
- Epoch (386)  Loss: l1_loss:0.0172 contrast_loss:1.7250
- Epoch (387)  Loss: l1_loss:0.0200 contrast_loss:1.8750
- Epoch (388)  Loss: l1_loss:0.0184 contrast_loss:1.5201
- Epoch (389)  Loss: l1_loss:0.0195 contrast_loss:1.7697
- Epoch (390)  Loss: l1_loss:0.0173 contrast_loss:1.6232
- Epoch (391)  Loss: l1_loss:0.0172 contrast_loss:2.0685
- Epoch (392)  Loss: l1_loss:0.0179 contrast_loss:2.2938
- Epoch (393)  Loss: l1_loss:0.0177 contrast_loss:1.8829
- Epoch (394)  Loss: l1_loss:0.0173 contrast_loss:1.5187
- Epoch (395)  Loss: l1_loss:0.0190 contrast_loss:1.8282
- Epoch (396)  Loss: l1_loss:0.0165 contrast_loss:1.8263
- Epoch (397)  Loss: l1_loss:0.0171 contrast_loss:2.0090
- Epoch (398)  Loss: l1_loss:0.0184 contrast_loss:1.9397
- Epoch (399)  Loss: l1_loss:0.0178 contrast_loss:1.7537
- Epoch (400)  Loss: l1_loss:0.0174 contrast_loss:1.5569
- Epoch (401)  Loss: l1_loss:0.0175 contrast_loss:1.8387
- Epoch (402)  Loss: l1_loss:0.0189 contrast_loss:1.7608
- Epoch (403)  Loss: l1_loss:0.0194 contrast_loss:1.3913
- Epoch (404)  Loss: l1_loss:0.0180 contrast_loss:1.9648
- Epoch (405)  Loss: l1_loss:0.0215 contrast_loss:1.8338
- Epoch (406)  Loss: l1_loss:0.0193 contrast_loss:1.3367
- Epoch (407)  Loss: l1_loss:0.0172 contrast_loss:1.5270
- Epoch (408)  Loss: l1_loss:0.0185 contrast_loss:1.8233
- Epoch (409)  Loss: l1_loss:0.0190 contrast_loss:1.4200
- Epoch (410)  Loss: l1_loss:0.0183 contrast_loss:1.6173
- Epoch (411)  Loss: l1_loss:0.0173 contrast_loss:1.6093
- Epoch (412)  Loss: l1_loss:0.0190 contrast_loss:2.4274
- Epoch (413)  Loss: l1_loss:0.0175 contrast_loss:2.1870
- Epoch (414)  Loss: l1_loss:0.0170 contrast_loss:1.4214
- Epoch (415)  Loss: l1_loss:0.0179 contrast_loss:2.0995
- Epoch (416)  Loss: l1_loss:0.0175 contrast_loss:1.7444
- Epoch (417)  Loss: l1_loss:0.0175 contrast_loss:1.3872
- Epoch (418)  Loss: l1_loss:0.0177 contrast_loss:1.6112
- Epoch (419)  Loss: l1_loss:0.0184 contrast_loss:2.2429
- Epoch (420)  Loss: l1_loss:0.0191 contrast_loss:1.6801
- Epoch (421)  Loss: l1_loss:0.0175 contrast_loss:2.1418
- Epoch (422)  Loss: l1_loss:0.0176 contrast_loss:1.8606
- Epoch (423)  Loss: l1_loss:0.0177 contrast_loss:1.5978
- Epoch (424)  Loss: l1_loss:0.0179 contrast_loss:1.5782
- Epoch (425)  Loss: l1_loss:0.0177 contrast_loss:1.4959
- Epoch (426)  Loss: l1_loss:0.0181 contrast_loss:1.6062
- Epoch (427)  Loss: l1_loss:0.0185 contrast_loss:2.0839
- Epoch (428)  Loss: l1_loss:0.0190 contrast_loss:1.3481
- Epoch (429)  Loss: l1_loss:0.0191 contrast_loss:1.8043
- Epoch (430)  Loss: l1_loss:0.0174 contrast_loss:1.7253
- Epoch (431)  Loss: l1_loss:0.0190 contrast_loss:1.5061
- Epoch (432)  Loss: l1_loss:0.0201 contrast_loss:1.4337
- Epoch (433)  Loss: l1_loss:0.0155 contrast_loss:1.2417
- Epoch (434)  Loss: l1_loss:0.0177 contrast_loss:1.5369
- Epoch (435)  Loss: l1_loss:0.0182 contrast_loss:1.7480
- Epoch (436)  Loss: l1_loss:0.0197 contrast_loss:1.6953
- Epoch (437)  Loss: l1_loss:0.0194 contrast_loss:1.6992
- Epoch (438)  Loss: l1_loss:0.0192 contrast_loss:1.8605
- Epoch (439)  Loss: l1_loss:0.0183 contrast_loss:1.3059
- Epoch (440)  Loss: l1_loss:0.0183 contrast_loss:1.6413
- Epoch (441)  Loss: l1_loss:0.0164 contrast_loss:2.7082
- Epoch (442)  Loss: l1_loss:0.0172 contrast_loss:1.4125
- Epoch (443)  Loss: l1_loss:0.0198 contrast_loss:1.7919
- Epoch (444)  Loss: l1_loss:0.0167 contrast_loss:1.8631
- Epoch (445)  Loss: l1_loss:0.0175 contrast_loss:1.7223
- Epoch (446)  Loss: l1_loss:0.0181 contrast_loss:1.3584
- Epoch (447)  Loss: l1_loss:0.0171 contrast_loss:1.6776
- Epoch (448)  Loss: l1_loss:0.0193 contrast_loss:1.4231
- Epoch (449)  Loss: l1_loss:0.0168 contrast_loss:1.8133
- Epoch (450)  Loss: l1_loss:0.0173 contrast_loss:1.7310
- Epoch (451)  Loss: l1_loss:0.0169 contrast_loss:1.3194
- Epoch (452)  Loss: l1_loss:0.0171 contrast_loss:1.6727
- Epoch (453)  Loss: l1_loss:0.0177 contrast_loss:1.3896
- Epoch (454)  Loss: l1_loss:0.0178 contrast_loss:1.6873
- Epoch (455)  Loss: l1_loss:0.0194 contrast_loss:2.1553
- Epoch (456)  Loss: l1_loss:0.0172 contrast_loss:2.1843
- Epoch (457)  Loss: l1_loss:0.0175 contrast_loss:2.2742
- Epoch (458)  Loss: l1_loss:0.0190 contrast_loss:1.9497
- Epoch (459)  Loss: l1_loss:0.0172 contrast_loss:1.7132
- Epoch (460)  Loss: l1_loss:0.0159 contrast_loss:1.5064
- Epoch (461)  Loss: l1_loss:0.0184 contrast_loss:2.0501
- Epoch (462)  Loss: l1_loss:0.0191 contrast_loss:1.6778
- Epoch (463)  Loss: l1_loss:0.0169 contrast_loss:1.9806
- Epoch (464)  Loss: l1_loss:0.0179 contrast_loss:1.5651
- Epoch (465)  Loss: l1_loss:0.0176 contrast_loss:1.6949
- Epoch (466)  Loss: l1_loss:0.0159 contrast_loss:1.7999
- Epoch (467)  Loss: l1_loss:0.0178 contrast_loss:1.8502
- Epoch (468)  Loss: l1_loss:0.0183 contrast_loss:1.7595
- Epoch (469)  Loss: l1_loss:0.0180 contrast_loss:1.7853
- Epoch (470)  Loss: l1_loss:0.0167 contrast_loss:2.3259
- Epoch (471)  Loss: l1_loss:0.0184 contrast_loss:1.1891
- Epoch (472)  Loss: l1_loss:0.0186 contrast_loss:1.6768
- Epoch (473)  Loss: l1_loss:0.0172 contrast_loss:1.7343
- Epoch (474)  Loss: l1_loss:0.0162 contrast_loss:1.7535
- Epoch (475)  Loss: l1_loss:0.0185 contrast_loss:1.6612
- Epoch (476)  Loss: l1_loss:0.0177 contrast_loss:1.6925
- Epoch (477)  Loss: l1_loss:0.0156 contrast_loss:1.4944
- Epoch (478)  Loss: l1_loss:0.0182 contrast_loss:1.4084
- Epoch (479)  Loss: l1_loss:0.0179 contrast_loss:1.4548
- Epoch (480)  Loss: l1_loss:0.0178 contrast_loss:1.5479
- Epoch (481)  Loss: l1_loss:0.0175 contrast_loss:1.8497
- Epoch (482)  Loss: l1_loss:0.0174 contrast_loss:1.5911
- Epoch (483)  Loss: l1_loss:0.0170 contrast_loss:1.6908
- Epoch (484)  Loss: l1_loss:0.0180 contrast_loss:1.5890
- Epoch (485)  Loss: l1_loss:0.0179 contrast_loss:1.6433
- Epoch (486)  Loss: l1_loss:0.0162 contrast_loss:2.3403
- Epoch (487)  Loss: l1_loss:0.0181 contrast_loss:1.7311
- Epoch (488)  Loss: l1_loss:0.0177 contrast_loss:1.7116
- Epoch (489)  Loss: l1_loss:0.0187 contrast_loss:2.1597
- Epoch (490)  Loss: l1_loss:0.0185 contrast_loss:1.5239
- Epoch (491)  Loss: l1_loss:0.0184 contrast_loss:2.1271
- Epoch (492)  Loss: l1_loss:0.0181 contrast_loss:1.5587
- Epoch (493)  Loss: l1_loss:0.0175 contrast_loss:1.9464
- Epoch (494)  Loss: l1_loss:0.0184 contrast_loss:2.1384
- Epoch (495)  Loss: l1_loss:0.0168 contrast_loss:1.9113
- Epoch (496)  Loss: l1_loss:0.0171 contrast_loss:1.7634
- Epoch (497)  Loss: l1_loss:0.0182 contrast_loss:2.0085
- Epoch (498)  Loss: l1_loss:0.0173 contrast_loss:1.8496
- Epoch (499)  Loss: l1_loss:0.0185 contrast_loss:1.3983
- Epoch (500)  Loss: l1_loss:0.0182 contrast_loss:2.2932
- Epoch (501)  Loss: l1_loss:0.0172 contrast_loss:1.5187
- Epoch (502)  Loss: l1_loss:0.0178 contrast_loss:2.4156
- Epoch (503)  Loss: l1_loss:0.0178 contrast_loss:1.5406
- Epoch (504)  Loss: l1_loss:0.0168 contrast_loss:1.6539
- Epoch (505)  Loss: l1_loss:0.0169 contrast_loss:1.6954
- Epoch (506)  Loss: l1_loss:0.0156 contrast_loss:1.8026
- Epoch (507)  Loss: l1_loss:0.0169 contrast_loss:1.8283
- Epoch (508)  Loss: l1_loss:0.0192 contrast_loss:1.5600
- Epoch (509)  Loss: l1_loss:0.0182 contrast_loss:1.9890
- Epoch (510)  Loss: l1_loss:0.0147 contrast_loss:1.5145
- Epoch (511)  Loss: l1_loss:0.0187 contrast_loss:1.3267
- Epoch (512)  Loss: l1_loss:0.0171 contrast_loss:1.9368
- Epoch (513)  Loss: l1_loss:0.0181 contrast_loss:1.3527
- Epoch (514)  Loss: l1_loss:0.0177 contrast_loss:1.2158
- Epoch (515)  Loss: l1_loss:0.0177 contrast_loss:2.0404
- Epoch (516)  Loss: l1_loss:0.0184 contrast_loss:1.6847
- Epoch (517)  Loss: l1_loss:0.0159 contrast_loss:1.8222
- Epoch (518)  Loss: l1_loss:0.0168 contrast_loss:1.0430
- Epoch (519)  Loss: l1_loss:0.0165 contrast_loss:1.5481
- Epoch (520)  Loss: l1_loss:0.0175 contrast_loss:1.8182
- Epoch (521)  Loss: l1_loss:0.0171 contrast_loss:1.5350
- Epoch (522)  Loss: l1_loss:0.0169 contrast_loss:1.3451
- Epoch (523)  Loss: l1_loss:0.0172 contrast_loss:1.6870
- Epoch (524)  Loss: l1_loss:0.0166 contrast_loss:1.5056
- Epoch (525)  Loss: l1_loss:0.0189 contrast_loss:1.6019
- Epoch (526)  Loss: l1_loss:0.0177 contrast_loss:1.7455
- Epoch (527)  Loss: l1_loss:0.0167 contrast_loss:1.5654
- Epoch (528)  Loss: l1_loss:0.0169 contrast_loss:1.6416
- Epoch (529)  Loss: l1_loss:0.0168 contrast_loss:2.2796
- Epoch (530)  Loss: l1_loss:0.0162 contrast_loss:1.6457
- Epoch (531)  Loss: l1_loss:0.0179 contrast_loss:1.5010
- Epoch (532)  Loss: l1_loss:0.0196 contrast_loss:1.7778
- Epoch (533)  Loss: l1_loss:0.0174 contrast_loss:1.7928
- Epoch (534)  Loss: l1_loss:0.0183 contrast_loss:2.1773
- Epoch (535)  Loss: l1_loss:0.0171 contrast_loss:1.5924
- Epoch (536)  Loss: l1_loss:0.0182 contrast_loss:1.8377
- Epoch (537)  Loss: l1_loss:0.0184 contrast_loss:1.4311
- Epoch (538)  Loss: l1_loss:0.0175 contrast_loss:2.2463
- Epoch (539)  Loss: l1_loss:0.0175 contrast_loss:1.5974
- Epoch (540)  Loss: l1_loss:0.0180 contrast_loss:2.6753
- Epoch (541)  Loss: l1_loss:0.0175 contrast_loss:1.9615
- Epoch (542)  Loss: l1_loss:0.0173 contrast_loss:2.2379
- Epoch (543)  Loss: l1_loss:0.0186 contrast_loss:1.0180
- Epoch (544)  Loss: l1_loss:0.0182 contrast_loss:1.7580
- Epoch (545)  Loss: l1_loss:0.0185 contrast_loss:1.9832
- Epoch (546)  Loss: l1_loss:0.0166 contrast_loss:1.8161
- Epoch (547)  Loss: l1_loss:0.0160 contrast_loss:1.7295
- Epoch (548)  Loss: l1_loss:0.0176 contrast_loss:1.6120
- Epoch (549)  Loss: l1_loss:0.0174 contrast_loss:2.2453
- Epoch (550)  Loss: l1_loss:0.0175 contrast_loss:1.5597
- Epoch (551)  Loss: l1_loss:0.0177 contrast_loss:1.8186
- Epoch (552)  Loss: l1_loss:0.0177 contrast_loss:1.3223
- Epoch (553)  Loss: l1_loss:0.0174 contrast_loss:1.4742
- Epoch (554)  Loss: l1_loss:0.0173 contrast_loss:1.7682
- Epoch (555)  Loss: l1_loss:0.0169 contrast_loss:2.0790
- Epoch (556)  Loss: l1_loss:0.0158 contrast_loss:1.4688
- Epoch (557)  Loss: l1_loss:0.0168 contrast_loss:1.1666
- Epoch (558)  Loss: l1_loss:0.0172 contrast_loss:2.0426
- Epoch (559)  Loss: l1_loss:0.0187 contrast_loss:2.0909
- Epoch (560)  Loss: l1_loss:0.0166 contrast_loss:2.3077
- Epoch (561)  Loss: l1_loss:0.0185 contrast_loss:1.7553
- Epoch (562)  Loss: l1_loss:0.0192 contrast_loss:1.6239
- Epoch (563)  Loss: l1_loss:0.0171 contrast_loss:1.4939
- Epoch (564)  Loss: l1_loss:0.0169 contrast_loss:2.0046
- Epoch (565)  Loss: l1_loss:0.0174 contrast_loss:1.3949
- Epoch (566)  Loss: l1_loss:0.0176 contrast_loss:1.7312
- Epoch (567)  Loss: l1_loss:0.0159 contrast_loss:1.5363
- Epoch (568)  Loss: l1_loss:0.0164 contrast_loss:1.2611
- Epoch (569)  Loss: l1_loss:0.0163 contrast_loss:1.8809
- Epoch (570)  Loss: l1_loss:0.0190 contrast_loss:1.6790
- Epoch (571)  Loss: l1_loss:0.0178 contrast_loss:1.7002
- Epoch (572)  Loss: l1_loss:0.0193 contrast_loss:1.9380
- Epoch (573)  Loss: l1_loss:0.0169 contrast_loss:1.3729
- Epoch (574)  Loss: l1_loss:0.0174 contrast_loss:2.0272
- Epoch (575)  Loss: l1_loss:0.0166 contrast_loss:1.4486
- Epoch (576)  Loss: l1_loss:0.0173 contrast_loss:1.6566
- Epoch (577)  Loss: l1_loss:0.0178 contrast_loss:2.0833
- Epoch (578)  Loss: l1_loss:0.0162 contrast_loss:2.1633
- Epoch (579)  Loss: l1_loss:0.0175 contrast_loss:1.7478
- Epoch (580)  Loss: l1_loss:0.0185 contrast_loss:2.2838
- Epoch (581)  Loss: l1_loss:0.0156 contrast_loss:2.0631
- Epoch (582)  Loss: l1_loss:0.0163 contrast_loss:1.2411
- Epoch (583)  Loss: l1_loss:0.0167 contrast_loss:1.5033
- Epoch (584)  Loss: l1_loss:0.0188 contrast_loss:1.2377
- Epoch (585)  Loss: l1_loss:0.0167 contrast_loss:1.2416
- Epoch (586)  Loss: l1_loss:0.0184 contrast_loss:1.8020
- Epoch (587)  Loss: l1_loss:0.0160 contrast_loss:1.9865
- Epoch (588)  Loss: l1_loss:0.0177 contrast_loss:1.4165
- Epoch (589)  Loss: l1_loss:0.0159 contrast_loss:1.3207
- Epoch (590)  Loss: l1_loss:0.0148 contrast_loss:1.8458
- Epoch (591)  Loss: l1_loss:0.0173 contrast_loss:2.1323
- Epoch (592)  Loss: l1_loss:0.0165 contrast_loss:1.7843
- Epoch (593)  Loss: l1_loss:0.0176 contrast_loss:2.0756
- Epoch (594)  Loss: l1_loss:0.0165 contrast_loss:1.7454
- Epoch (595)  Loss: l1_loss:0.0183 contrast_loss:1.4653
- Epoch (596)  Loss: l1_loss:0.0180 contrast_loss:1.9560
- Epoch (597)  Loss: l1_loss:0.0173 contrast_loss:1.5824
- Epoch (598)  Loss: l1_loss:0.0159 contrast_loss:2.1627
- Epoch (599)  Loss: l1_loss:0.0161 contrast_loss:1.1466
- Epoch (600)  Loss: l1_loss:0.0165 contrast_loss:1.5993
- Epoch (601)  Loss: l1_loss:0.0180 contrast_loss:1.7794
- Epoch (602)  Loss: l1_loss:0.0149 contrast_loss:1.6826
- Epoch (603)  Loss: l1_loss:0.0163 contrast_loss:1.3776
- Epoch (604)  Loss: l1_loss:0.0176 contrast_loss:2.6270
- Epoch (605)  Loss: l1_loss:0.0176 contrast_loss:2.3675
- Epoch (606)  Loss: l1_loss:0.0171 contrast_loss:1.5579
- Epoch (607)  Loss: l1_loss:0.0171 contrast_loss:1.8223
- Epoch (608)  Loss: l1_loss:0.0181 contrast_loss:1.4667
- Epoch (609)  Loss: l1_loss:0.0181 contrast_loss:1.9140
- Epoch (610)  Loss: l1_loss:0.0164 contrast_loss:2.0428
- Epoch (611)  Loss: l1_loss:0.0173 contrast_loss:1.7506
- Epoch (612)  Loss: l1_loss:0.0180 contrast_loss:1.6442
- Epoch (613)  Loss: l1_loss:0.0176 contrast_loss:1.4267
- Epoch (614)  Loss: l1_loss:0.0169 contrast_loss:1.4382
- Epoch (615)  Loss: l1_loss:0.0180 contrast_loss:1.7898
- Epoch (616)  Loss: l1_loss:0.0165 contrast_loss:1.6796
- Epoch (617)  Loss: l1_loss:0.0161 contrast_loss:1.4825
- Epoch (618)  Loss: l1_loss:0.0175 contrast_loss:1.8619
- Epoch (619)  Loss: l1_loss:0.0162 contrast_loss:1.7513
- Epoch (620)  Loss: l1_loss:0.0178 contrast_loss:1.4409
- Epoch (621)  Loss: l1_loss:0.0192 contrast_loss:1.5735
- Epoch (622)  Loss: l1_loss:0.0168 contrast_loss:1.8637
- Epoch (623)  Loss: l1_loss:0.0173 contrast_loss:1.9443
- Epoch (624)  Loss: l1_loss:0.0183 contrast_loss:1.5730
- Epoch (625)  Loss: l1_loss:0.0176 contrast_loss:1.6723
- Epoch (626)  Loss: l1_loss:0.0172 contrast_loss:1.5030
- Epoch (627)  Loss: l1_loss:0.0173 contrast_loss:2.0130
- Epoch (628)  Loss: l1_loss:0.0173 contrast_loss:2.1484
- Epoch (629)  Loss: l1_loss:0.0172 contrast_loss:2.3089
- Epoch (630)  Loss: l1_loss:0.0157 contrast_loss:1.6824
- Epoch (631)  Loss: l1_loss:0.0164 contrast_loss:1.3031
- Epoch (632)  Loss: l1_loss:0.0160 contrast_loss:1.9285
- Epoch (633)  Loss: l1_loss:0.0163 contrast_loss:2.3755
- Epoch (634)  Loss: l1_loss:0.0155 contrast_loss:1.5100
- Epoch (635)  Loss: l1_loss:0.0175 contrast_loss:1.4556
- Epoch (636)  Loss: l1_loss:0.0165 contrast_loss:1.5765
- Epoch (637)  Loss: l1_loss:0.0175 contrast_loss:1.9278
- Epoch (638)  Loss: l1_loss:0.0179 contrast_loss:1.6925
- Epoch (639)  Loss: l1_loss:0.0173 contrast_loss:1.8109
- Epoch (640)  Loss: l1_loss:0.0165 contrast_loss:1.6588
- Epoch (641)  Loss: l1_loss:0.0186 contrast_loss:1.5421
- Epoch (642)  Loss: l1_loss:0.0164 contrast_loss:1.5899
- Epoch (643)  Loss: l1_loss:0.0171 contrast_loss:2.2105
- Epoch (644)  Loss: l1_loss:0.0175 contrast_loss:1.3889
- Epoch (645)  Loss: l1_loss:0.0180 contrast_loss:2.1072
- Epoch (646)  Loss: l1_loss:0.0167 contrast_loss:1.3272
- Epoch (647)  Loss: l1_loss:0.0169 contrast_loss:1.8870
- Epoch (648)  Loss: l1_loss:0.0186 contrast_loss:1.3983
- Epoch (649)  Loss: l1_loss:0.0183 contrast_loss:1.5856
- Epoch (650)  Loss: l1_loss:0.0165 contrast_loss:1.7787
- Epoch (651)  Loss: l1_loss:0.0176 contrast_loss:1.7367
- Epoch (652)  Loss: l1_loss:0.0172 contrast_loss:2.2162
- Epoch (653)  Loss: l1_loss:0.0169 contrast_loss:1.5415
- Epoch (654)  Loss: l1_loss:0.0163 contrast_loss:1.4661
- Epoch (655)  Loss: l1_loss:0.0168 contrast_loss:1.1803
- Epoch (656)  Loss: l1_loss:0.0176 contrast_loss:1.9805
- Epoch (657)  Loss: l1_loss:0.0182 contrast_loss:1.6317
- Epoch (658)  Loss: l1_loss:0.0168 contrast_loss:1.9541
- Epoch (659)  Loss: l1_loss:0.0158 contrast_loss:1.7144
- Epoch (660)  Loss: l1_loss:0.0166 contrast_loss:1.9780
- Epoch (661)  Loss: l1_loss:0.0181 contrast_loss:2.1045
- Epoch (662)  Loss: l1_loss:0.0168 contrast_loss:1.7760
- Epoch (663)  Loss: l1_loss:0.0180 contrast_loss:1.2982
- Epoch (664)  Loss: l1_loss:0.0176 contrast_loss:1.6546
- Epoch (665)  Loss: l1_loss:0.0173 contrast_loss:1.5998
- Epoch (666)  Loss: l1_loss:0.0165 contrast_loss:2.0067
- Epoch (667)  Loss: l1_loss:0.0175 contrast_loss:1.8121
- Epoch (668)  Loss: l1_loss:0.0179 contrast_loss:1.5769
- Epoch (669)  Loss: l1_loss:0.0157 contrast_loss:2.0717
- Epoch (670)  Loss: l1_loss:0.0166 contrast_loss:1.2718
- Epoch (671)  Loss: l1_loss:0.0157 contrast_loss:1.8972
- Epoch (672)  Loss: l1_loss:0.0167 contrast_loss:1.4287
- Epoch (673)  Loss: l1_loss:0.0160 contrast_loss:1.7633
- Epoch (674)  Loss: l1_loss:0.0163 contrast_loss:1.4788
- Epoch (675)  Loss: l1_loss:0.0164 contrast_loss:1.6306
- Epoch (676)  Loss: l1_loss:0.0154 contrast_loss:1.9020
- Epoch (677)  Loss: l1_loss:0.0174 contrast_loss:1.8587
- Epoch (678)  Loss: l1_loss:0.0177 contrast_loss:1.4391
- Epoch (679)  Loss: l1_loss:0.0182 contrast_loss:1.7917
- Epoch (680)  Loss: l1_loss:0.0179 contrast_loss:2.1359
- Epoch (681)  Loss: l1_loss:0.0173 contrast_loss:1.9908
- Epoch (682)  Loss: l1_loss:0.0191 contrast_loss:1.4414
- Epoch (683)  Loss: l1_loss:0.0179 contrast_loss:1.6925
- Epoch (684)  Loss: l1_loss:0.0166 contrast_loss:1.8934
- Epoch (685)  Loss: l1_loss:0.0164 contrast_loss:2.0406
- Epoch (686)  Loss: l1_loss:0.0171 contrast_loss:1.5358
- Epoch (687)  Loss: l1_loss:0.0163 contrast_loss:1.3026
- Epoch (688)  Loss: l1_loss:0.0159 contrast_loss:1.6530
- Epoch (689)  Loss: l1_loss:0.0172 contrast_loss:1.8867
- Epoch (690)  Loss: l1_loss:0.0159 contrast_loss:3.5012
- Epoch (691)  Loss: l1_loss:0.0166 contrast_loss:1.6734
- Epoch (692)  Loss: l1_loss:0.0162 contrast_loss:1.6370
- Epoch (693)  Loss: l1_loss:0.0164 contrast_loss:1.6884
- Epoch (694)  Loss: l1_loss:0.0170 contrast_loss:1.8730
- Epoch (695)  Loss: l1_loss:0.0171 contrast_loss:1.4132
- Epoch (696)  Loss: l1_loss:0.0179 contrast_loss:2.0932
- Epoch (697)  Loss: l1_loss:0.0177 contrast_loss:2.1819
- Epoch (698)  Loss: l1_loss:0.0184 contrast_loss:1.7596
- Epoch (699)  Loss: l1_loss:0.0172 contrast_loss:1.7951
- Epoch (700)  Loss: l1_loss:0.0181 contrast_loss:2.0526
- Epoch (701)  Loss: l1_loss:0.0176 contrast_loss:2.0877
- Epoch (702)  Loss: l1_loss:0.0172 contrast_loss:1.9070
- Epoch (703)  Loss: l1_loss:0.0177 contrast_loss:1.8234
- Epoch (704)  Loss: l1_loss:0.0169 contrast_loss:1.5915
- Epoch (705)  Loss: l1_loss:0.0169 contrast_loss:1.3371
- Epoch (706)  Loss: l1_loss:0.0169 contrast_loss:1.4660
- Epoch (707)  Loss: l1_loss:0.0162 contrast_loss:1.5785
- Epoch (708)  Loss: l1_loss:0.0175 contrast_loss:1.5821
- Epoch (709)  Loss: l1_loss:0.0175 contrast_loss:1.6551
- Epoch (710)  Loss: l1_loss:0.0158 contrast_loss:1.3113
- Epoch (711)  Loss: l1_loss:0.0169 contrast_loss:1.8622
- Epoch (712)  Loss: l1_loss:0.0170 contrast_loss:1.9939
- Epoch (713)  Loss: l1_loss:0.0190 contrast_loss:1.4088
- Epoch (714)  Loss: l1_loss:0.0161 contrast_loss:1.4229
- Epoch (715)  Loss: l1_loss:0.0166 contrast_loss:2.1770
- Epoch (716)  Loss: l1_loss:0.0172 contrast_loss:1.5392
- Epoch (717)  Loss: l1_loss:0.0173 contrast_loss:1.7619
- Epoch (718)  Loss: l1_loss:0.0161 contrast_loss:1.8647
- Epoch (719)  Loss: l1_loss:0.0167 contrast_loss:1.3462
- Epoch (720)  Loss: l1_loss:0.0168 contrast_loss:1.3025
- Epoch (721)  Loss: l1_loss:0.0158 contrast_loss:1.7730
- Epoch (722)  Loss: l1_loss:0.0171 contrast_loss:1.4204
- Epoch (723)  Loss: l1_loss:0.0162 contrast_loss:2.1695
- Epoch (724)  Loss: l1_loss:0.0178 contrast_loss:1.7170
- Epoch (725)  Loss: l1_loss:0.0171 contrast_loss:1.4327
- Epoch (726)  Loss: l1_loss:0.0160 contrast_loss:1.8723
- Epoch (727)  Loss: l1_loss:0.0174 contrast_loss:1.7983
- Epoch (728)  Loss: l1_loss:0.0164 contrast_loss:2.3616
- Epoch (729)  Loss: l1_loss:0.0157 contrast_loss:1.3290
- Epoch (730)  Loss: l1_loss:0.0172 contrast_loss:1.6308
- Epoch (731)  Loss: l1_loss:0.0182 contrast_loss:1.9937
- Epoch (732)  Loss: l1_loss:0.0172 contrast_loss:1.8982
- Epoch (733)  Loss: l1_loss:0.0170 contrast_loss:1.7597
- Epoch (734)  Loss: l1_loss:0.0169 contrast_loss:1.5027
- Epoch (735)  Loss: l1_loss:0.0155 contrast_loss:1.4880
- Epoch (736)  Loss: l1_loss:0.0179 contrast_loss:1.2434
- Epoch (737)  Loss: l1_loss:0.0175 contrast_loss:1.3118
- Epoch (738)  Loss: l1_loss:0.0180 contrast_loss:1.6127
- Epoch (739)  Loss: l1_loss:0.0175 contrast_loss:1.8423
- Epoch (740)  Loss: l1_loss:0.0170 contrast_loss:1.5672
- Epoch (741)  Loss: l1_loss:0.0170 contrast_loss:1.8061
- Epoch (742)  Loss: l1_loss:0.0168 contrast_loss:1.5474
- Epoch (743)  Loss: l1_loss:0.0171 contrast_loss:2.6669
- Epoch (744)  Loss: l1_loss:0.0179 contrast_loss:1.6789
- Epoch (745)  Loss: l1_loss:0.0175 contrast_loss:1.8385
- Epoch (746)  Loss: l1_loss:0.0169 contrast_loss:2.3666
- Epoch (747)  Loss: l1_loss:0.0170 contrast_loss:1.2946
- Epoch (748)  Loss: l1_loss:0.0163 contrast_loss:1.6554
- Epoch (749)  Loss: l1_loss:0.0167 contrast_loss:1.4227
- Epoch (750)  Loss: l1_loss:0.0170 contrast_loss:1.6116
- Epoch (751)  Loss: l1_loss:0.0167 contrast_loss:1.8823
- Epoch (752)  Loss: l1_loss:0.0154 contrast_loss:1.9923
- Epoch (753)  Loss: l1_loss:0.0179 contrast_loss:1.4791
- Epoch (754)  Loss: l1_loss:0.0176 contrast_loss:1.5092
- Epoch (755)  Loss: l1_loss:0.0169 contrast_loss:2.2880
- Epoch (756)  Loss: l1_loss:0.0166 contrast_loss:1.6310
- Epoch (757)  Loss: l1_loss:0.0168 contrast_loss:1.2929
- Epoch (758)  Loss: l1_loss:0.0164 contrast_loss:1.5747
- Epoch (759)  Loss: l1_loss:0.0168 contrast_loss:1.7831
- Epoch (760)  Loss: l1_loss:0.0152 contrast_loss:1.8212
- Epoch (761)  Loss: l1_loss:0.0159 contrast_loss:1.4443
- Epoch (762)  Loss: l1_loss:0.0171 contrast_loss:1.8710
- Epoch (763)  Loss: l1_loss:0.0177 contrast_loss:1.6029
- Epoch (764)  Loss: l1_loss:0.0167 contrast_loss:1.6699
- Epoch (765)  Loss: l1_loss:0.0174 contrast_loss:1.8439
- Epoch (766)  Loss: l1_loss:0.0160 contrast_loss:1.3998
- Epoch (767)  Loss: l1_loss:0.0160 contrast_loss:1.9394
- Epoch (768)  Loss: l1_loss:0.0168 contrast_loss:1.4418
- Epoch (769)  Loss: l1_loss:0.0173 contrast_loss:1.5420
- Epoch (770)  Loss: l1_loss:0.0164 contrast_loss:1.3470
- Epoch (771)  Loss: l1_loss:0.0152 contrast_loss:1.8024
- Epoch (772)  Loss: l1_loss:0.0178 contrast_loss:1.5005
- Epoch (773)  Loss: l1_loss:0.0165 contrast_loss:1.3613
- Epoch (774)  Loss: l1_loss:0.0157 contrast_loss:1.4101
- Epoch (775)  Loss: l1_loss:0.0162 contrast_loss:2.0410
- Epoch (776)  Loss: l1_loss:0.0173 contrast_loss:1.8846
- Epoch (777)  Loss: l1_loss:0.0173 contrast_loss:2.0725
- Epoch (778)  Loss: l1_loss:0.0174 contrast_loss:1.6736
- Epoch (779)  Loss: l1_loss:0.0173 contrast_loss:1.8621
- Epoch (780)  Loss: l1_loss:0.0171 contrast_loss:1.4890
- Epoch (781)  Loss: l1_loss:0.0164 contrast_loss:1.6257
- Epoch (782)  Loss: l1_loss:0.0161 contrast_loss:1.5433
- Epoch (783)  Loss: l1_loss:0.0186 contrast_loss:1.6370
- Epoch (784)  Loss: l1_loss:0.0164 contrast_loss:1.4314
- Epoch (785)  Loss: l1_loss:0.0171 contrast_loss:1.8513
- Epoch (786)  Loss: l1_loss:0.0171 contrast_loss:1.7509
- Epoch (787)  Loss: l1_loss:0.0171 contrast_loss:1.6193
- Epoch (788)  Loss: l1_loss:0.0179 contrast_loss:1.4898
- Epoch (789)  Loss: l1_loss:0.0160 contrast_loss:1.4949
- Epoch (790)  Loss: l1_loss:0.0168 contrast_loss:1.3547
- Epoch (791)  Loss: l1_loss:0.0169 contrast_loss:1.8216
- Epoch (792)  Loss: l1_loss:0.0184 contrast_loss:1.7851
- Epoch (793)  Loss: l1_loss:0.0153 contrast_loss:1.7543
- Epoch (794)  Loss: l1_loss:0.0171 contrast_loss:1.7321
- Epoch (795)  Loss: l1_loss:0.0164 contrast_loss:2.0408
- Epoch (796)  Loss: l1_loss:0.0175 contrast_loss:1.7444
- Epoch (797)  Loss: l1_loss:0.0168 contrast_loss:1.4154
- Epoch (798)  Loss: l1_loss:0.0174 contrast_loss:1.8475
- Epoch (799)  Loss: l1_loss:0.0168 contrast_loss:1.5372
- Epoch (800)  Loss: l1_loss:0.0157 contrast_loss:1.6736
- Epoch (801)  Loss: l1_loss:0.0169 contrast_loss:1.2909
- Epoch (802)  Loss: l1_loss:0.0159 contrast_loss:2.0208
- Epoch (803)  Loss: l1_loss:0.0172 contrast_loss:1.9197
- Epoch (804)  Loss: l1_loss:0.0173 contrast_loss:2.1282
- Epoch (805)  Loss: l1_loss:0.0164 contrast_loss:1.5583
- Epoch (806)  Loss: l1_loss:0.0180 contrast_loss:2.2735
- Epoch (807)  Loss: l1_loss:0.0163 contrast_loss:1.6520
- Epoch (808)  Loss: l1_loss:0.0172 contrast_loss:1.8528
- Epoch (809)  Loss: l1_loss:0.0160 contrast_loss:1.4453
- Epoch (810)  Loss: l1_loss:0.0171 contrast_loss:1.5872
- Epoch (811)  Loss: l1_loss:0.0179 contrast_loss:1.6891
- Epoch (812)  Loss: l1_loss:0.0152 contrast_loss:1.3937
- Epoch (813)  Loss: l1_loss:0.0168 contrast_loss:1.6789
- Epoch (814)  Loss: l1_loss:0.0167 contrast_loss:1.3796
- Epoch (815)  Loss: l1_loss:0.0171 contrast_loss:1.5597
- Epoch (816)  Loss: l1_loss:0.0173 contrast_loss:2.2654
- Epoch (817)  Loss: l1_loss:0.0161 contrast_loss:1.9855
- Epoch (818)  Loss: l1_loss:0.0168 contrast_loss:1.5321
- Epoch (819)  Loss: l1_loss:0.0159 contrast_loss:1.8965
- Epoch (820)  Loss: l1_loss:0.0161 contrast_loss:1.7590
- Epoch (821)  Loss: l1_loss:0.0167 contrast_loss:1.4586
- Epoch (822)  Loss: l1_loss:0.0177 contrast_loss:1.3644
- Epoch (823)  Loss: l1_loss:0.0148 contrast_loss:2.0238
- Epoch (824)  Loss: l1_loss:0.0170 contrast_loss:1.5587
- Epoch (825)  Loss: l1_loss:0.0162 contrast_loss:1.3537
- Epoch (826)  Loss: l1_loss:0.0168 contrast_loss:1.5528
- Epoch (827)  Loss: l1_loss:0.0163 contrast_loss:1.6568
- Epoch (828)  Loss: l1_loss:0.0171 contrast_loss:2.0872
- Epoch (829)  Loss: l1_loss:0.0165 contrast_loss:1.5649
- Epoch (830)  Loss: l1_loss:0.0170 contrast_loss:1.7928
- Epoch (831)  Loss: l1_loss:0.0161 contrast_loss:2.3161
- Epoch (832)  Loss: l1_loss:0.0175 contrast_loss:1.5058
- Epoch (833)  Loss: l1_loss:0.0172 contrast_loss:1.8828
- Epoch (834)  Loss: l1_loss:0.0166 contrast_loss:2.0845
- Epoch (835)  Loss: l1_loss:0.0171 contrast_loss:1.8257
- Epoch (836)  Loss: l1_loss:0.0178 contrast_loss:1.5559
- Epoch (837)  Loss: l1_loss:0.0177 contrast_loss:1.7792
- Epoch (838)  Loss: l1_loss:0.0171 contrast_loss:1.9599
- Epoch (839)  Loss: l1_loss:0.0161 contrast_loss:2.3297
- Epoch (840)  Loss: l1_loss:0.0169 contrast_loss:1.6889
- Epoch (841)  Loss: l1_loss:0.0170 contrast_loss:1.8309
- Epoch (842)  Loss: l1_loss:0.0179 contrast_loss:1.5638
- Epoch (843)  Loss: l1_loss:0.0181 contrast_loss:1.9678
- Epoch (844)  Loss: l1_loss:0.0151 contrast_loss:1.6153
- Epoch (845)  Loss: l1_loss:0.0170 contrast_loss:1.7644
- Epoch (846)  Loss: l1_loss:0.0166 contrast_loss:1.6099
- Epoch (847)  Loss: l1_loss:0.0163 contrast_loss:1.8854
- Epoch (848)  Loss: l1_loss:0.0166 contrast_loss:1.4134
- Epoch (849)  Loss: l1_loss:0.0160 contrast_loss:1.4645
- Epoch (850)  Loss: l1_loss:0.0157 contrast_loss:1.2192
- Epoch (851)  Loss: l1_loss:0.0148 contrast_loss:1.7041
- Epoch (852)  Loss: l1_loss:0.0165 contrast_loss:1.3946
- Epoch (853)  Loss: l1_loss:0.0172 contrast_loss:1.7064
- Epoch (854)  Loss: l1_loss:0.0147 contrast_loss:1.6651
- Epoch (855)  Loss: l1_loss:0.0173 contrast_loss:1.6255
- Epoch (856)  Loss: l1_loss:0.0153 contrast_loss:1.9683
- Epoch (857)  Loss: l1_loss:0.0154 contrast_loss:1.4584
- Epoch (858)  Loss: l1_loss:0.0155 contrast_loss:1.2285
- Epoch (859)  Loss: l1_loss:0.0171 contrast_loss:1.7232
- Epoch (860)  Loss: l1_loss:0.0157 contrast_loss:1.8963
- Epoch (861)  Loss: l1_loss:0.0173 contrast_loss:2.5505
- Epoch (862)  Loss: l1_loss:0.0153 contrast_loss:1.2913
- Epoch (863)  Loss: l1_loss:0.0168 contrast_loss:2.1255
- Epoch (864)  Loss: l1_loss:0.0166 contrast_loss:1.8248
- Epoch (865)  Loss: l1_loss:0.0165 contrast_loss:1.7922
- Epoch (866)  Loss: l1_loss:0.0173 contrast_loss:1.3815
- Epoch (867)  Loss: l1_loss:0.0167 contrast_loss:1.5233
- Epoch (868)  Loss: l1_loss:0.0166 contrast_loss:1.4115
- Epoch (869)  Loss: l1_loss:0.0160 contrast_loss:1.5203
- Epoch (870)  Loss: l1_loss:0.0172 contrast_loss:1.7016
- Epoch (871)  Loss: l1_loss:0.0164 contrast_loss:1.3336
- Epoch (872)  Loss: l1_loss:0.0158 contrast_loss:1.5626
- Epoch (873)  Loss: l1_loss:0.0172 contrast_loss:1.6728
- Epoch (874)  Loss: l1_loss:0.0168 contrast_loss:1.8709
- Epoch (875)  Loss: l1_loss:0.0158 contrast_loss:2.2955
- Epoch (876)  Loss: l1_loss:0.0175 contrast_loss:1.5012
- Epoch (877)  Loss: l1_loss:0.0164 contrast_loss:1.7287
- Epoch (878)  Loss: l1_loss:0.0175 contrast_loss:1.1020
- Epoch (879)  Loss: l1_loss:0.0157 contrast_loss:1.8365
- Epoch (880)  Loss: l1_loss:0.0170 contrast_loss:1.7415
- Epoch (881)  Loss: l1_loss:0.0169 contrast_loss:1.1493
- Epoch (882)  Loss: l1_loss:0.0171 contrast_loss:1.1862
- Epoch (883)  Loss: l1_loss:0.0163 contrast_loss:1.4959
- Epoch (884)  Loss: l1_loss:0.0167 contrast_loss:1.1393
- Epoch (885)  Loss: l1_loss:0.0177 contrast_loss:1.7917
- Epoch (886)  Loss: l1_loss:0.0158 contrast_loss:1.5602
- Epoch (887)  Loss: l1_loss:0.0184 contrast_loss:1.8684
- Epoch (888)  Loss: l1_loss:0.0170 contrast_loss:1.7433
- Epoch (889)  Loss: l1_loss:0.0169 contrast_loss:1.8124
- Epoch (890)  Loss: l1_loss:0.0169 contrast_loss:1.6440
- Epoch (891)  Loss: l1_loss:0.0158 contrast_loss:1.5320
- Epoch (892)  Loss: l1_loss:0.0170 contrast_loss:1.9368
- Epoch (893)  Loss: l1_loss:0.0168 contrast_loss:1.5252
- Epoch (894)  Loss: l1_loss:0.0152 contrast_loss:1.4324
- Epoch (895)  Loss: l1_loss:0.0178 contrast_loss:1.5893
- Epoch (896)  Loss: l1_loss:0.0167 contrast_loss:1.7522
- Epoch (897)  Loss: l1_loss:0.0163 contrast_loss:1.7265
- Epoch (898)  Loss: l1_loss:0.0166 contrast_loss:1.6287
- Epoch (899)  Loss: l1_loss:0.0169 contrast_loss:1.6536
- Epoch (900)  Loss: l1_loss:0.0168 contrast_loss:1.7139
- Epoch (901)  Loss: l1_loss:0.0171 contrast_loss:1.9521
- Epoch (902)  Loss: l1_loss:0.0160 contrast_loss:1.8330
- Epoch (903)  Loss: l1_loss:0.0153 contrast_loss:1.5240
- Epoch (904)  Loss: l1_loss:0.0162 contrast_loss:2.0647
- Epoch (905)  Loss: l1_loss:0.0174 contrast_loss:1.6795
- Epoch (906)  Loss: l1_loss:0.0168 contrast_loss:2.1005
- Epoch (907)  Loss: l1_loss:0.0161 contrast_loss:1.7077
- Epoch (908)  Loss: l1_loss:0.0160 contrast_loss:1.8678
- Epoch (909)  Loss: l1_loss:0.0173 contrast_loss:1.8289
- Epoch (910)  Loss: l1_loss:0.0175 contrast_loss:1.6604
- Epoch (911)  Loss: l1_loss:0.0161 contrast_loss:1.7110
- Epoch (912)  Loss: l1_loss:0.0177 contrast_loss:1.7834
- Epoch (913)  Loss: l1_loss:0.0161 contrast_loss:1.7383
- Epoch (914)  Loss: l1_loss:0.0161 contrast_loss:1.5529
- Epoch (915)  Loss: l1_loss:0.0166 contrast_loss:2.0283
- Epoch (916)  Loss: l1_loss:0.0168 contrast_loss:1.8041
- Epoch (917)  Loss: l1_loss:0.0166 contrast_loss:1.8380
- Epoch (918)  Loss: l1_loss:0.0163 contrast_loss:1.8496
- Epoch (919)  Loss: l1_loss:0.0170 contrast_loss:1.5381
- Epoch (920)  Loss: l1_loss:0.0173 contrast_loss:1.6536
- Epoch (921)  Loss: l1_loss:0.0171 contrast_loss:1.4808
- Epoch (922)  Loss: l1_loss:0.0176 contrast_loss:1.8029
- Epoch (923)  Loss: l1_loss:0.0177 contrast_loss:1.2328
- Epoch (924)  Loss: l1_loss:0.0164 contrast_loss:1.4386
- Epoch (925)  Loss: l1_loss:0.0164 contrast_loss:1.3320
- Epoch (926)  Loss: l1_loss:0.0175 contrast_loss:2.0530
- Epoch (927)  Loss: l1_loss:0.0164 contrast_loss:1.5173
- Epoch (928)  Loss: l1_loss:0.0180 contrast_loss:1.4661
- Epoch (929)  Loss: l1_loss:0.0163 contrast_loss:1.7055
- Epoch (930)  Loss: l1_loss:0.0180 contrast_loss:1.8816
- Epoch (931)  Loss: l1_loss:0.0165 contrast_loss:1.5588
- Epoch (932)  Loss: l1_loss:0.0159 contrast_loss:2.3354
- Epoch (933)  Loss: l1_loss:0.0161 contrast_loss:1.3594
- Epoch (934)  Loss: l1_loss:0.0155 contrast_loss:1.5802
- Epoch (935)  Loss: l1_loss:0.0179 contrast_loss:2.1199
- Epoch (936)  Loss: l1_loss:0.0159 contrast_loss:1.2909
- Epoch (937)  Loss: l1_loss:0.0175 contrast_loss:2.0181
- Epoch (938)  Loss: l1_loss:0.0169 contrast_loss:2.1317
- Epoch (939)  Loss: l1_loss:0.0167 contrast_loss:1.8079
- Epoch (940)  Loss: l1_loss:0.0177 contrast_loss:1.7245
- Epoch (941)  Loss: l1_loss:0.0165 contrast_loss:1.3246
- Epoch (942)  Loss: l1_loss:0.0168 contrast_loss:2.2519
- Epoch (943)  Loss: l1_loss:0.0171 contrast_loss:1.7188
- Epoch (944)  Loss: l1_loss:0.0179 contrast_loss:1.7626
- Epoch (945)  Loss: l1_loss:0.0155 contrast_loss:1.2615
- Epoch (946)  Loss: l1_loss:0.0170 contrast_loss:1.4450
- Epoch (947)  Loss: l1_loss:0.0162 contrast_loss:1.4412
- Epoch (948)  Loss: l1_loss:0.0171 contrast_loss:1.3506
- Epoch (949)  Loss: l1_loss:0.0169 contrast_loss:1.4637
- Epoch (950)  Loss: l1_loss:0.0165 contrast_loss:1.5338
- Epoch (951)  Loss: l1_loss:0.0194 contrast_loss:1.7163
- Epoch (952)  Loss: l1_loss:0.0159 contrast_loss:1.8691
- Epoch (953)  Loss: l1_loss:0.0153 contrast_loss:2.4971
- Epoch (954)  Loss: l1_loss:0.0180 contrast_loss:1.8914
- Epoch (955)  Loss: l1_loss:0.0164 contrast_loss:1.5825
- Epoch (956)  Loss: l1_loss:0.0160 contrast_loss:1.8477
- Epoch (957)  Loss: l1_loss:0.0162 contrast_loss:1.9607
- Epoch (958)  Loss: l1_loss:0.0180 contrast_loss:1.3752
- Epoch (959)  Loss: l1_loss:0.0153 contrast_loss:1.8991
- Epoch (960)  Loss: l1_loss:0.0160 contrast_loss:1.6404
- Epoch (961)  Loss: l1_loss:0.0178 contrast_loss:1.5946
- Epoch (962)  Loss: l1_loss:0.0160 contrast_loss:1.8912
- Epoch (963)  Loss: l1_loss:0.0178 contrast_loss:1.3873
- Epoch (964)  Loss: l1_loss:0.0160 contrast_loss:1.6060
- Epoch (965)  Loss: l1_loss:0.0171 contrast_loss:2.0612
- Epoch (966)  Loss: l1_loss:0.0164 contrast_loss:1.9786
- Epoch (967)  Loss: l1_loss:0.0170 contrast_loss:1.8245
- Epoch (968)  Loss: l1_loss:0.0168 contrast_loss:1.8544
- Epoch (969)  Loss: l1_loss:0.0171 contrast_loss:1.5920
- Epoch (970)  Loss: l1_loss:0.0163 contrast_loss:1.1701
- Epoch (971)  Loss: l1_loss:0.0175 contrast_loss:1.5036
- Epoch (972)  Loss: l1_loss:0.0166 contrast_loss:1.4317
- Epoch (973)  Loss: l1_loss:0.0170 contrast_loss:1.7474
- Epoch (974)  Loss: l1_loss:0.0156 contrast_loss:1.3182
- Epoch (975)  Loss: l1_loss:0.0168 contrast_loss:1.4476
- Epoch (976)  Loss: l1_loss:0.0171 contrast_loss:1.8024
- Epoch (977)  Loss: l1_loss:0.0168 contrast_loss:1.5397
- Epoch (978)  Loss: l1_loss:0.0163 contrast_loss:1.4785
- Epoch (979)  Loss: l1_loss:0.0157 contrast_loss:1.7148
- Epoch (980)  Loss: l1_loss:0.0162 contrast_loss:1.9330
- Epoch (981)  Loss: l1_loss:0.0163 contrast_loss:1.5086
- Epoch (982)  Loss: l1_loss:0.0164 contrast_loss:1.7877
- Epoch (983)  Loss: l1_loss:0.0169 contrast_loss:1.4147
- Epoch (984)  Loss: l1_loss:0.0161 contrast_loss:2.0066
- Epoch (985)  Loss: l1_loss:0.0152 contrast_loss:1.7579
- Epoch (986)  Loss: l1_loss:0.0167 contrast_loss:1.8393
- Epoch (987)  Loss: l1_loss:0.0160 contrast_loss:1.7937
- Epoch (988)  Loss: l1_loss:0.0160 contrast_loss:1.8060
- Epoch (989)  Loss: l1_loss:0.0161 contrast_loss:2.0907
- Epoch (990)  Loss: l1_loss:0.0158 contrast_loss:1.7428
- Epoch (991)  Loss: l1_loss:0.0170 contrast_loss:1.4978
- Epoch (992)  Loss: l1_loss:0.0175 contrast_loss:1.9703
- Epoch (993)  Loss: l1_loss:0.0166 contrast_loss:2.1968
- Epoch (994)  Loss: l1_loss:0.0172 contrast_loss:1.9175
- Epoch (995)  Loss: l1_loss:0.0153 contrast_loss:1.8051
- Epoch (996)  Loss: l1_loss:0.0158 contrast_loss:1.6570
- Epoch (997)  Loss: l1_loss:0.0161 contrast_loss:1.7118
- Epoch (998)  Loss: l1_loss:0.0177 contrast_loss:1.4774
- Epoch (999)  Loss: l1_loss:0.0166 contrast_loss:1.5190
- 

@@ -1,7 +1,0 @@
-Decoder: True
-<class 'net.fre2.WaveletResNet'>
-Start training...
-Epoch (0)  Loss: contrast_loss:3.8205
- Epoch (1)  Loss: contrast_loss:3.7292
- Epoch (2)  Loss: contrast_loss:3.5915
- 
