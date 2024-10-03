@@ -1,0 +1,942 @@
+Decoder: True
+<class 'net.fre2.WaveletResNet'>
+Start training...
+Epoch (0)  Loss: contrast_loss:3.6584
+ Epoch (1)  Loss: contrast_loss:4.3998
+ Epoch (2)  Loss: contrast_loss:3.8400
+ Epoch (3)  Loss: contrast_loss:3.4962
+ Epoch (4)  Loss: contrast_loss:3.6508
+ Epoch (5)  Loss: contrast_loss:3.5388
+ Epoch (6)  Loss: contrast_loss:4.0283
+ Epoch (7)  Loss: contrast_loss:4.3512
+ Epoch (8)  Loss: contrast_loss:3.8925
+ Epoch (9)  Loss: contrast_loss:3.9738
+ Epoch (10)  Loss: contrast_loss:3.1593
+ Epoch (11)  Loss: contrast_loss:3.2264
+ Epoch (12)  Loss: contrast_loss:4.3185
+ Epoch (13)  Loss: contrast_loss:3.5681
+ Epoch (14)  Loss: contrast_loss:3.7556
+ Epoch (15)  Loss: contrast_loss:4.4201
+ Epoch (16)  Loss: contrast_loss:3.8854
+ Epoch (17)  Loss: contrast_loss:4.0512
+ Epoch (18)  Loss: contrast_loss:3.4630
+ Epoch (19)  Loss: contrast_loss:5.0197
+ Epoch (20)  Loss: contrast_loss:3.8188
+ Epoch (21)  Loss: contrast_loss:3.8502
+ Epoch (22)  Loss: contrast_loss:3.5639
+ Epoch (23)  Loss: contrast_loss:3.4300
+ Epoch (24)  Loss: contrast_loss:3.6417
+ Epoch (25)  Loss: contrast_loss:5.1471
+ Epoch (26)  Loss: contrast_loss:3.0940
+ Epoch (27)  Loss: contrast_loss:4.1908
+ Epoch (28)  Loss: contrast_loss:3.6323
+ Epoch (29)  Loss: contrast_loss:4.1747
+ Epoch (30)  Loss: contrast_loss:2.9163
+ Epoch (31)  Loss: contrast_loss:3.3227
+ Epoch (32)  Loss: contrast_loss:3.5342
+ Epoch (33)  Loss: contrast_loss:4.3780
+ Epoch (34)  Loss: contrast_loss:3.9522
+ Epoch (35)  Loss: contrast_loss:3.7460
+ Epoch (36)  Loss: contrast_loss:3.4552
+ Epoch (37)  Loss: contrast_loss:3.6306
+ Epoch (38)  Loss: contrast_loss:3.3293
+ Epoch (39)  Loss: contrast_loss:3.1552
+ Epoch (40)  Loss: contrast_loss:2.9952
+ Epoch (41)  Loss: contrast_loss:4.0193
+ Epoch (42)  Loss: contrast_loss:5.0739
+ Epoch (43)  Loss: contrast_loss:3.1218
+ Epoch (44)  Loss: contrast_loss:3.4933
+ Epoch (45)  Loss: contrast_loss:3.7900
+ Epoch (46)  Loss: contrast_loss:3.2882
+ Epoch (47)  Loss: contrast_loss:4.0732
+ Epoch (48)  Loss: contrast_loss:3.0224
+ Epoch (49)  Loss: contrast_loss:5.7902
+ Epoch (50)  Loss: contrast_loss:3.3821
+ Epoch (51)  Loss: contrast_loss:3.0628
+ Epoch (52)  Loss: contrast_loss:3.3968
+ Epoch (53)  Loss: contrast_loss:2.8995
+ Epoch (54)  Loss: contrast_loss:2.8139
+ Epoch (55)  Loss: contrast_loss:2.6831
+ Epoch (56)  Loss: contrast_loss:4.4553
+ Epoch (57)  Loss: contrast_loss:2.6515
+ Epoch (58)  Loss: contrast_loss:2.8466
+ Epoch (59)  Loss: contrast_loss:3.0458
+ Epoch (60)  Loss: contrast_loss:2.5290
+ Epoch (61)  Loss: contrast_loss:2.7797
+ Epoch (62)  Loss: contrast_loss:2.8746
+ Epoch (63)  Loss: contrast_loss:3.5086
+ Epoch (64)  Loss: contrast_loss:2.6401
+ Epoch (65)  Loss: contrast_loss:2.4616
+ Epoch (66)  Loss: contrast_loss:2.7860
+ Epoch (67)  Loss: contrast_loss:5.9120
+ Epoch (68)  Loss: contrast_loss:2.6423
+ Epoch (69)  Loss: contrast_loss:2.5694
+ Epoch (70)  Loss: contrast_loss:2.7243
+ Epoch (71)  Loss: contrast_loss:2.3442
+ Epoch (72)  Loss: contrast_loss:2.6285
+ Epoch (73)  Loss: contrast_loss:3.1411
+ Epoch (74)  Loss: contrast_loss:2.1815
+ Epoch (75)  Loss: contrast_loss:2.4343
+ Epoch (76)  Loss: contrast_loss:2.8194
+ Epoch (77)  Loss: contrast_loss:2.2784
+ Epoch (78)  Loss: contrast_loss:2.2499
+ Epoch (79)  Loss: contrast_loss:2.5163
+ Epoch (80)  Loss: contrast_loss:2.3229
+ Epoch (81)  Loss: contrast_loss:2.8438
+ Epoch (82)  Loss: contrast_loss:6.1680
+ Epoch (83)  Loss: contrast_loss:2.6210
+ Epoch (84)  Loss: contrast_loss:2.7266
+ Epoch (85)  Loss: contrast_loss:2.1446
+ Epoch (86)  Loss: contrast_loss:2.7552
+ Epoch (87)  Loss: contrast_loss:3.2482
+ Epoch (88)  Loss: contrast_loss:2.4603
+ Epoch (89)  Loss: contrast_loss:2.9861
+ Epoch (90)  Loss: contrast_loss:2.4035
+ Epoch (91)  Loss: contrast_loss:2.4413
+ Epoch (92)  Loss: contrast_loss:2.5254
+ Epoch (93)  Loss: contrast_loss:1.9702
+ Epoch (94)  Loss: contrast_loss:6.6759
+ Epoch (95)  Loss: contrast_loss:2.7168
+ Epoch (96)  Loss: contrast_loss:2.3638
+ Epoch (97)  Loss: contrast_loss:1.9587
+ Epoch (98)  Loss: contrast_loss:2.6659
+ Epoch (99)  Loss: contrast_loss:2.9135
+ Epoch (100)  Loss: l1_loss:0.0368 contrast_loss:2.5070
+ ssim_loss:0.2062
+ Epoch (101)  Loss: l1_loss:0.0342 contrast_loss:1.8798
+ ssim_loss:0.1650
+ Epoch (102)  Loss: l1_loss:0.0312 contrast_loss:2.8785
+ ssim_loss:0.1444
+ Epoch (103)  Loss: l1_loss:0.0639 contrast_loss:3.8193
+ ssim_loss:0.1755
+ Epoch (104)  Loss: l1_loss:0.0405 contrast_loss:2.2736
+ ssim_loss:0.1598
+ Epoch (105)  Loss: l1_loss:0.0380 contrast_loss:2.0072
+ ssim_loss:0.1334
+ Epoch (106)  Loss: l1_loss:0.0337 contrast_loss:2.7348
+ ssim_loss:0.1176
+ Epoch (107)  Loss: l1_loss:0.0372 contrast_loss:4.1814
+ ssim_loss:0.1255
+ Epoch (108)  Loss: l1_loss:0.0228 contrast_loss:2.3510
+ ssim_loss:0.1116
+ Epoch (109)  Loss: l1_loss:0.0287 contrast_loss:2.7089
+ ssim_loss:0.1013
+ Epoch (110)  Loss: l1_loss:0.0236 contrast_loss:2.3838
+ ssim_loss:0.1290
+ Epoch (111)  Loss: l1_loss:0.0337 contrast_loss:2.2402
+ ssim_loss:0.1194
+ Epoch (112)  Loss: l1_loss:0.0420 contrast_loss:4.2903
+ ssim_loss:0.1285
+ Epoch (113)  Loss: l1_loss:0.0204 contrast_loss:2.5245
+ ssim_loss:0.0936
+ Epoch (114)  Loss: l1_loss:0.0243 contrast_loss:2.5900
+ ssim_loss:0.0928
+ Epoch (115)  Loss: l1_loss:0.0250 contrast_loss:2.6561
+ ssim_loss:0.0868
+ Epoch (116)  Loss: l1_loss:0.0460 contrast_loss:5.3518
+ ssim_loss:0.1800
+ Epoch (117)  Loss: l1_loss:0.0319 contrast_loss:2.6722
+ ssim_loss:0.0970
+ Epoch (118)  Loss: l1_loss:0.0236 contrast_loss:2.2556
+ ssim_loss:0.0865
+ Epoch (119)  Loss: l1_loss:0.0204 contrast_loss:4.5246
+ ssim_loss:0.0911
+ Epoch (120)  Loss: l1_loss:0.0200 contrast_loss:2.4185
+ ssim_loss:0.0795
+ Epoch (121)  Loss: l1_loss:0.0204 contrast_loss:2.7011
+ ssim_loss:0.0754
+ Epoch (122)  Loss: l1_loss:0.0181 contrast_loss:2.5553
+ ssim_loss:0.0640
+ Epoch (123)  Loss: l1_loss:0.0179 contrast_loss:1.9339
+ ssim_loss:0.0727
+ Epoch (124)  Loss: l1_loss:0.0210 contrast_loss:2.5688
+ ssim_loss:0.1140
+ Epoch (125)  Loss: l1_loss:0.0275 contrast_loss:2.3461
+ ssim_loss:0.1238
+ Epoch (126)  Loss: l1_loss:0.0251 contrast_loss:2.3570
+ ssim_loss:0.1190
+ Epoch (127)  Loss: l1_loss:0.0180 contrast_loss:2.2525
+ ssim_loss:0.0803
+ Epoch (128)  Loss: l1_loss:0.0161 contrast_loss:3.7226
+ ssim_loss:0.0610
+ Epoch (129)  Loss: l1_loss:0.0288 contrast_loss:2.7579
+ ssim_loss:0.0888
+ Epoch (130)  Loss: l1_loss:0.0188 contrast_loss:3.9992
+ ssim_loss:0.0629
+ Epoch (131)  Loss: l1_loss:0.0189 contrast_loss:2.4423
+ ssim_loss:0.0651
+ Epoch (132)  Loss: l1_loss:0.0164 contrast_loss:2.5904
+ ssim_loss:0.0834
+ Epoch (133)  Loss: l1_loss:0.0300 contrast_loss:1.9990
+ ssim_loss:0.0781
+ Epoch (134)  Loss: l1_loss:0.0156 contrast_loss:4.3731
+ ssim_loss:0.0834
+ Epoch (135)  Loss: l1_loss:0.0144 contrast_loss:3.7662
+ ssim_loss:0.0581
+ Epoch (136)  Loss: l1_loss:0.0161 contrast_loss:2.4089
+ ssim_loss:0.0749
+ Epoch (137)  Loss: l1_loss:0.0317 contrast_loss:3.4143
+ ssim_loss:0.1100
+ Epoch (138)  Loss: l1_loss:0.0206 contrast_loss:2.3692
+ ssim_loss:0.0834
+ Epoch (139)  Loss: l1_loss:0.0160 contrast_loss:2.6151
+ ssim_loss:0.0683
+ Epoch (140)  Loss: l1_loss:0.0202 contrast_loss:2.6220
+ ssim_loss:0.0738
+ Epoch (141)  Loss: l1_loss:0.0355 contrast_loss:7.1430
+ ssim_loss:0.1215
+ Epoch (142)  Loss: l1_loss:0.0217 contrast_loss:2.4283
+ ssim_loss:0.0625
+ Epoch (143)  Loss: l1_loss:0.0160 contrast_loss:2.5560
+ ssim_loss:0.0719
+ Epoch (144)  Loss: l1_loss:0.0205 contrast_loss:2.3733
+ ssim_loss:0.0750
+ Epoch (145)  Loss: l1_loss:0.0161 contrast_loss:2.2197
+ ssim_loss:0.0576
+ Epoch (146)  Loss: l1_loss:0.0153 contrast_loss:2.2782
+ ssim_loss:0.0575
+ Epoch (147)  Loss: l1_loss:0.0152 contrast_loss:1.9834
+ ssim_loss:0.0620
+ Epoch (148)  Loss: l1_loss:0.0194 contrast_loss:2.6014
+ ssim_loss:0.0535
+ Epoch (149)  Loss: l1_loss:0.0166 contrast_loss:2.0978
+ ssim_loss:0.0668
+ Epoch (150)  Loss: l1_loss:0.0167 contrast_loss:2.1242
+ ssim_loss:0.0708
+ Epoch (151)  Loss: l1_loss:0.0163 contrast_loss:2.8565
+ ssim_loss:0.0834
+ Epoch (152)  Loss: l1_loss:0.0305 contrast_loss:2.8625
+ ssim_loss:0.0792
+ Epoch (153)  Loss: l1_loss:0.0209 contrast_loss:2.0667
+ ssim_loss:0.1016
+ Epoch (154)  Loss: l1_loss:0.0144 contrast_loss:2.5320
+ ssim_loss:0.0550
+ Epoch (155)  Loss: l1_loss:0.0170 contrast_loss:1.8263
+ ssim_loss:0.0851
+ Epoch (156)  Loss: l1_loss:0.0136 contrast_loss:2.7028
+ ssim_loss:0.0578
+ Epoch (157)  Loss: l1_loss:0.0138 contrast_loss:3.0222
+ ssim_loss:0.0547
+ Epoch (158)  Loss: l1_loss:0.0239 contrast_loss:3.2963
+ ssim_loss:0.0722
+ Epoch (159)  Loss: l1_loss:0.0136 contrast_loss:2.6307
+ ssim_loss:0.0623
+ Epoch (160)  Loss: l1_loss:0.0135 contrast_loss:2.1711
+ ssim_loss:0.0466
+ Epoch (161)  Loss: l1_loss:0.0125 contrast_loss:1.9207
+ ssim_loss:0.0506
+ Epoch (162)  Loss: l1_loss:0.0159 contrast_loss:3.2852
+ ssim_loss:0.0851
+ Epoch (163)  Loss: l1_loss:0.0155 contrast_loss:2.1420
+ ssim_loss:0.0550
+ Epoch (164)  Loss: l1_loss:0.0137 contrast_loss:2.6905
+ ssim_loss:0.0789
+ Epoch (165)  Loss: l1_loss:0.0152 contrast_loss:1.8651
+ ssim_loss:0.0536
+ Epoch (166)  Loss: l1_loss:0.0157 contrast_loss:2.8228
+ ssim_loss:0.0630
+ Epoch (167)  Loss: l1_loss:0.0138 contrast_loss:3.1393
+ ssim_loss:0.0607
+ Epoch (168)  Loss: l1_loss:0.0161 contrast_loss:2.0319
+ ssim_loss:0.0621
+ Epoch (169)  Loss: l1_loss:0.0155 contrast_loss:2.3333
+ ssim_loss:0.0589
+ Epoch (170)  Loss: l1_loss:0.0131 contrast_loss:2.2139
+ ssim_loss:0.0597
+ Epoch (171)  Loss: l1_loss:0.0176 contrast_loss:1.9455
+ ssim_loss:0.0605
+ Epoch (172)  Loss: l1_loss:0.0139 contrast_loss:2.1860
+ ssim_loss:0.0695
+ Epoch (173)  Loss: l1_loss:0.0148 contrast_loss:1.8424
+ ssim_loss:0.0593
+ Epoch (174)  Loss: l1_loss:0.0167 contrast_loss:2.0825
+ ssim_loss:0.0813
+ Epoch (175)  Loss: l1_loss:0.0135 contrast_loss:1.7526
+ ssim_loss:0.0487
+ Epoch (176)  Loss: l1_loss:0.0158 contrast_loss:3.5296
+ ssim_loss:0.0774
+ Epoch (177)  Loss: l1_loss:0.0113 contrast_loss:3.8617
+ ssim_loss:0.0465
+ Epoch (178)  Loss: l1_loss:0.0160 contrast_loss:1.9944
+ ssim_loss:0.0480
+ Epoch (179)  Loss: l1_loss:0.0175 contrast_loss:2.1563
+ ssim_loss:0.0841
+ Epoch (180)  Loss: l1_loss:0.0135 contrast_loss:2.1865
+ ssim_loss:0.0529
+ Epoch (181)  Loss: l1_loss:0.0132 contrast_loss:2.5515
+ ssim_loss:0.0475
+ Epoch (182)  Loss: l1_loss:0.0126 contrast_loss:2.5967
+ ssim_loss:0.0547
+ Epoch (183)  Loss: l1_loss:0.0137 contrast_loss:2.5238
+ ssim_loss:0.0497
+ Epoch (184)  Loss: l1_loss:0.0106 contrast_loss:2.6576
+ ssim_loss:0.0496
+ Epoch (185)  Loss: l1_loss:0.0138 contrast_loss:2.4981
+ ssim_loss:0.0468
+ Epoch (186)  Loss: l1_loss:0.0129 contrast_loss:2.3971
+ ssim_loss:0.0451
+ Epoch (187)  Loss: l1_loss:0.0163 contrast_loss:2.2706
+ ssim_loss:0.0760
+ Epoch (188)  Loss: l1_loss:0.0122 contrast_loss:2.1610
+ ssim_loss:0.0489
+ Epoch (189)  Loss: l1_loss:0.0122 contrast_loss:2.8953
+ ssim_loss:0.0458
+ Epoch (190)  Loss: l1_loss:0.0151 contrast_loss:1.7103
+ ssim_loss:0.0728
+ Epoch (191)  Loss: l1_loss:0.0114 contrast_loss:1.8041
+ ssim_loss:0.0474
+ Epoch (192)  Loss: l1_loss:0.0121 contrast_loss:2.6808
+ ssim_loss:0.0430
+ Epoch (193)  Loss: l1_loss:0.0170 contrast_loss:1.8723
+ ssim_loss:0.0697
+ Epoch (194)  Loss: l1_loss:0.0345 contrast_loss:2.4365
+ ssim_loss:0.1124
+ Epoch (195)  Loss: l1_loss:0.0150 contrast_loss:2.0218
+ ssim_loss:0.0518
+ Epoch (196)  Loss: l1_loss:0.0130 contrast_loss:2.1022
+ ssim_loss:0.0457
+ Epoch (197)  Loss: l1_loss:0.0138 contrast_loss:3.3044
+ ssim_loss:0.0555
+ Epoch (198)  Loss: l1_loss:0.0153 contrast_loss:3.2704
+ ssim_loss:0.0668
+ Epoch (199)  Loss: l1_loss:0.0147 contrast_loss:4.7694
+ ssim_loss:0.0394
+ Epoch (200)  Loss: l1_loss:0.0127 contrast_loss:2.1102
+ ssim_loss:0.0571
+ Epoch (201)  Loss: l1_loss:0.0159 contrast_loss:4.8273
+ ssim_loss:0.0638
+ Epoch (202)  Loss: l1_loss:0.0099 contrast_loss:1.8292
+ ssim_loss:0.0440
+ Epoch (203)  Loss: l1_loss:0.0126 contrast_loss:1.9403
+ ssim_loss:0.0481
+ Epoch (204)  Loss: l1_loss:0.0130 contrast_loss:2.1010
+ ssim_loss:0.0427
+ Epoch (205)  Loss: l1_loss:0.0134 contrast_loss:2.9497
+ ssim_loss:0.0602
+ Epoch (206)  Loss: l1_loss:0.0134 contrast_loss:2.3839
+ ssim_loss:0.0459
+ Epoch (207)  Loss: l1_loss:0.0144 contrast_loss:2.1300
+ ssim_loss:0.0524
+ Epoch (208)  Loss: l1_loss:0.0116 contrast_loss:2.3608
+ ssim_loss:0.0518
+ Epoch (209)  Loss: l1_loss:0.0147 contrast_loss:2.7199
+ ssim_loss:0.0507
+ Epoch (210)  Loss: l1_loss:0.0118 contrast_loss:2.3202
+ ssim_loss:0.0408
+ Epoch (211)  Loss: l1_loss:0.0131 contrast_loss:2.1958
+ ssim_loss:0.0517
+ Epoch (212)  Loss: l1_loss:0.0122 contrast_loss:2.0207
+ ssim_loss:0.0429
+ Epoch (213)  Loss: l1_loss:0.0121 contrast_loss:1.9808
+ ssim_loss:0.0518
+ Epoch (214)  Loss: l1_loss:0.0123 contrast_loss:2.8437
+ ssim_loss:0.0446
+ Epoch (215)  Loss: l1_loss:0.0145 contrast_loss:2.0380
+ ssim_loss:0.0782
+ Epoch (216)  Loss: l1_loss:0.0138 contrast_loss:2.2536
+ ssim_loss:0.0495
+ Epoch (217)  Loss: l1_loss:0.0114 contrast_loss:2.1147
+ ssim_loss:0.0458
+ Epoch (218)  Loss: l1_loss:0.0120 contrast_loss:2.2599
+ ssim_loss:0.0551
+ Epoch (219)  Loss: l1_loss:0.0124 contrast_loss:2.2743
+ ssim_loss:0.0692
+ Epoch (220)  Loss: l1_loss:0.0117 contrast_loss:3.1042
+ ssim_loss:0.0487
+ Epoch (221)  Loss: l1_loss:0.0285 contrast_loss:2.1396
+ ssim_loss:0.0862
+ Epoch (222)  Loss: l1_loss:0.0122 contrast_loss:2.2128
+ ssim_loss:0.0557
+ Epoch (223)  Loss: l1_loss:0.0123 contrast_loss:2.2626
+ ssim_loss:0.0486
+ Epoch (224)  Loss: l1_loss:0.0126 contrast_loss:2.2320
+ ssim_loss:0.0457
+ Epoch (225)  Loss: l1_loss:0.0106 contrast_loss:1.9689
+ ssim_loss:0.0501
+ Epoch (226)  Loss: l1_loss:0.0130 contrast_loss:3.5899
+ ssim_loss:0.0588
+ Epoch (227)  Loss: l1_loss:0.0123 contrast_loss:2.1243
+ ssim_loss:0.0420
+ Epoch (228)  Loss: l1_loss:0.0108 contrast_loss:2.5574
+ ssim_loss:0.0381
+ Epoch (229)  Loss: l1_loss:0.0114 contrast_loss:2.3336
+ ssim_loss:0.0460
+ Epoch (230)  Loss: l1_loss:0.0116 contrast_loss:2.2337
+ ssim_loss:0.0522
+ Epoch (231)  Loss: l1_loss:0.0109 contrast_loss:1.8705
+ ssim_loss:0.0567
+ Epoch (232)  Loss: l1_loss:0.0106 contrast_loss:2.1398
+ ssim_loss:0.0564
+ Epoch (233)  Loss: l1_loss:0.0103 contrast_loss:2.3494
+ ssim_loss:0.0411
+ Epoch (234)  Loss: l1_loss:0.0113 contrast_loss:2.3035
+ ssim_loss:0.0564
+ Epoch (235)  Loss: l1_loss:0.0119 contrast_loss:1.9674
+ ssim_loss:0.0373
+ Epoch (236)  Loss: l1_loss:0.0115 contrast_loss:1.9150
+ ssim_loss:0.0408
+ Epoch (237)  Loss: l1_loss:0.0117 contrast_loss:2.2173
+ ssim_loss:0.0443
+ Epoch (238)  Loss: l1_loss:0.0122 contrast_loss:1.8112
+ ssim_loss:0.0471
+ Epoch (239)  Loss: l1_loss:0.0343 contrast_loss:2.9351
+ ssim_loss:0.1045
+ Epoch (240)  Loss: l1_loss:0.0129 contrast_loss:2.5692
+ ssim_loss:0.0646
+ Epoch (241)  Loss: l1_loss:0.0129 contrast_loss:2.2425
+ ssim_loss:0.0515
+ Epoch (242)  Loss: l1_loss:0.0108 contrast_loss:2.4084
+ ssim_loss:0.0429
+ Epoch (243)  Loss: l1_loss:0.0116 contrast_loss:2.1963
+ ssim_loss:0.0606
+ Epoch (244)  Loss: l1_loss:0.0118 contrast_loss:1.8251
+ ssim_loss:0.0402
+ Epoch (245)  Loss: l1_loss:0.0108 contrast_loss:2.3163
+ ssim_loss:0.0472
+ Epoch (246)  Loss: l1_loss:0.0094 contrast_loss:1.9877
+ ssim_loss:0.0383
+ Epoch (247)  Loss: l1_loss:0.0114 contrast_loss:1.9413
+ ssim_loss:0.0481
+ Epoch (248)  Loss: l1_loss:0.0117 contrast_loss:2.1053
+ ssim_loss:0.0597
+ Epoch (249)  Loss: l1_loss:0.0115 contrast_loss:2.4486
+ ssim_loss:0.0502
+ Epoch (250)  Loss: l1_loss:0.0110 contrast_loss:1.9758
+ ssim_loss:0.0558
+ Epoch (251)  Loss: l1_loss:0.0125 contrast_loss:2.5166
+ ssim_loss:0.0507
+ Epoch (252)  Loss: l1_loss:0.0122 contrast_loss:2.2188
+ ssim_loss:0.0501
+ Epoch (253)  Loss: l1_loss:0.0107 contrast_loss:1.9952
+ ssim_loss:0.0464
+ Epoch (254)  Loss: l1_loss:0.0117 contrast_loss:2.0134
+ ssim_loss:0.0471
+ Epoch (255)  Loss: l1_loss:0.0115 contrast_loss:3.0168
+ ssim_loss:0.0481
+ Epoch (256)  Loss: l1_loss:0.0111 contrast_loss:2.2991
+ ssim_loss:0.0438
+ Epoch (257)  Loss: l1_loss:0.0111 contrast_loss:2.2441
+ ssim_loss:0.0510
+ Epoch (258)  Loss: l1_loss:0.0122 contrast_loss:2.3825
+ ssim_loss:0.0602
+ Epoch (259)  Loss: l1_loss:0.0110 contrast_loss:2.4970
+ ssim_loss:0.0547
+ Epoch (260)  Loss: l1_loss:0.0096 contrast_loss:2.1047
+ ssim_loss:0.0328
+ Epoch (261)  Loss: l1_loss:0.0128 contrast_loss:2.2555
+ ssim_loss:0.0577
+ Epoch (262)  Loss: l1_loss:0.0114 contrast_loss:3.3058
+ ssim_loss:0.0478
+ Epoch (263)  Loss: l1_loss:0.0114 contrast_loss:1.9946
+ ssim_loss:0.0397
+ Epoch (264)  Loss: l1_loss:0.0132 contrast_loss:2.2151
+ ssim_loss:0.0722
+ Epoch (265)  Loss: l1_loss:0.0109 contrast_loss:1.9783
+ ssim_loss:0.0449
+ Epoch (266)  Loss: l1_loss:0.0097 contrast_loss:1.8725
+ ssim_loss:0.0375
+ Epoch (267)  Loss: l1_loss:0.0131 contrast_loss:2.0158
+ ssim_loss:0.0584
+ Epoch (268)  Loss: l1_loss:0.0122 contrast_loss:2.1922
+ ssim_loss:0.0426
+ Epoch (269)  Loss: l1_loss:0.0117 contrast_loss:1.9329
+ ssim_loss:0.0373
+ Epoch (270)  Loss: l1_loss:0.0142 contrast_loss:2.0987
+ ssim_loss:0.0760
+ Epoch (271)  Loss: l1_loss:0.0103 contrast_loss:1.7870
+ ssim_loss:0.0446
+ Epoch (272)  Loss: l1_loss:0.0098 contrast_loss:2.1641
+ ssim_loss:0.0438
+ Epoch (273)  Loss: l1_loss:0.0115 contrast_loss:2.1857
+ ssim_loss:0.0446
+ Epoch (274)  Loss: l1_loss:0.0117 contrast_loss:2.0168
+ ssim_loss:0.0510
+ Epoch (275)  Loss: l1_loss:0.0106 contrast_loss:2.1459
+ ssim_loss:0.0506
+ Epoch (276)  Loss: l1_loss:0.0143 contrast_loss:2.6014
+ ssim_loss:0.0616
+ Epoch (277)  Loss: l1_loss:0.0125 contrast_loss:2.1301
+ ssim_loss:0.0465
+ Epoch (278)  Loss: l1_loss:0.0105 contrast_loss:1.9920
+ ssim_loss:0.0394
+ Epoch (279)  Loss: l1_loss:0.0118 contrast_loss:2.2599
+ ssim_loss:0.0454
+ Epoch (280)  Loss: l1_loss:0.0122 contrast_loss:2.0696
+ ssim_loss:0.0537
+ Epoch (281)  Loss: l1_loss:0.0128 contrast_loss:2.0232
+ ssim_loss:0.0463
+ Epoch (282)  Loss: l1_loss:0.0103 contrast_loss:2.1511
+ ssim_loss:0.0434
+ Epoch (283)  Loss: l1_loss:0.0114 contrast_loss:1.9559
+ ssim_loss:0.0472
+ Epoch (284)  Loss: l1_loss:0.0131 contrast_loss:2.1394
+ ssim_loss:0.0478
+ Epoch (285)  Loss: l1_loss:0.0109 contrast_loss:2.1547
+ ssim_loss:0.0510
+ Epoch (286)  Loss: l1_loss:0.0110 contrast_loss:2.1091
+ ssim_loss:0.0400
+ Epoch (287)  Loss: l1_loss:0.0118 contrast_loss:2.2582
+ ssim_loss:0.0474
+ Epoch (288)  Loss: l1_loss:0.0121 contrast_loss:2.0704
+ ssim_loss:0.0404
+ Epoch (289)  Loss: l1_loss:0.0105 contrast_loss:2.3523
+ ssim_loss:0.0529
+ Epoch (290)  Loss: l1_loss:0.0102 contrast_loss:2.2798
+ ssim_loss:0.0386
+ Epoch (291)  Loss: l1_loss:0.0107 contrast_loss:2.6903
+ ssim_loss:0.0545
+ Epoch (292)  Loss: l1_loss:0.0100 contrast_loss:2.2697
+ ssim_loss:0.0373
+ Epoch (293)  Loss: l1_loss:0.0105 contrast_loss:2.2126
+ ssim_loss:0.0443
+ Epoch (294)  Loss: l1_loss:0.0090 contrast_loss:2.9570
+ ssim_loss:0.0409
+ Epoch (295)  Loss: l1_loss:0.0118 contrast_loss:1.9582
+ ssim_loss:0.0507
+ Epoch (296)  Loss: l1_loss:0.0117 contrast_loss:3.3273
+ ssim_loss:0.0417
+ Epoch (297)  Loss: l1_loss:0.0114 contrast_loss:2.1797
+ ssim_loss:0.0379
+ Epoch (298)  Loss: l1_loss:0.0138 contrast_loss:1.9655
+ ssim_loss:0.0656
+ Epoch (299)  Loss: l1_loss:0.0111 contrast_loss:2.1697
+ ssim_loss:0.0406
+ Epoch (300)  Loss: l1_loss:0.0150 contrast_loss:2.0140
+ ssim_loss:0.0502
+ Epoch (301)  Loss: l1_loss:0.0105 contrast_loss:1.9692
+ ssim_loss:0.0545
+ Epoch (302)  Loss: l1_loss:0.0104 contrast_loss:2.6458
+ ssim_loss:0.0350
+ Epoch (303)  Loss: l1_loss:0.0129 contrast_loss:1.9650
+ ssim_loss:0.0505
+ Epoch (304)  Loss: l1_loss:0.0108 contrast_loss:1.8420
+ ssim_loss:0.0437
+ Epoch (305)  Loss: l1_loss:0.0127 contrast_loss:2.6566
+ ssim_loss:0.0545
+ Epoch (306)  Loss: l1_loss:0.0087 contrast_loss:2.4492
+ ssim_loss:0.0404
+ Epoch (307)  Loss: l1_loss:0.0138 contrast_loss:2.1185
+ ssim_loss:0.0682
+ Epoch (308)  Loss: l1_loss:0.0112 contrast_loss:2.3363
+ ssim_loss:0.0428
+ Epoch (309)  Loss: l1_loss:0.0101 contrast_loss:1.8844
+ ssim_loss:0.0313
+ Epoch (310)  Loss: l1_loss:0.0105 contrast_loss:2.0889
+ ssim_loss:0.0456
+ Epoch (311)  Loss: l1_loss:0.0102 contrast_loss:2.2495
+ ssim_loss:0.0421
+ Epoch (312)  Loss: l1_loss:0.0127 contrast_loss:2.3229
+ ssim_loss:0.0500
+ Epoch (313)  Loss: l1_loss:0.0086 contrast_loss:2.4378
+ ssim_loss:0.0388
+ Epoch (314)  Loss: l1_loss:0.0126 contrast_loss:2.8119
+ ssim_loss:0.0508
+ Epoch (315)  Loss: l1_loss:0.0115 contrast_loss:1.9956
+ ssim_loss:0.0420
+ Epoch (316)  Loss: l1_loss:0.0141 contrast_loss:2.3028
+ ssim_loss:0.0637
+ Epoch (317)  Loss: l1_loss:0.0106 contrast_loss:5.0836
+ ssim_loss:0.0513
+ Epoch (318)  Loss: l1_loss:0.0117 contrast_loss:2.0810
+ ssim_loss:0.0434
+ Epoch (319)  Loss: l1_loss:0.0101 contrast_loss:2.0960
+ ssim_loss:0.0470
+ Epoch (320)  Loss: l1_loss:0.0133 contrast_loss:2.2105
+ ssim_loss:0.0800
+ Epoch (321)  Loss: l1_loss:0.0124 contrast_loss:2.1436
+ ssim_loss:0.0598
+ Epoch (322)  Loss: l1_loss:0.0133 contrast_loss:2.0201
+ ssim_loss:0.0650
+ Epoch (323)  Loss: l1_loss:0.0116 contrast_loss:2.6176
+ ssim_loss:0.0523
+ Epoch (324)  Loss: l1_loss:0.0099 contrast_loss:2.1164
+ ssim_loss:0.0494
+ Epoch (325)  Loss: l1_loss:0.0127 contrast_loss:2.2375
+ ssim_loss:0.0620
+ Epoch (326)  Loss: l1_loss:0.0112 contrast_loss:2.2567
+ ssim_loss:0.0362
+ Epoch (327)  Loss: l1_loss:0.0120 contrast_loss:2.2439
+ ssim_loss:0.0454
+ Epoch (328)  Loss: l1_loss:0.0098 contrast_loss:2.2943
+ ssim_loss:0.0443
+ Epoch (329)  Loss: l1_loss:0.0098 contrast_loss:7.3335
+ ssim_loss:0.0365
+ Epoch (330)  Loss: l1_loss:0.0103 contrast_loss:2.3600
+ ssim_loss:0.0421
+ Epoch (331)  Loss: l1_loss:0.0121 contrast_loss:2.2526
+ ssim_loss:0.0567
+ Epoch (332)  Loss: l1_loss:0.0115 contrast_loss:2.5801
+ ssim_loss:0.0424
+ Epoch (333)  Loss: l1_loss:0.0108 contrast_loss:2.0792
+ ssim_loss:0.0518
+ Epoch (334)  Loss: l1_loss:0.0113 contrast_loss:2.3377
+ ssim_loss:0.0385
+ Epoch (335)  Loss: l1_loss:0.0098 contrast_loss:1.7413
+ ssim_loss:0.0465
+ Epoch (336)  Loss: l1_loss:0.0108 contrast_loss:3.2706
+ ssim_loss:0.0450
+ Epoch (337)  Loss: l1_loss:0.0132 contrast_loss:4.5631
+ ssim_loss:0.0562
+ Epoch (338)  Loss: l1_loss:0.0137 contrast_loss:2.1508
+ ssim_loss:0.0565
+ Epoch (339)  Loss: l1_loss:0.0114 contrast_loss:2.2555
+ ssim_loss:0.0563
+ Epoch (340)  Loss: l1_loss:0.0111 contrast_loss:2.0628
+ ssim_loss:0.0480
+ Epoch (341)  Loss: l1_loss:0.0102 contrast_loss:1.9058
+ ssim_loss:0.0576
+ Epoch (342)  Loss: l1_loss:0.0117 contrast_loss:2.2211
+ ssim_loss:0.0364
+ Epoch (343)  Loss: l1_loss:0.0171 contrast_loss:2.3425
+ ssim_loss:0.0722
+ Epoch (344)  Loss: l1_loss:0.0104 contrast_loss:2.0964
+ ssim_loss:0.0483
+ Epoch (345)  Loss: l1_loss:0.0106 contrast_loss:2.1517
+ ssim_loss:0.0483
+ Epoch (346)  Loss: l1_loss:0.0097 contrast_loss:2.1612
+ ssim_loss:0.0447
+ Epoch (347)  Loss: l1_loss:0.0098 contrast_loss:2.8956
+ ssim_loss:0.0409
+ Epoch (348)  Loss: l1_loss:0.0115 contrast_loss:2.1962
+ ssim_loss:0.0571
+ Epoch (349)  Loss: l1_loss:0.0118 contrast_loss:2.0058
+ ssim_loss:0.0568
+ Epoch (350)  Loss: l1_loss:0.0100 contrast_loss:2.0039
+ ssim_loss:0.0525
+ Epoch (351)  Loss: l1_loss:0.0112 contrast_loss:1.9182
+ ssim_loss:0.0453
+ Epoch (352)  Loss: l1_loss:0.0125 contrast_loss:2.0907
+ ssim_loss:0.0619
+ Epoch (353)  Loss: l1_loss:0.0124 contrast_loss:2.4505
+ ssim_loss:0.0638
+ Epoch (354)  Loss: l1_loss:0.0098 contrast_loss:2.5244
+ ssim_loss:0.0479
+ Epoch (355)  Loss: l1_loss:0.0118 contrast_loss:4.7209
+ ssim_loss:0.0587
+ Epoch (356)  Loss: l1_loss:0.0101 contrast_loss:2.2493
+ ssim_loss:0.0547
+ Epoch (357)  Loss: l1_loss:0.0115 contrast_loss:2.2054
+ ssim_loss:0.0681
+ Epoch (358)  Loss: l1_loss:0.0091 contrast_loss:2.2989
+ ssim_loss:0.0343
+ Epoch (359)  Loss: l1_loss:0.0099 contrast_loss:2.0452
+ ssim_loss:0.0373
+ Epoch (360)  Loss: l1_loss:0.0102 contrast_loss:2.6840
+ ssim_loss:0.0417
+ Epoch (361)  Loss: l1_loss:0.0102 contrast_loss:1.9111
+ ssim_loss:0.0399
+ Epoch (362)  Loss: l1_loss:0.0123 contrast_loss:3.8953
+ ssim_loss:0.0595
+ Epoch (363)  Loss: l1_loss:0.0092 contrast_loss:4.6535
+ ssim_loss:0.0382
+ Epoch (364)  Loss: l1_loss:0.0129 contrast_loss:2.2406
+ ssim_loss:0.0652
+ Epoch (365)  Loss: l1_loss:0.0113 contrast_loss:1.9545
+ ssim_loss:0.0429
+ Epoch (366)  Loss: l1_loss:0.0105 contrast_loss:1.9703
+ ssim_loss:0.0472
+ Epoch (367)  Loss: l1_loss:0.0119 contrast_loss:2.5650
+ ssim_loss:0.0601
+ Epoch (368)  Loss: l1_loss:0.0098 contrast_loss:3.3778
+ ssim_loss:0.0473
+ Epoch (369)  Loss: l1_loss:0.0094 contrast_loss:2.2470
+ ssim_loss:0.0426
+ Epoch (370)  Loss: l1_loss:0.0108 contrast_loss:4.1884
+ ssim_loss:0.0485
+ Epoch (371)  Loss: l1_loss:0.0109 contrast_loss:2.2884
+ ssim_loss:0.0437
+ Epoch (372)  Loss: l1_loss:0.0111 contrast_loss:2.0023
+ ssim_loss:0.0504
+ Epoch (373)  Loss: l1_loss:0.0104 contrast_loss:1.8076
+ ssim_loss:0.0464
+ Epoch (374)  Loss: l1_loss:0.0123 contrast_loss:1.9518
+ ssim_loss:0.0675
+ Epoch (375)  Loss: l1_loss:0.0097 contrast_loss:1.9310
+ ssim_loss:0.0532
+ Epoch (376)  Loss: l1_loss:0.0096 contrast_loss:1.6495
+ ssim_loss:0.0476
+ Epoch (377)  Loss: l1_loss:0.0108 contrast_loss:2.4497
+ ssim_loss:0.0477
+ Epoch (378)  Loss: l1_loss:0.0115 contrast_loss:2.0798
+ ssim_loss:0.0526
+ Epoch (379)  Loss: l1_loss:0.0135 contrast_loss:1.8376
+ ssim_loss:0.0651
+ Epoch (380)  Loss: l1_loss:0.0107 contrast_loss:2.0599
+ ssim_loss:0.0380
+ Epoch (381)  Loss: l1_loss:0.0117 contrast_loss:2.0759
+ ssim_loss:0.0505
+ Epoch (382)  Loss: l1_loss:0.0128 contrast_loss:1.9992
+ ssim_loss:0.0584
+ Epoch (383)  Loss: l1_loss:0.0095 contrast_loss:3.4249
+ ssim_loss:0.0428
+ Epoch (384)  Loss: l1_loss:0.0092 contrast_loss:2.8996
+ ssim_loss:0.0361
+ Epoch (385)  Loss: l1_loss:0.0146 contrast_loss:2.1315
+ ssim_loss:0.0675
+ Epoch (386)  Loss: l1_loss:0.0114 contrast_loss:2.0509
+ ssim_loss:0.0474
+ Epoch (387)  Loss: l1_loss:0.0128 contrast_loss:2.1119
+ ssim_loss:0.0619
+ Epoch (388)  Loss: l1_loss:0.0109 contrast_loss:2.8688
+ ssim_loss:0.0404
+ Epoch (389)  Loss: l1_loss:0.0089 contrast_loss:2.4891
+ ssim_loss:0.0389
+ Epoch (390)  Loss: l1_loss:0.0104 contrast_loss:1.9852
+ ssim_loss:0.0392
+ Epoch (391)  Loss: l1_loss:0.0127 contrast_loss:2.0056
+ ssim_loss:0.0612
+ Epoch (392)  Loss: l1_loss:0.0103 contrast_loss:2.3043
+ ssim_loss:0.0461
+ Epoch (393)  Loss: l1_loss:0.0108 contrast_loss:2.3586
+ ssim_loss:0.0372
+ Epoch (394)  Loss: l1_loss:0.0098 contrast_loss:1.9249
+ ssim_loss:0.0444
+ Epoch (395)  Loss: l1_loss:0.0118 contrast_loss:1.9559
+ ssim_loss:0.0412
+ Epoch (396)  Loss: l1_loss:0.0097 contrast_loss:2.1476
+ ssim_loss:0.0493
+ Epoch (397)  Loss: l1_loss:0.0110 contrast_loss:2.3992
+ ssim_loss:0.0457
+ Epoch (398)  Loss: l1_loss:0.0131 contrast_loss:2.0798
+ ssim_loss:0.0609
+ Epoch (399)  Loss: l1_loss:0.0100 contrast_loss:2.0725
+ ssim_loss:0.0511
+ Epoch (400)  Loss: l1_loss:0.0105 contrast_loss:2.1355
+ ssim_loss:0.0345
+ Epoch (401)  Loss: l1_loss:0.0099 contrast_loss:2.2429
+ ssim_loss:0.0397
+ Epoch (402)  Loss: l1_loss:0.0102 contrast_loss:2.1370
+ ssim_loss:0.0413
+ Epoch (403)  Loss: l1_loss:0.0109 contrast_loss:1.9837
+ ssim_loss:0.0497
+ Epoch (404)  Loss: l1_loss:0.0106 contrast_loss:2.4975
+ ssim_loss:0.0439
+ Epoch (405)  Loss: l1_loss:0.0117 contrast_loss:2.2179
+ ssim_loss:0.0580
+ Epoch (406)  Loss: l1_loss:0.0105 contrast_loss:2.1043
+ ssim_loss:0.0466
+ Epoch (407)  Loss: l1_loss:0.0135 contrast_loss:2.0952
+ ssim_loss:0.0595
+ Epoch (408)  Loss: l1_loss:0.0093 contrast_loss:2.0436
+ ssim_loss:0.0359
+ Epoch (409)  Loss: l1_loss:0.0124 contrast_loss:2.0280
+ ssim_loss:0.0447
+ Epoch (410)  Loss: l1_loss:0.0101 contrast_loss:2.1031
+ ssim_loss:0.0397
+ Epoch (411)  Loss: l1_loss:0.0134 contrast_loss:2.1399
+ ssim_loss:0.0577
+ Epoch (412)  Loss: l1_loss:0.0111 contrast_loss:2.0098
+ ssim_loss:0.0421
+ Epoch (413)  Loss: l1_loss:0.0097 contrast_loss:2.1436
+ ssim_loss:0.0400
+ Epoch (414)  Loss: l1_loss:0.0124 contrast_loss:2.2552
+ ssim_loss:0.0616
+ Epoch (415)  Loss: l1_loss:0.0107 contrast_loss:2.3289
+ ssim_loss:0.0365
+ Epoch (416)  Loss: l1_loss:0.0131 contrast_loss:2.1026
+ ssim_loss:0.0698
+ Epoch (417)  Loss: l1_loss:0.0096 contrast_loss:1.9314
+ ssim_loss:0.0405
+ Epoch (418)  Loss: l1_loss:0.0110 contrast_loss:2.7459
+ ssim_loss:0.0442
+ Epoch (419)  Loss: l1_loss:0.0108 contrast_loss:2.1337
+ ssim_loss:0.0494
+ Epoch (420)  Loss: l1_loss:0.0103 contrast_loss:2.0817
+ ssim_loss:0.0460
+ Epoch (421)  Loss: l1_loss:0.0136 contrast_loss:2.6022
+ ssim_loss:0.0633
+ Epoch (422)  Loss: l1_loss:0.0098 contrast_loss:2.4475
+ ssim_loss:0.0439
+ Epoch (423)  Loss: l1_loss:0.0113 contrast_loss:2.3786
+ ssim_loss:0.0573
+ Epoch (424)  Loss: l1_loss:0.0102 contrast_loss:2.0511
+ ssim_loss:0.0440
+ Epoch (425)  Loss: l1_loss:0.0095 contrast_loss:2.2083
+ ssim_loss:0.0435
+ Epoch (426)  Loss: l1_loss:0.0099 contrast_loss:2.3491
+ ssim_loss:0.0429
+ Epoch (427)  Loss: l1_loss:0.0117 contrast_loss:2.1555
+ ssim_loss:0.0433
+ Epoch (428)  Loss: l1_loss:0.0110 contrast_loss:2.4642
+ ssim_loss:0.0449
+ Epoch (429)  Loss: l1_loss:0.0111 contrast_loss:2.4452
+ ssim_loss:0.0467
+ Epoch (430)  Loss: l1_loss:0.0101 contrast_loss:2.1253
+ ssim_loss:0.0497
+ Epoch (431)  Loss: l1_loss:0.0093 contrast_loss:1.9292
+ ssim_loss:0.0316
+ Epoch (432)  Loss: l1_loss:0.0105 contrast_loss:2.2138
+ ssim_loss:0.0353
+ Epoch (433)  Loss: l1_loss:0.0109 contrast_loss:2.1309
+ ssim_loss:0.0550
+ Epoch (434)  Loss: l1_loss:0.0090 contrast_loss:1.9022
+ ssim_loss:0.0469
+ Epoch (435)  Loss: l1_loss:0.0102 contrast_loss:2.4373
+ ssim_loss:0.0347
+ Epoch (436)  Loss: l1_loss:0.0105 contrast_loss:1.9255
+ ssim_loss:0.0563
+ Epoch (437)  Loss: l1_loss:0.0108 contrast_loss:2.2424
+ ssim_loss:0.0420
+ Epoch (438)  Loss: l1_loss:0.0138 contrast_loss:2.3128
+ ssim_loss:0.0703
+ Epoch (439)  Loss: l1_loss:0.0107 contrast_loss:2.0284
+ ssim_loss:0.0560
+ Epoch (440)  Loss: l1_loss:0.0108 contrast_loss:4.9065
+ ssim_loss:0.0387
+ Epoch (441)  Loss: l1_loss:0.0110 contrast_loss:2.0741
+ ssim_loss:0.0349
+ Epoch (442)  Loss: l1_loss:0.0106 contrast_loss:2.5632
+ ssim_loss:0.0483
+ Epoch (443)  Loss: l1_loss:0.0113 contrast_loss:1.9245
+ ssim_loss:0.0628
+ Epoch (444)  Loss: l1_loss:0.0126 contrast_loss:1.8074
+ ssim_loss:0.0553
+ Epoch (445)  Loss: l1_loss:0.0099 contrast_loss:4.5103
+ ssim_loss:0.0431
+ Epoch (446)  Loss: l1_loss:0.0102 contrast_loss:2.3161
+ ssim_loss:0.0412
+ Epoch (447)  Loss: l1_loss:0.0105 contrast_loss:2.1384
+ ssim_loss:0.0444
+ Epoch (448)  Loss: l1_loss:0.0098 contrast_loss:2.0334
+ ssim_loss:0.0389
+ Epoch (449)  Loss: l1_loss:0.0096 contrast_loss:1.9679
+ ssim_loss:0.0437
+ Epoch (450)  Loss: l1_loss:0.0112 contrast_loss:2.5484
+ ssim_loss:0.0488
+ Epoch (451)  Loss: l1_loss:0.0098 contrast_loss:2.1175
+ ssim_loss:0.0531
+ Epoch (452)  Loss: l1_loss:0.0102 contrast_loss:3.3220
+ ssim_loss:0.0357
+ Epoch (453)  Loss: l1_loss:0.0128 contrast_loss:2.2651
+ ssim_loss:0.0553
+ Epoch (454)  Loss: l1_loss:0.0104 contrast_loss:2.2816
+ ssim_loss:0.0440
+ Epoch (455)  Loss: l1_loss:0.0098 contrast_loss:2.2896
+ ssim_loss:0.0353
+ Epoch (456)  Loss: l1_loss:0.0105 contrast_loss:2.3510
+ ssim_loss:0.0400
+ Epoch (457)  Loss: l1_loss:0.0111 contrast_loss:2.0226
+ ssim_loss:0.0524
+ Epoch (458)  Loss: l1_loss:0.0102 contrast_loss:2.1901
+ ssim_loss:0.0441
+ Epoch (459)  Loss: l1_loss:0.0104 contrast_loss:2.4913
+ ssim_loss:0.0480
+ Epoch (460)  Loss: l1_loss:0.0118 contrast_loss:2.3999
+ ssim_loss:0.0437
+ Epoch (461)  Loss: l1_loss:0.0098 contrast_loss:3.3383
+ ssim_loss:0.0382
+ Epoch (462)  Loss: l1_loss:0.0111 contrast_loss:2.5964
+ ssim_loss:0.0539
+ Epoch (463)  Loss: l1_loss:0.0091 contrast_loss:2.1686
+ ssim_loss:0.0476
+ Epoch (464)  Loss: l1_loss:0.0093 contrast_loss:2.3663
+ ssim_loss:0.0317
+ Epoch (465)  Loss: l1_loss:0.0096 contrast_loss:2.7565
+ ssim_loss:0.0439
+ Epoch (466)  Loss: l1_loss:0.0097 contrast_loss:1.9748
+ ssim_loss:0.0356
+ Epoch (467)  Loss: l1_loss:0.0106 contrast_loss:2.1118
+ ssim_loss:0.0350
+ Epoch (468)  Loss: l1_loss:0.0088 contrast_loss:3.2929
+ ssim_loss:0.0467
+ Epoch (469)  Loss: l1_loss:0.0109 contrast_loss:2.5674
+ ssim_loss:0.0400
+ Epoch (470)  Loss: l1_loss:0.0124 contrast_loss:2.2367
+ ssim_loss:0.0477
+ Epoch (471)  Loss: l1_loss:0.0099 contrast_loss:2.2399
+ ssim_loss:0.0451
+ Epoch (472)  Loss: l1_loss:0.0114 contrast_loss:2.2074
+ ssim_loss:0.0447
+ Epoch (473)  Loss: l1_loss:0.0127 contrast_loss:2.3449
+ ssim_loss:0.0659
+ Epoch (474)  Loss: l1_loss:0.0129 contrast_loss:2.1703
+ ssim_loss:0.0620
+ Epoch (475)  Loss: l1_loss:0.0094 contrast_loss:2.1326
+ ssim_loss:0.0333
+ Epoch (476)  Loss: l1_loss:0.0090 contrast_loss:1.9101
+ ssim_loss:0.0484
+ Epoch (477)  Loss: l1_loss:0.0105 contrast_loss:2.2066
+ ssim_loss:0.0484
+ Epoch (478)  Loss: l1_loss:0.0102 contrast_loss:2.0757
+ ssim_loss:0.0380
+ Epoch (479)  Loss: l1_loss:0.0118 contrast_loss:1.8332
+ ssim_loss:0.0417
+ Epoch (480)  Loss: l1_loss:0.0102 contrast_loss:2.3117
+ ssim_loss:0.0520
+ Epoch (481)  Loss: l1_loss:0.0114 contrast_loss:2.2739
+ ssim_loss:0.0491
+ Epoch (482)  Loss: l1_loss:0.0082 contrast_loss:2.7047
+ ssim_loss:0.0352
+ Epoch (483)  Loss: l1_loss:0.0100 contrast_loss:2.1320
+ ssim_loss:0.0437
+ Epoch (484)  Loss: l1_loss:0.0096 contrast_loss:1.7069
+ ssim_loss:0.0341
+ Epoch (485)  Loss: l1_loss:0.0125 contrast_loss:2.4403
+ ssim_loss:0.0570
+ Epoch (486)  Loss: l1_loss:0.0116 contrast_loss:2.4573
+ ssim_loss:0.0519
+ Epoch (487)  Loss: l1_loss:0.0081 contrast_loss:2.4200
+ ssim_loss:0.0387
+ Epoch (488)  Loss: l1_loss:0.0102 contrast_loss:2.2577
+ ssim_loss:0.0410
+ Epoch (489)  Loss: l1_loss:0.0102 contrast_loss:2.1348
+ ssim_loss:0.0440
+ Epoch (490)  Loss: l1_loss:0.0097 contrast_loss:2.1012
+ ssim_loss:0.0360
+ Epoch (491)  Loss: l1_loss:0.0094 contrast_loss:1.7766
+ ssim_loss:0.0346
+ Epoch (492)  Loss: l1_loss:0.0098 contrast_loss:1.8260
+ ssim_loss:0.0474
+ Epoch (493)  Loss: l1_loss:0.0106 contrast_loss:1.9974
+ ssim_loss:0.0459
+ Epoch (494)  Loss: l1_loss:0.0112 contrast_loss:1.8928
+ ssim_loss:0.0484
+ Epoch (495)  Loss: l1_loss:0.0099 contrast_loss:2.2186
+ ssim_loss:0.0465
+ Epoch (496)  Loss: l1_loss:0.0103 contrast_loss:1.9936
+ ssim_loss:0.0414
+ Epoch (497)  Loss: l1_loss:0.0097 contrast_loss:1.9778
+ ssim_loss:0.0417
+ Epoch (498)  Loss: l1_loss:0.0091 contrast_loss:2.4047
+ ssim_loss:0.0301
+ Epoch (499)  Loss: l1_loss:0.0104 contrast_loss:2.3195
+ ssim_loss:0.0360
+ Epoch (500)  Loss: l1_loss:0.0102 contrast_loss:2.6942
+ ssim_loss:0.0455
+ Epoch (501)  Loss: l1_loss:0.0101 contrast_loss:2.1231
+ ssim_loss:0.0340
+ Epoch (502)  Loss: l1_loss:0.0098 contrast_loss:2.0070
+ ssim_loss:0.0410
+ Epoch (503)  Loss: l1_loss:0.0123 contrast_loss:2.6466
+ ssim_loss:0.0702
+ Epoch (504)  Loss: l1_loss:0.0101 contrast_loss:2.0291
+ ssim_loss:0.0432
+ Epoch (505)  Loss: l1_loss:0.0116 contrast_loss:2.1110
+ ssim_loss:0.0605
+ Epoch (506)  Loss: l1_loss:0.0093 contrast_loss:2.3236
+ ssim_loss:0.0558
+ Epoch (507)  Loss: l1_loss:0.0110 contrast_loss:2.2562
+ ssim_loss:0.0704
+ Epoch (508)  Loss: l1_loss:0.0123 contrast_loss:1.9952
+ ssim_loss:0.0599
+ Epoch (509)  Loss: l1_loss:0.0134 contrast_loss:2.8447
+ ssim_loss:0.0583
+ Epoch (510)  Loss: l1_loss:0.0099 contrast_loss:2.2239
+ ssim_loss:0.0513
+ Epoch (511)  Loss: l1_loss:0.0123 contrast_loss:2.2125
+ ssim_loss:0.0593
+ Epoch (512)  Loss: l1_loss:0.0107 contrast_loss:3.5509
+ ssim_loss:0.0493
+ Epoch (513)  Loss: l1_loss:0.0107 contrast_loss:2.8470
+ ssim_loss:0.0488
+ Epoch (514)  Loss: l1_loss:0.0090 contrast_loss:2.2069
+ ssim_loss:0.0351
+ Epoch (515)  Loss: l1_loss:0.0088 contrast_loss:2.2321
+ ssim_loss:0.0311
+ Epoch (516)  Loss: l1_loss:0.0093 contrast_loss:1.8544
+ ssim_loss:0.0323
+ Epoch (517)  Loss: l1_loss:0.0090 contrast_loss:2.4140
+ ssim_loss:0.0453
+ Epoch (518)  Loss: l1_loss:0.0098 contrast_loss:2.2119
+ ssim_loss:0.0383
+ 

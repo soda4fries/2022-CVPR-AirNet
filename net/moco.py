@@ -16,6 +16,8 @@ class MoCo(nn.Module):
         T: softmax temperature (default: 0.07)
         """
         super(MoCo, self).__init__()
+        
+        print(base_encoder)
 
         self.K = K
         self.m = m

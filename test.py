@@ -1,5 +1,7 @@
 import argparse
+import shutil
 import subprocess
+import tempfile
 from tqdm import tqdm
 import numpy as np
 
@@ -13,9 +15,13 @@ from utils.image_io import save_image_tensor
 from net.model import AirNet
 
 
-def test_Denoise(net, dataset, sigma=15):
-    output_path = opt.output_path + 'denoise/' + str(sigma) + '/'
-    subprocess.check_output(['mkdir', '-p', output_path])
+def test_Denoise(net, dataset, sigma=15, is_val=False):
+    if not is_val:
+        output_path = opt.output_path + 'denoise/' + str(sigma) + '/'
+        subprocess.check_output(['mkdir', '-p', output_path])
+    else:
+        output_path = tempfile.mkdtemp()
+        subprocess.check_output(['mkdir', '-p', output_path])
 
     dataset.set_sigma(sigma)
     testloader = DataLoader(dataset, batch_size=1, pin_memory=True, shuffle=False, num_workers=0)
@@ -35,7 +41,11 @@ def test_Denoise(net, dataset, sigma=15):
 
             save_image_tensor(restored, output_path + clean_name[0] + '.png')
 
-        print("Deonise sigma=%d: psnr: %.2f, ssim: %.4f" % (sigma, psnr.avg, ssim.avg))
+        if is_val:
+            shutil.rmtree(output_path)
+        print("Denoise sigma=%d: psnr: %.2f, ssim: %.4f" % (sigma, psnr.avg, ssim.avg))
+        return psnr.avg, ssim.avg
+    
 
 
 def test_Derain_Dehaze(net, dataset, task="derain"):
@@ -51,8 +61,11 @@ def test_Derain_Dehaze(net, dataset, task="derain"):
     with torch.no_grad():
         for ([degraded_name], degrad_patch, clean_patch) in tqdm(testloader):
             degrad_patch, clean_patch = degrad_patch.cuda(), clean_patch.cuda()
+            
+            
 
             restored = net(x_query=degrad_patch, x_key=degrad_patch)
+            
             temp_psnr, temp_ssim, N = compute_psnr_ssim(restored, clean_patch)
             psnr.update(temp_psnr, N)
             ssim.update(temp_ssim, N)
@@ -60,6 +73,26 @@ def test_Derain_Dehaze(net, dataset, task="derain"):
             save_image_tensor(restored, output_path + degraded_name[0] + '.png')
 
         print("PSNR: %.2f, SSIM: %.4f" % (psnr.avg, ssim.avg))
+        
+        
+from types import SimpleNamespace
+
+def modular_denoising_test(net, dataset_path):
+    net.eval()
+    
+    args = SimpleNamespace()
+    args.denoise_path = dataset_path
+
+    
+    denoise_set = DenoiseTestDataset(args)
+    
+
+
+    x,y = test_Denoise(net, denoise_set, sigma=50, is_val=True)
+    net.train()
+    return x,y
+
+
 
 
 if __name__ == '__main__':
@@ -79,19 +112,21 @@ if __name__ == '__main__':
     np.random.seed(0)
     torch.manual_seed(0)
     torch.cuda.set_device(opt.cuda)
+    
+    ckpt_path = opt.ckpt_path
 
     if opt.mode == 0:
         opt.batch_size = 3
-        ckpt_path = opt.ckpt_path + 'Denoise.pth'
+        #ckpt_path = opt.ckpt_path + 'Denoise.pth'
     elif opt.mode == 1:
         opt.batch_size = 1
-        ckpt_path = opt.ckpt_path + 'Derain.pth'
+        #ckpt_path = opt.ckpt_path + 'Derain.pth'
     elif opt.mode == 2:
         opt.batch_size = 1
-        ckpt_path = opt.ckpt_path + 'Dehaze.pth'
+        #ckpt_path = opt.ckpt_path + 'Dehaze.pth'
     elif opt.mode == 3:
         opt.batch_size = 5
-        ckpt_path = opt.ckpt_path + 'All.pth'
+        #ckpt_path = opt.ckpt_path + 'All.pth'
 
     denoise_set = DenoiseTestDataset(opt)
     derain_set = DerainDehazeDataset(opt)
@@ -131,3 +166,6 @@ if __name__ == '__main__':
 
         print('Start testing SOTS...')
         test_Derain_Dehaze(net, derain_set, task="dehaze")
+        
+        
+        

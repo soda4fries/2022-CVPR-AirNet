@@ -228,12 +228,14 @@ class DerainDehazeDataset(Dataset):
         self.length = len(self.ids)
 
     def _get_gt_path(self, degraded_name):
+        
         if self.task_idx == 0:
             gt_name = degraded_name.replace("input", "target")
         elif self.task_idx == 1:
             dir_name = degraded_name.split("input")[0] + 'target/'
             name = degraded_name.split('/')[-1].split('_')[0] + '.png'
             gt_name = dir_name + name
+            
         return gt_name
 
     def set_dataset(self, task):

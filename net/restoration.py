@@ -349,10 +349,14 @@ class PromptIR(nn.Module):
         bias = False,
         LayerNorm_type = 'WithBias',   ## Other option 'BiasFree'
         decoder = True,
+        wavelet_dim=256
+        
     
     ):
 
         super(PromptIR, self).__init__()
+        
+        print(f'Decoder: {decoder}')
 
         self.patch_embed = OverlapPatchEmbed(inp_channels, dim)
         
@@ -418,7 +422,7 @@ class PromptIR(nn.Module):
         self.refinement = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_refinement_blocks)])
                     
         self.output = nn.Conv2d(int(dim*2**1), out_channels, kernel_size=3, stride=1, padding=1, bias=bias)
-        print(f'dim = {dim}')
+        #print(f'dim = {dim}')
 
     def forward(self, inp_img,noise_emb = None):
         

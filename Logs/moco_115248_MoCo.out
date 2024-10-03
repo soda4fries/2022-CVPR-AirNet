@@ -1,0 +1,15 @@
+no change     /app/miniconda/24.7.1/condabin/conda
+no change     /app/miniconda/24.7.1/bin/conda
+no change     /app/miniconda/24.7.1/bin/conda-env
+no change     /app/miniconda/24.7.1/bin/activate
+no change     /app/miniconda/24.7.1/bin/deactivate
+no change     /app/miniconda/24.7.1/etc/profile.d/conda.sh
+no change     /app/miniconda/24.7.1/etc/fish/conf.d/conda.fish
+no change     /app/miniconda/24.7.1/shell/condabin/Conda.psm1
+no change     /app/miniconda/24.7.1/shell/condabin/conda-hook.ps1
+no change     /app/miniconda/24.7.1/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /app/miniconda/24.7.1/etc/profile.d/conda.csh
+modified      /home/user/mahdinur/.bashrc
+
+==> For changes to take effect, close and re-open your current shell. <==
+

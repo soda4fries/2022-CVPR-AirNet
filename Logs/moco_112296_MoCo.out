@@ -1,0 +1,53 @@
+no change     /app/miniconda/24.7.1/condabin/conda
+no change     /app/miniconda/24.7.1/bin/conda
+no change     /app/miniconda/24.7.1/bin/conda-env
+no change     /app/miniconda/24.7.1/bin/activate
+no change     /app/miniconda/24.7.1/bin/deactivate
+no change     /app/miniconda/24.7.1/etc/profile.d/conda.sh
+no change     /app/miniconda/24.7.1/etc/fish/conf.d/conda.fish
+no change     /app/miniconda/24.7.1/shell/condabin/Conda.psm1
+no change     /app/miniconda/24.7.1/shell/condabin/conda-hook.ps1
+no change     /app/miniconda/24.7.1/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /app/miniconda/24.7.1/etc/profile.d/conda.csh
+no change     /home/user/mahdinur/.bashrc
+No action taken.
+Start training...
+Epoch (0)  Loss: contrast_loss:6.0258
+ Epoch (1)  Loss: contrast_loss:5.7948
+ Epoch (2)  Loss: contrast_loss:5.5714
+ Epoch (3)  Loss: contrast_loss:5.4500
+ Epoch (4)  Loss: contrast_loss:5.4928
+ Epoch (5)  Loss: contrast_loss:5.4008
+ Epoch (6)  Loss: contrast_loss:5.3116
+ Epoch (7)  Loss: contrast_loss:5.1781
+ Epoch (8)  Loss: contrast_loss:5.2971
+ Epoch (9)  Loss: contrast_loss:5.1849
+ Epoch (10)  Loss: contrast_loss:5.2010
+ Epoch (11)  Loss: contrast_loss:5.1481
+ Epoch (12)  Loss: contrast_loss:5.1405
+ Epoch (13)  Loss: contrast_loss:5.1716
+ Epoch (14)  Loss: contrast_loss:5.1379
+ Epoch (15)  Loss: contrast_loss:5.1595
+ Epoch (16)  Loss: contrast_loss:5.1070
+ Epoch (17)  Loss: contrast_loss:5.1694
+ Epoch (18)  Loss: contrast_loss:5.0260
+ Epoch (19)  Loss: contrast_loss:4.9634
+ Epoch (20)  Loss: contrast_loss:4.9660
+ Epoch (21)  Loss: contrast_loss:4.9805
+ Epoch (22)  Loss: contrast_loss:5.0189
+ Epoch (23)  Loss: contrast_loss:5.0508
+ Epoch (24)  Loss: contrast_loss:5.0264
+ Epoch (25)  Loss: contrast_loss:4.9483
+ Epoch (26)  Loss: contrast_loss:4.8621
+ Epoch (27)  Loss: contrast_loss:4.8644
+ Epoch (28)  Loss: contrast_loss:4.8282
+ Epoch (29)  Loss: contrast_loss:4.8684
+ Epoch (30)  Loss: contrast_loss:4.8649
+ Epoch (31)  Loss: contrast_loss:4.8760
+ Epoch (32)  Loss: contrast_loss:4.7626
+ Epoch (33)  Loss: contrast_loss:4.7970
+ Epoch (34)  Loss: contrast_loss:4.8431
+ Epoch (35)  Loss: contrast_loss:4.7415
+ Epoch (36)  Loss: contrast_loss:4.8410
+ Epoch (37)  Loss: contrast_loss:4.7492
+ 

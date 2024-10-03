@@ -12,11 +12,9 @@
 #SBATCH --qos=long
 #SBATCH --time=48:00:00 
 
-module load anaconda3
+module load miniconda
 
-conda init bash
-
-source ~/.bashrc
+source /app/miniconda/24.1.2/etc/profile.d/conda.sh
 
 conda activate CFP
 

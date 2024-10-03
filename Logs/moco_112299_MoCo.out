@@ -1,0 +1,121 @@
+no change     /app/miniconda/24.7.1/condabin/conda
+no change     /app/miniconda/24.7.1/bin/conda
+no change     /app/miniconda/24.7.1/bin/conda-env
+no change     /app/miniconda/24.7.1/bin/activate
+no change     /app/miniconda/24.7.1/bin/deactivate
+no change     /app/miniconda/24.7.1/etc/profile.d/conda.sh
+no change     /app/miniconda/24.7.1/etc/fish/conf.d/conda.fish
+no change     /app/miniconda/24.7.1/shell/condabin/Conda.psm1
+no change     /app/miniconda/24.7.1/shell/condabin/conda-hook.ps1
+no change     /app/miniconda/24.7.1/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /app/miniconda/24.7.1/etc/profile.d/conda.csh
+no change     /home/user/mahdinur/.bashrc
+No action taken.
+Decoder: False
+<class 'net.fre2.WaveletResNet'>
+Start training...
+Epoch (0)  Loss: contrast_loss:5.9875
+ Epoch (1)  Loss: contrast_loss:5.7608
+ Epoch (2)  Loss: contrast_loss:5.6449
+ Epoch (3)  Loss: contrast_loss:5.5406
+ Epoch (4)  Loss: contrast_loss:5.5421
+ Epoch (5)  Loss: contrast_loss:5.5161
+ Epoch (6)  Loss: contrast_loss:5.4068
+ Epoch (7)  Loss: contrast_loss:5.3934
+ Epoch (8)  Loss: contrast_loss:5.3225
+ Epoch (9)  Loss: contrast_loss:5.3446
+ Epoch (10)  Loss: contrast_loss:5.2654
+ Epoch (11)  Loss: contrast_loss:5.1856
+ Epoch (12)  Loss: contrast_loss:5.2127
+ Epoch (13)  Loss: contrast_loss:5.2024
+ Epoch (14)  Loss: contrast_loss:5.1688
+ Epoch (15)  Loss: contrast_loss:5.1517
+ Epoch (16)  Loss: contrast_loss:5.0752
+ Epoch (17)  Loss: contrast_loss:5.1007
+ Epoch (18)  Loss: contrast_loss:5.2127
+ Epoch (19)  Loss: contrast_loss:5.0574
+ Epoch (20)  Loss: contrast_loss:5.0395
+ Epoch (21)  Loss: contrast_loss:5.0249
+ Epoch (22)  Loss: contrast_loss:5.0638
+ Epoch (23)  Loss: contrast_loss:4.9641
+ Epoch (24)  Loss: contrast_loss:4.9097
+ Epoch (25)  Loss: contrast_loss:5.0346
+ Epoch (26)  Loss: contrast_loss:4.9955
+ Epoch (27)  Loss: contrast_loss:4.9030
+ Epoch (28)  Loss: contrast_loss:4.9177
+ Epoch (29)  Loss: contrast_loss:4.8563
+ Epoch (30)  Loss: contrast_loss:4.9139
+ Epoch (31)  Loss: contrast_loss:4.8978
+ Epoch (32)  Loss: contrast_loss:4.9763
+ Epoch (33)  Loss: contrast_loss:4.8881
+ Epoch (34)  Loss: contrast_loss:4.8372
+ Epoch (35)  Loss: contrast_loss:4.8071
+ Epoch (36)  Loss: contrast_loss:4.8112
+ Epoch (37)  Loss: contrast_loss:4.8621
+ Epoch (38)  Loss: contrast_loss:4.9130
+ Epoch (39)  Loss: contrast_loss:4.7929
+ Epoch (40)  Loss: contrast_loss:4.8444
+ Epoch (41)  Loss: contrast_loss:4.6694
+ Epoch (42)  Loss: contrast_loss:4.7476
+ Epoch (43)  Loss: contrast_loss:4.7086
+ Epoch (44)  Loss: contrast_loss:4.7695
+ Epoch (45)  Loss: contrast_loss:4.7113
+ Epoch (46)  Loss: contrast_loss:4.7228
+ Epoch (47)  Loss: contrast_loss:4.7603
+ Epoch (48)  Loss: contrast_loss:4.7109
+ Epoch (49)  Loss: contrast_loss:4.6751
+ Epoch (50)  Loss: contrast_loss:4.6646
+ Epoch (51)  Loss: contrast_loss:4.6433
+ Epoch (52)  Loss: contrast_loss:4.6320
+ Epoch (53)  Loss: contrast_loss:4.5953
+ Epoch (54)  Loss: contrast_loss:4.6779
+ Epoch (55)  Loss: contrast_loss:4.6058
+ Epoch (56)  Loss: contrast_loss:4.5791
+ Epoch (57)  Loss: contrast_loss:4.5519
+ Epoch (58)  Loss: contrast_loss:4.5806
+ Epoch (59)  Loss: contrast_loss:4.5792
+ Epoch (60)  Loss: contrast_loss:4.6257
+ Epoch (61)  Loss: contrast_loss:4.6249
+ Epoch (62)  Loss: contrast_loss:4.5818
+ Epoch (63)  Loss: contrast_loss:4.5662
+ Epoch (64)  Loss: contrast_loss:4.4927
+ Epoch (65)  Loss: contrast_loss:4.5032
+ Epoch (66)  Loss: contrast_loss:4.4097
+ Epoch (67)  Loss: contrast_loss:4.4287
+ Epoch (68)  Loss: contrast_loss:4.4724
+ Epoch (69)  Loss: contrast_loss:4.4273
+ Epoch (70)  Loss: contrast_loss:4.4808
+ Epoch (71)  Loss: contrast_loss:4.5075
+ Epoch (72)  Loss: contrast_loss:4.3788
+ Epoch (73)  Loss: contrast_loss:4.4130
+ Epoch (74)  Loss: contrast_loss:4.3460
+ Epoch (75)  Loss: contrast_loss:4.3794
+ Epoch (76)  Loss: contrast_loss:4.3830
+ Epoch (77)  Loss: contrast_loss:4.3425
+ Epoch (78)  Loss: contrast_loss:4.3273
+ Epoch (79)  Loss: contrast_loss:4.3079
+ Epoch (80)  Loss: contrast_loss:4.2588
+ Epoch (81)  Loss: contrast_loss:4.3163
+ Epoch (82)  Loss: contrast_loss:4.2775
+ Epoch (83)  Loss: contrast_loss:4.2837
+ Epoch (84)  Loss: contrast_loss:4.3178
+ Epoch (85)  Loss: contrast_loss:4.3634
+ Epoch (86)  Loss: contrast_loss:4.3233
+ Epoch (87)  Loss: contrast_loss:4.1545
+ Epoch (88)  Loss: contrast_loss:4.2518
+ Epoch (89)  Loss: contrast_loss:4.3521
+ Epoch (90)  Loss: contrast_loss:4.2665
+ Epoch (91)  Loss: contrast_loss:4.3490
+ Epoch (92)  Loss: contrast_loss:4.3048
+ Epoch (93)  Loss: contrast_loss:4.2428
+ Epoch (94)  Loss: contrast_loss:4.2185
+ Epoch (95)  Loss: contrast_loss:4.2563
+ Epoch (96)  Loss: contrast_loss:4.2096
+ Epoch (97)  Loss: contrast_loss:4.2065
+ Epoch (98)  Loss: contrast_loss:4.3099
+ Epoch (99)  Loss: contrast_loss:4.1878
+ changed
+[1;34mwandb[0m:
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync /scr/user/mahdinur/CVPR/2022-CVPR-AirNet/wandb/offline-run-20240929_231445-xgp8h00y[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/offline-run-20240929_231445-xgp8h00y/logs[0m
