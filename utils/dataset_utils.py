@@ -40,6 +40,9 @@ class TrainDataset(Dataset):
         if 'dehaze' in self.de_type:
             self._init_hazy_ids()
 
+        if 'deflare' in self.de_type:
+            self._init_deflare_ids()
+
         random.shuffle(self.de_type)
 
     def _init_clean_ids(self):
@@ -75,6 +78,13 @@ class TrainDataset(Dataset):
 
         self.rl_counter = 0
         self.num_rl = len(self.rs_ids)
+    
+
+
+    def _init_deflare_ids(self):
+        flare = self.args.data_file_dir + "deflare/"
+
+        pass
 
     def _crop_patch(self, img_1, img_2):
         H = img_1.shape[0]
