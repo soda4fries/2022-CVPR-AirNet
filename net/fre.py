@@ -62,17 +62,15 @@ class WaveletCNNBlock(nn.Module):
 
     def forward(self, x):
         residual = self.shortcut(x)
-
-
-        yl, yh = self.dwt(out)
-
-        out = self.conv1(yl)
+        
+        out = self.conv1(x)
         out = self.bn1(out)
         out = self.relu(out)
         
         # Apply DWT
+        yl, yh = self.dwt(out)
         
-        out = self.conv2(out)
+        out = self.conv2(yl)
         out = self.bn2(out)
         out = self.relu(out)
         
