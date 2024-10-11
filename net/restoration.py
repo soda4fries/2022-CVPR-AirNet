@@ -351,7 +351,7 @@ class PromptIR(nn.Module):
         ffn_expansion_factor = 2.66,
         bias = False,
         LayerNorm_type = 'WithBias',   ## Other option 'BiasFree'
-        decoder = False,
+        decoder = True,
         wavelet_dim=256
     
     ):
