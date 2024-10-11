@@ -91,12 +91,14 @@ class FeedForward(nn.Module):
 
         self.dwconv = nn.Conv2d(hidden_features*2, hidden_features*2, kernel_size=3, stride=1, padding=1, groups=hidden_features*2, bias=bias)
 
+        self.wt_dw_conv = WTConv2d(hidden_features, hidden_features, kernel_size=3, bias=bias)
         self.project_out = nn.Conv2d(hidden_features, dim, kernel_size=1, bias=bias)
 
     def forward(self, x):
         x = self.project_in(x)
         x1, x2 = self.dwconv(x).chunk(2, dim=1)
         x = F.gelu(x1) * x2
+        x = self.wt_dw_conv(x)
         x = self.project_out(x)
         return x
 
@@ -153,14 +155,14 @@ class WaveletAtt(nn.Module):
 
         self.v = nn.Conv2d(k_dim, dim, kernel_size=1, bias = bias)
 
-        self.q_dw = WTConv2d(dim, dim, kernel_size=3, stride=1 ,bias= bias)
-        self.k_dw = WTConv2d(dim, dim, kernel_size=3, stride=1, bias= bias)
+        self.q_dw = nn.Conv2d(dim, dim, kernel_size=3, stride=1 ,bias= bias)
+        self.k_dw = nn.Conv2d(dim, dim, kernel_size=3, stride=1, bias= bias)
 
-        self.v_dw = WTConv2d(dim, dim, kernel_size=3, stride=1, bias= bias)
+        self.v_dw = nn.Conv2d(dim, dim, kernel_size=3, stride=1, bias= bias)
 
         #self.qkv = WTConv2d(dim, dim*3, kernel_size=1, bias=bias)
         #self.qkv_dwconv = WTConv2d(dim*3, dim*3, kernel_size=3, stride=1, padding=1, groups=dim*3, bias=bias)
-        self.project_out = WTConv2d(dim, dim, kernel_size=1, bias=bias)
+        self.project_out = nn.Conv2d(dim, dim, kernel_size=1, bias=bias)
         
 
 
