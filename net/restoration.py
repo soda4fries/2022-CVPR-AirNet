@@ -14,7 +14,7 @@ from einops import rearrange
 from einops.layers.torch import Rearrange
 import time
 
-from net.wtconv.wtconv2d import WTConv2d
+from wtconv.wtconv2d import WTConv2d
 
 
 ##########################################################################
@@ -155,10 +155,10 @@ class WaveletAtt(nn.Module):
 
         self.v = nn.Conv2d(k_dim, dim, kernel_size=1, bias = bias)
 
-        self.q_dw = nn.Conv2d(dim, dim, kernel_size=3, stride=1 ,bias= bias)
-        self.k_dw = nn.Conv2d(dim, dim, kernel_size=3, stride=1, bias= bias)
+        self.q_dw = nn.Conv2d(dim, dim, kernel_size=3, stride=1 ,bias= bias, padding=1)
+        self.k_dw = nn.Conv2d(dim, dim, kernel_size=3, stride=1, bias= bias, padding=1)
 
-        self.v_dw = nn.Conv2d(dim, dim, kernel_size=3, stride=1, bias= bias)
+        self.v_dw = nn.Conv2d(dim, dim, kernel_size=3, stride=1, bias= bias, padding=1)
 
         #self.qkv = WTConv2d(dim, dim*3, kernel_size=1, bias=bias)
         #self.qkv_dwconv = WTConv2d(dim*3, dim*3, kernel_size=3, stride=1, padding=1, groups=dim*3, bias=bias)
@@ -502,6 +502,6 @@ class PromptIR(nn.Module):
 if __name__ == '__main__':
     net = PromptIR(decoder=True)
 
-    random1 = torch.randn(3,3,256,256)
-    random2 = torch.randn(3,256,16,16)
+    random1 = torch.randn(2,3,256,256)
+    random2 = torch.randn(2,256,8,8)
     print(net(random1,random2).shape)
