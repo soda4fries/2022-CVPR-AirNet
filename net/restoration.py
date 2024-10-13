@@ -502,6 +502,6 @@ class PromptIR(nn.Module):
 if __name__ == '__main__':
     net = PromptIR(decoder=True)
 
-    random1 = torch.randn(2,3,256,256)
+    random1 = torch.randn(2,3,64,64)
     random2 = torch.randn(2,256,8,8)
     print(net(random1,random2).shape)
