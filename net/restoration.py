@@ -244,7 +244,7 @@ class Upsample(nn.Module):
 class TransformerBlock(nn.Module):
     def __init__(self, dim, num_heads, ffn_expansion_factor, bias, LayerNorm_type, dualAtt=True):
         super(TransformerBlock, self).__init__()
-        wavelet_dim=256
+        wavelet_dim=128
         self.norm1 = LayerNorm(dim, LayerNorm_type)
         if dualAtt == True:
             self.waveletselfattn = Attention(wavelet_dim, num_heads, bias)
@@ -500,6 +500,6 @@ class PromptIR(nn.Module):
 if __name__ == '__main__':
     net = PromptIR(decoder=True)
 
-    random1 = torch.randn(3,3,256,256)
-    random2 = torch.randn(3,256,16,16)
+    random1 = torch.randn(2,3,128,128)
+    random2 = torch.randn(2,64,32,32)
     print(net(random1,random2).shape)

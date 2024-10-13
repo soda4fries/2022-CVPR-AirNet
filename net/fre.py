@@ -128,15 +128,17 @@ class WaveletResNet(nn.Module):
         x = self.bn1(x)
         x = self.relu(x)
         x = self.maxpool(x)
+    
+        x  = self.layer1(x)
 
-        x = self.layer1(x)
-        x = self.layer2(x)
+        
+        l2_output = self.layer2(l2_output)
         x = self.layer3(x)
         logits = self.avgpool(x)
         logits = torch.flatten(logits,1)
         #print(logits.shape)
         logits = self.mlp(logits)
-        return x, logits   #feature, out(logits), inter
+        return l2_output, logits   #feature, out(logits), inter
 
 # Test the model
 # model = WaveletResNet()
