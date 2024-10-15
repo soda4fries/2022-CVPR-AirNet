@@ -91,15 +91,18 @@ class FeedForward(nn.Module):
 
         self.dwconv = nn.Conv2d(hidden_features*2, hidden_features*2, kernel_size=3, stride=1, padding=1, groups=hidden_features*2, bias=bias)
 
-        self.wt_dw_conv = WTConv2d(hidden_features, hidden_features, kernel_size=3, bias=bias)
-        self.project_out = nn.Conv2d(hidden_features, dim, kernel_size=1, bias=bias)
+        self.wt_dw_conv = WTConv2d(dim, hidden_features, kernel_size=3, bias=bias)
+        self.project_out = nn.Conv2d(hidden_features * 2, dim, kernel_size=1, bias=bias)
 
     def forward(self, x):
+        wt_x = self.wt_dw_conv(x)
         x = self.project_in(x)
+
         x1, x2 = self.dwconv(x).chunk(2, dim=1)
         x = F.gelu(x1) * x2
-        x = self.wt_dw_conv(x)
-        x = self.project_out(x)
+        x = torch.concat([wt_x,x])
+    
+        x = self.project_out(x) 
         return x
 
 
