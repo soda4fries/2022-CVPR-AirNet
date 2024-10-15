@@ -14,7 +14,7 @@ from einops import rearrange
 from einops.layers.torch import Rearrange
 import time
 
-from wtconv.wtconv2d import WTConv2d
+from net.wtconv.wtconv2d import WTConv2d
 
 
 ##########################################################################
@@ -91,8 +91,8 @@ class FeedForward(nn.Module):
 
         self.dwconv = nn.Conv2d(hidden_features*2, hidden_features*2, kernel_size=3, stride=1, padding=1, groups=hidden_features*2, bias=bias)
 
-        self.wt_dw_conv = WTConv2d(dim, hidden_features, kernel_size=3, bias=bias)
-        self.project_out = nn.Conv2d(hidden_features * 2, dim, kernel_size=1, bias=bias)
+        self.wt_dw_conv = WTConv2d(dim, dim, kernel_size=3, bias=bias)
+        self.project_out = nn.Conv2d(hidden_features + dim, dim, kernel_size=1, bias=bias)
 
     def forward(self, x):
         wt_x = self.wt_dw_conv(x)
@@ -100,7 +100,7 @@ class FeedForward(nn.Module):
 
         x1, x2 = self.dwconv(x).chunk(2, dim=1)
         x = F.gelu(x1) * x2
-        x = torch.concat([wt_x,x])
+        x = torch.concat([wt_x,x], dim = 1)
     
         x = self.project_out(x) 
         return x
@@ -142,6 +142,12 @@ class Attention(nn.Module):
 
         out = self.project_out(out)
         return out
+
+
+
+
+
+
 
 
 
