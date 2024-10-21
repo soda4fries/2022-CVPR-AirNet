@@ -14,7 +14,7 @@ from einops import rearrange
 from einops.layers.torch import Rearrange
 import time
 
-from net.wtconv.wtconv2d import WTConv2d
+from wtconv.wtconv2d import WTConv2d
 
 
 ##########################################################################
@@ -164,10 +164,10 @@ class WaveletAtt(nn.Module):
 
         self.v = nn.Conv2d(k_dim, dim, kernel_size=1, bias = bias)
 
-        self.q_dw = nn.Conv2d(dim, dim, kernel_size=3, stride=1 ,bias= bias, padding=1)
-        self.k_dw = nn.Conv2d(dim, dim, kernel_size=3, stride=1, bias= bias, padding=1)
+        self.q_dw = WTConv2d(dim, dim, kernel_size=3, stride=1 ,bias= bias)
+        self.k_dw = WTConv2d(dim, dim, kernel_size=3, stride=1, bias= bias)
 
-        self.v_dw = nn.Conv2d(dim, dim, kernel_size=3, stride=1, bias= bias, padding=1)
+        self.v_dw = WTConv2d(dim, dim, kernel_size=3, stride=1, bias= bias)
 
         #self.qkv = WTConv2d(dim, dim*3, kernel_size=1, bias=bias)
         #self.qkv_dwconv = WTConv2d(dim*3, dim*3, kernel_size=3, stride=1, padding=1, groups=dim*3, bias=bias)
@@ -413,16 +413,12 @@ class PromptIR(nn.Module):
         self.encoder_level3 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**2), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[2])])
 
         self.down3_4 = Downsample(int(dim*2**2)) ## From Level 3 to Level 4
-        
         self.latent = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**3), num_heads=heads[3], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[3])])
         
         self.up4_3 = Upsample(int(dim*2**2)) ## From Level 4 to Level 3
-
-        self.noise_level3 = TransformerBlock(dim=int(dim*2**3), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type)
-
-        self.reduce_noise_level3 = nn.Conv2d(int(dim*2**3),int(dim*2**2),kernel_size=1,bias=bias)
-
-        self.reduce_chan_level3 = nn.Conv2d(int(dim*2**2) +96 , int(dim*2**2), kernel_size=1, bias=bias)
+        self.reduce_chan_level3 = nn.Conv2d(int(dim*2**1)+192, int(dim*2**2), kernel_size=1, bias=bias)
+        self.noise_level3 = TransformerBlock(dim=int(dim*2**2) + 512, num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type)
+        self.reduce_noise_level3 = nn.Conv2d(int(dim*2**2)+512,int(dim*2**2),kernel_size=1,bias=bias)
 
 
         self.decoder_level3 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**2), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[2])])
@@ -430,16 +426,16 @@ class PromptIR(nn.Module):
 
         self.up3_2 = Upsample(int(dim*2**2)) ## From Level 3 to Level 2
         self.reduce_chan_level2 = nn.Conv2d(int(dim*2**2), int(dim*2**1), kernel_size=1, bias=bias)
-        self.noise_level2 = TransformerBlock(dim=int(dim*2**2)  , num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type)
-        self.reduce_noise_level2 = nn.Conv2d(int(dim*2**2), int(dim*2**2),kernel_size=1,bias=bias)
+        self.noise_level2 = TransformerBlock(dim=int(dim*2**1) + 224, num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type)
+        self.reduce_noise_level2 = nn.Conv2d(int(dim*2**1)+224,int(dim*2**2),kernel_size=1,bias=bias)
 
 
         self.decoder_level2 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[1], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[1])])
         
         self.up2_1 = Upsample(int(dim*2**1))  ## From Level 2 to Level 1  (NO 1x1 conv to reduce channels)
 
-        self.noise_level1 = TransformerBlock(dim=int(dim*2**1), num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type)
-        self.reduce_noise_level1 = nn.Conv2d(int(dim*2**1),int(dim*2**1),kernel_size=1,bias=bias)
+        self.noise_level1 = TransformerBlock(dim=int(dim*2**1)+64, num_heads=heads[2], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type)
+        self.reduce_noise_level1 = nn.Conv2d(int(dim*2**1)+64,int(dim*2**1),kernel_size=1,bias=bias)
 
 
         self.decoder_level1 = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_blocks[0])])
@@ -447,7 +443,7 @@ class PromptIR(nn.Module):
         self.refinement = MultiInputSequential(*[TransformerBlock(dim=int(dim*2**1), num_heads=heads[0], ffn_expansion_factor=ffn_expansion_factor, bias=bias, LayerNorm_type=LayerNorm_type) for i in range(num_refinement_blocks)])
                     
         self.output = nn.Conv2d(int(dim*2**1), out_channels, kernel_size=3, stride=1, padding=1, bias=bias)
-        #print(f'dim = {dim}')
+
 
     def forward(self, inp_img,noise_emb = None):
         
@@ -476,9 +472,9 @@ class PromptIR(nn.Module):
 
 
         if self.decoder:
-            # dec3_param = self.prompt3(latent)
-            # latent = torch.cat([latent, dec3_param], 1)
-            latent = self.noise_level3(latent, noise_emb)
+            dec3_param = self.prompt3(latent)
+            latent = torch.cat([latent, dec3_param], 1)
+            latent = self.noise_level3(latent,noise_emb)
             latent = self.reduce_noise_level3(latent)
                         
         inp_dec_level3 = self.up4_3(latent)
@@ -490,6 +486,8 @@ class PromptIR(nn.Module):
         out_dec_level3 = self.decoder_level3(inp_dec_level3) 
 
         if self.decoder:
+            dec2_param = self.prompt2(out_dec_level3)
+            out_dec_level3 = torch.cat([out_dec_level3, dec2_param], 1)
 
             out_dec_level3 = self.noise_level2(out_dec_level3,noise_emb)
             out_dec_level3 = self.reduce_noise_level2(out_dec_level3)
@@ -501,7 +499,8 @@ class PromptIR(nn.Module):
         out_dec_level2 = self.decoder_level2(inp_dec_level2)
 
         if self.decoder:
-           
+            dec1_param = self.prompt1(out_dec_level2)
+            out_dec_level2 = torch.cat([out_dec_level2, dec1_param], 1)
             out_dec_level2 = self.noise_level1(out_dec_level2, noise_emb)
             out_dec_level2 = self.reduce_noise_level1(out_dec_level2)
         
