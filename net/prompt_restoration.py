@@ -14,7 +14,7 @@ from einops import rearrange
 from einops.layers.torch import Rearrange
 import time
 
-from wtconv.wtconv2d import WTConv2d
+from net.wtconv.wtconv2d import WTConv2d
 
 
 ##########################################################################
@@ -362,6 +362,57 @@ class MultiInputSequential(nn.Module):
 ##########################################################################
 ##---------- PromptIR -----------------------
 
+
+class BasicConv(nn.Module):
+    def __init__(self, in_channel, out_channel, kernel_size, stride, bias=True, norm=False, relu=True, transpose=False):
+        super(BasicConv, self).__init__()
+        if bias and norm:
+            bias = False
+
+        padding = kernel_size // 2
+        layers = list()
+        if transpose:
+            padding = kernel_size // 2 -1
+            layers.append(nn.ConvTranspose2d(in_channel, out_channel, kernel_size, padding=padding, stride=stride, bias=bias))
+        else:
+            layers.append(
+                nn.Conv2d(in_channel, out_channel, kernel_size, padding=padding, stride=stride, bias=bias))
+        if norm:
+            layers.append(nn.BatchNorm2d(out_channel))
+        if relu:
+            layers.append(nn.GELU())
+        self.main = nn.Sequential(*layers)
+
+    def forward(self, x):
+        return self.main(x)
+
+
+class SCM(nn.Module):
+    def __init__(self, out_plane):
+        super(SCM, self).__init__()
+        self.main = nn.Sequential(
+            BasicConv(3, out_plane//4, kernel_size=3, stride=1, relu=True),
+            BasicConv(out_plane // 4, out_plane // 2, kernel_size=1, stride=1, relu=True),
+            WTConv2d(out_plane // 2, out_plane // 2, kernel_size=3),
+            BasicConv(out_plane // 2, out_plane, kernel_size=1, stride=1, relu=False),
+            nn.InstanceNorm2d(out_plane, affine=True)
+        )
+
+    def forward(self, x):
+        x = self.main(x)
+        return x
+
+
+
+class FAM(nn.Module):
+    def __init__(self, channel):
+        super(FAM, self).__init__()
+        self.merge = BasicConv(channel*2, channel, kernel_size=3, stride=1, relu=False)
+
+    def forward(self, x1, x2):
+        return self.merge(torch.cat([x1, x2], dim=1))
+
+
 class PromptIR(nn.Module):
     def __init__(self, 
         inp_channels=3, 
@@ -445,21 +496,42 @@ class PromptIR(nn.Module):
         self.output = nn.Conv2d(int(dim*2**1), out_channels, kernel_size=3, stride=1, padding=1, bias=bias)
 
 
+        
+        self.SCM1 = SCM(int(dim*2**1))
+        self.SCM2 = SCM(int(dim*2**2))
+        self.FAM1 = FAM(int(dim*2**1))
+        self.FAM2 = FAM(int(dim*2**2))
+
     def forward(self, inp_img,noise_emb = None):
         
+        x_2 = F.interpolate(inp_img, scale_factor=0.5)
+        x_4 = F.interpolate(inp_img, scale_factor=0.25)
+        z2 = self.SCM1(x_2)
+        z4 = self.SCM2(x_4)
 
 
         inp_enc_level1 = self.patch_embed(inp_img)
 
         out_enc_level1 = self.encoder_level1(inp_enc_level1)
         
+        
+
+
+
         inp_enc_level2 = self.down1_2(out_enc_level1)
+        
+        inp_enc_level2 = self.FAM1(z2,inp_enc_level2) # fusion of degraded image
 
         out_enc_level2 = self.encoder_level2(inp_enc_level2)
 
+        
+
         inp_enc_level3 = self.down2_3(out_enc_level2)
+        
+        inp_enc_level3 = self.FAM2(z4,inp_enc_level3)
 
         out_enc_level3 = self.encoder_level3(inp_enc_level3) 
+
 
         inp_enc_level4 = self.down3_4(out_enc_level3)  
 
