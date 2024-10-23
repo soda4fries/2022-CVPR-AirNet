@@ -14,7 +14,7 @@ from einops import rearrange
 from einops.layers.torch import Rearrange
 import time
 
-from net.wtconv.wtconv2d import WTConv2d
+from wtconv.wtconv2d import WTConv2d
 
 
 ##########################################################################
@@ -291,7 +291,7 @@ class TransformerBlock(nn.Module):
             cross2 = self.image_to_wavelet(x, wave)
             cross2 = F.interpolate(cross2, size=(h, w), mode='bilinear', align_corners=False)
             # cross2 needs to resize
-            x = cross1 * self.para1 + cross2 * self.para2 #torch.concat( [cross1, cross2], dim = 1)
+            #x = cross1 * self.para1 + cross2 * self.para2 #torch.concat( [cross1, cross2], dim = 1)
             x = x + self.ffn(self.norm2(x))
 
         return x
@@ -331,9 +331,9 @@ class PromptGenBlock(nn.Module):
 
 
         #wavelet lowfreq
-        yl, yh = self.dwt(x)
+        #yl, yh = self.dwt(x)
         
-        emb = yl.mean(dim=(-2,-1))
+        emb = x.mean(dim=(-2,-1))
         prompt_weights = F.softmax(self.linear_layer(emb),dim=1)
         prompt = prompt_weights.unsqueeze(-1).unsqueeze(-1).unsqueeze(-1) * self.prompt_param.unsqueeze(0).repeat(B,1,1,1,1,1).squeeze(1)
         prompt = torch.sum(prompt,dim=1)
